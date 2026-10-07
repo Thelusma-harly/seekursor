@@ -1,0 +1,64 @@
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+    <defs>
+      <linearGradient id="topLayerGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+        <stop offset="0%" stop-color="#55EFFF" />
+        <stop offset="35%" stop-color="#32DEFF" />
+        <stop offset="70%" stop-color="#00C0FF" />
+        <stop offset="100%" stop-color="#009EFF" />
+      </linearGradient>
+      <linearGradient id="midLayerGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+        <stop offset="0%" stop-color="#00C0FF" />
+        <stop offset="45%" stop-color="#0084FF" />
+        <stop offset="85%" stop-color="#005BFF" />
+        <stop offset="100%" stop-color="#0042EA" />
+      </linearGradient>
+      <linearGradient id="botLayerGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+        <stop offset="0%" stop-color="#005BFF" />
+        <stop offset="50%" stop-color="#003EFF" />
+        <stop offset="85%" stop-color="#0024D6" />
+        <stop offset="100%" stop-color="#0018B0" />
+      </linearGradient>
+      <linearGradient id="cubeTop1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#55EFFF" />
+        <stop offset="100%" stop-color="#22D2FF" />
+      </linearGradient>
+      <linearGradient id="cubeTop2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00AEFF" />
+        <stop offset="100%" stop-color="#0066FF" />
+      </linearGradient>
+      <linearGradient id="cubeBot1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0084FF" />
+        <stop offset="100%" stop-color="#004CFF" />
+      </linearGradient>
+      <linearGradient id="cubeBot2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#004CFF" />
+        <stop offset="100%" stop-color="#001CC8" />
+      </linearGradient>
+    </defs>
+    <rect width="512" height="512" rx="112" fill="#0A0D14" />
+    <g transform="translate(256, 256) scale(0.92)">
+      <path d="M -85 -145 L 105 -35 C 138 -15 148 28 128 62 L 15 210 C -5 244 -48 254 -82 234 L -272 124 C -305 104 -315 62 -295 28 L -182 -120 C -162 -154 -118 -165 -85 -145 Z"
+            transform="translate(42, 60) scale(0.72)"
+            fill="url(#botLayerGrad)" />
+      <path d="M -85 -145 L 105 -35 C 138 -15 148 28 128 62 L 15 210 C -5 244 -48 254 -82 234 L -272 124 C -305 104 -315 62 -295 28 L -182 -120 C -162 -154 -118 -165 -85 -145 Z"
+            transform="translate(4, 5) scale(0.72)"
+            fill="url(#midLayerGrad)" />
+      <path d="M -85 -145 L 105 -35 C 138 -15 148 28 128 62 L 15 210 C -5 244 -48 254 -82 234 L -272 124 C -305 104 -315 62 -295 28 L -182 -120 C -162 -154 -118 -165 -85 -145 Z"
+            transform="translate(-34, -50) scale(0.72)"
+            fill="url(#topLayerGrad)" />
+      <path d="M -15 -25 L 20 -5 C 28 0 30 10 25 18 L 10 40 C 5 48 -5 50 -13 45 L -48 25 C -56 20 -58 10 -53 2 L -38 -20 C -33 -28 -23 -30 -15 -25 Z"
+            transform="translate(205, -165) scale(0.62)"
+            fill="url(#cubeTop1)" />
+      <path d="M -15 -25 L 20 -5 C 28 0 30 10 25 18 L 10 40 C 5 48 -5 50 -13 45 L -48 25 C -56 20 -58 10 -53 2 L -38 -20 C -33 -28 -23 -30 -15 -25 Z"
+            transform="translate(245, -95) scale(0.62)"
+            fill="url(#cubeTop2)" />
+      <path d="M -15 -25 L 20 -5 C 28 0 30 10 25 18 L 10 40 C 5 48 -5 50 -13 45 L -48 25 C -56 20 -58 10 -53 2 L -38 -20 C -33 -28 -23 -30 -15 -25 Z"
+            transform="translate(-275, 115) scale(0.62)"
+            fill="url(#cubeBot1)" />
+      <path d="M -15 -25 L 20 -5 C 28 0 30 10 25 18 L 10 40 C 5 48 -5 50 -13 45 L -48 25 C -56 20 -58 10 -53 2 L -38 -20 C -33 -28 -23 -30 -15 -25 Z"
+            transform="translate(-238, 185) scale(0.62)"
+            fill="url(#cubeBot2)" />
+    </g>
+  </svg>
+  
