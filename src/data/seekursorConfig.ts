@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import restaurantImage from "../assets/images/showcase_restaurant_1791226109241.jpg";
 import businessImage from "../assets/images/showcase_business_1791226120501.jpg";
 import catalogueImage from "../assets/images/showcase_menu_catalog_1791226129424.jpg";
-import workspaceImage from "../assets/images/founder_workspace_1791226139115.jpg";
+import workspaceImage from "../assets/images/founder_workspace.jpg";
 import { siteConfig } from "./siteConfig";
 
 export interface ServiceItem {
