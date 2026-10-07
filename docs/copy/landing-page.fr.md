@@ -566,7 +566,7 @@ Bonjour Seekursor, je viens de voir le concept « Un catalogue, plus simple à u
 
 ## Métadonnées
 
-Seekursor — Studio de solutions digitales
+Seekursor — Agence de solutions digitales
 
 Seekursor aide les entreprises à mieux servir leurs clients, simplifier leurs opérations et développer leur activité grâce à des solutions digitales pratiques.
 

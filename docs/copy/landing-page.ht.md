@@ -566,7 +566,7 @@ Bonjou Seekursor, mwen sot gade konsèp « Yon katalòg ki pi fasil pou itilize 
 
 ## Metadone
 
-Seekursor — Estidyo solisyon dijital
+Seekursor — Ajans solisyon dijital
 
 Seekursor ede biznis yo pi byen sèvi kliyan yo, senplifye fason yo travay epi devlope aktivite yo ak solisyon dijital ki pratik.
 

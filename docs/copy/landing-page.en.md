@@ -566,7 +566,7 @@ Hello Seekursor, I just viewed the “A catalogue, easier to use” concept and 
 
 ## Metadata
 
-Seekursor — Digital solutions studio
+Seekursor — Digital solutions agency
 
 Seekursor helps businesses serve their customers better, simplify operations and grow through practical digital solutions.
 

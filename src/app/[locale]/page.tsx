@@ -23,7 +23,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
     ...(origin ? {metadataBase: new URL(origin)} : {}),
     title: t("title"), description: t("description"),
     alternates: {canonical: `${origin ?? ""}/${locale}`, languages: {...languages, "x-default": `${origin ?? ""}/fr`}},
-    icons: {icon: [{url: "/favicon.svg", type: "image/svg+xml"}, {url: "/favicon.png", sizes: "64x64", type: "image/png"}], apple: "/favicon.png"},
+    icons: {icon: [{url: "/favicon.png", type: "image/png"}], apple: "/favicon.png"},
     openGraph: {type: "website", siteName: siteConfig.name, title: t("title"), description: t("socialDescription"),
       locale: {fr: "fr_FR", en: "en_US", ht: "ht_HT"}[locale],
       alternateLocale: routing.locales.filter(code => code !== locale).map(code => ({fr: "fr_FR", en: "en_US", ht: "ht_HT"}[code])),
