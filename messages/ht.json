@@ -20,7 +20,7 @@
   "Navigation": {
     "home": "Akèy",
     "services": "Sèvis",
-    "projects": "Konsèp",
+    "projects": "Egzanp",
     "approach": "Apwòch",
     "about": "Sou nou",
     "primary": "Navigasyon prensipal",
@@ -31,31 +31,33 @@
     "brandHome": "Seekursor — akèy"
   },
   "Hero": {
-    "title": "Solisyon dijital ki fè biznis ou avanse",
-    "description": "Seekursor se yon ajans solisyon dijital. Nou ede biznis yo pi byen sèvi kliyan yo, senplifye fason yo travay epi devlope aktivite yo."
+    "title": "Fè prezans dijital ou tounen yon zouti ki itil pou biznis ou",
+    "description": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "eyebrow": "AJANS SOLISYON DIJITAL",
+    "baseline": "Baze ann Ayiti · Fèt pou biznis yo · Ouvè pou lòt mache"
   },
   "Discovery": {
-    "eyebrow": "PREMYE KONTAK LA",
-    "title": "Ede kliyan ou yo fè premye pa a",
+    "eyebrow": "ANVAN PREMYE KONVÈSASYON AN",
+    "title": "Anvan kliyan ou kontakte ou, li deja ap chèche konprann twa bagay",
     "items": [
       {
-        "title": "Pou yo jwenn ou",
-        "description": "Fè biznis ou ak enfòmasyon ki enpòtan yo fasil pou moun jwenn."
+        "title": "Jwenn ou",
+        "description": "Biznis ou dwe fasil pou jwenn lè yon kliyan kòmanse fè rechèch li."
       },
       {
-        "title": "Pou yo konprann ou",
-        "description": "Prezante sa ou ofri yo klèman pou ede kliyan ou yo fè chwa yo."
+        "title": "Konprann ou",
+        "description": "Sa ou ofri, sèvis ou yo ak enfòmasyon enpòtan yo dwe fasil pou konprann."
       },
       {
-        "title": "Fasilite kontak la",
-        "description": "Fè li fasil pou yon kesyon mennen nan yon premye konvèsasyon."
+        "title": "Pase nan aksyon",
+        "description": "Fason pou pran kontak, fè yon demann, rezève oswa pase yon kòmann dwe klè."
       }
     ]
   },
   "Services": {
-    "eyebrow": "Solisyon nou yo",
-    "title": "Sa nou ka bati ansanm",
-    "description": "Bon chwa a depann de biznis ou, kliyan ou yo ak bezwen ou vle reponn lan.",
+    "eyebrow": "SA NOU KREYE",
+    "title": "Bon nivo solisyon an pou bon bezwen an",
+    "description": "Nou pa kòmanse ak yon teknoloji oswa yon fòma nou deja chwazi. Nou kòmanse ak sa biznis ou ap chèche amelyore.",
     "discover": "Dekouvri",
     "discoverLabel": "Dekouvri: {title}",
     "returnLabel": "Retounen: {title}",
@@ -63,8 +65,8 @@
     "items": [
       {
         "title": "Prezans dijital",
-        "subtitle": "Prezante biznis ou klèman.",
-        "description": "Espas sou entènèt ki fè sa ou ofri yo pi fasil pou moun jwenn epi konprann.",
+        "subtitle": "Prezante biznis ou ak sa li ofri klèman.",
+        "description": "Sit entènèt, paj prezantasyon, meni, katalòg ak lòt espas sou entènèt ki fèt pou rann biznis ou pi klè epi pi aksesib.",
         "features": [
           "Sit entènèt",
           "Meni ak katalòg",
@@ -73,74 +75,65 @@
       },
       {
         "title": "Eksperyans kliyan",
-        "subtitle": "Fasilite relasyon ou ak kliyan yo.",
-        "description": "Etap senp pou jwenn enfòmasyon, pran kontak oswa jwenn aksè ak sèvis ou yo.",
+        "subtitle": "Fè etap yo pi senp pou kliyan ou yo.",
+        "description": "Eksperyans ki fèt pou fasilite rechèch enfòmasyon, kontak, rezèvasyon, demann oswa kòmann.",
         "features": [
-          "Pakou kliyan",
+          "Enfòmasyon",
           "Rezèvasyon",
-          "Demann ak kòmann"
+          "Demann"
         ]
       },
       {
         "title": "Zouti dijital",
-        "subtitle": "Pi byen òganize biznis ou.",
-        "description": "Zouti ki adapte ak bezwen biznis ou ak moun k ap sèvi avè yo.",
+        "subtitle": "Kreye zouti biznis ou vrèman bezwen yo.",
+        "description": "Aplikasyon entènèt, zouti entèn, pòtay ak entèfas ki adapte ak fason ou travay.",
         "features": [
-          "Zouti entèn",
           "Aplikasyon entènèt",
+          "Zouti entèn",
           "Pòtay pou biznis"
         ]
       },
       {
         "title": "Otomatizasyon",
-        "subtitle": "Senplifye travay ki repete yo.",
-        "description": "Pwosesis ki pi byen konekte pou diminye etap manyèl yo epi fasilite travay chak jou.",
+        "subtitle": "Diminye travay ki repete yo epi ki ralanti biznis ou.",
+        "description": "Pwosesis ki pi byen konekte pou senplifye travay chak jou epi diminye etap manyèl ki pa nesesè yo.",
         "features": [
           "Sik travay",
           "Swivi demann",
           "Koneksyon ant zouti yo"
         ]
-      },
-      {
-        "title": "Solisyon entelijan",
-        "subtitle": "Sèvi ak IA lè li itil.",
-        "description": "Fonksyon entelijan nou chwazi pou reponn yon bezwen presi.",
-        "features": [
-          "Asistan pou travay presi",
-          "Rechèch ki pi fasil",
-          "Tretman enfòmasyon"
-        ]
       }
-    ]
+    ],
+    "aiNote": "IA ka fè pati solisyon an lè li pote yon valè reyèl. Nou pa chwazi li otomatikman."
   },
   "Process": {
-    "eyebrow": "Fason nou travay",
+    "eyebrow": "FASON NOU TRAVAY",
     "title": "Konprann anvan. Bati apre",
-    "description": "Chak biznis fonksyone yon fason diferan. Nou kòmanse ak reyalite pa ou pou chwazi yon solisyon ki adapte avè l.",
+    "description": "Yon bon solisyon kòmanse ak pwoblèm li dwe rezoud la, pa ak teknoloji nou sèvi pou bati li a.",
     "step": "ETAP {number}",
     "items": [
       {
         "title": "Konprann",
-        "description": "Nou pale sou biznis ou, kliyan ou yo ak sa ou ta renmen amelyore."
+        "description": "Biznis ou, kliyan ou yo ak sa ou ap chèche amelyore."
       },
       {
         "title": "Idantifye",
-        "description": "Nou chèche difikilte ki reyèl yo epi chwazi sa ki pi enpòtan pou nou rezoud."
+        "description": "Difikilte reyèl yo ak sa ki pi enpòtan pou nou rezoud."
       },
       {
         "title": "Konsevwa",
-        "description": "Nou fè yon solisyon klè pran fòm, ak yon pwototip lè sa ede ou pran yon desizyon."
+        "description": "Yon repons klè, ak yon pwototip lè sa ede ou pran yon desizyon."
       },
       {
         "title": "Bati",
-        "description": "Nou devlope, teste epi ajiste solisyon an ansanm avè ou anvan nou mete l sou entènèt."
+        "description": "Yon solisyon ki teste, ajiste epi ki pare pou evolye ak biznis ou."
       }
     ]
   },
   "Projects": {
-    "eyebrow": "Konsèp ak demonstrasyon",
-    "title": "Lide ki pran fòm",
-    "description": "Kèk egzanp pou imajine sa yon solisyon dijital ka pote pou yon biznis.",
+    "eyebrow": "KÈK EGZANP",
+    "title": "Gade yon lide pran fòm",
+    "description": "Kèk demonstrasyon sa yon solisyon dijital ka pote pou yon biznis nan yon sitiyasyon konkrè.",
     "examine": "Gade konsèp la",
     "previewAlt": "Apèsi ilistratif konsèp la: {title}",
     "imageAlt": "Imaj ilistratif: {title}",
@@ -149,23 +142,21 @@
     "discuss": "Pale sou bezwen mwen",
     "items": [
       {
-        "title": "Yon restoran ki pi aksesib",
-        "badge": "Konsèp",
         "category": "Restorasyon",
-        "description": "Gade yon meni epi prepare yon kòmann sou telefòn ou.",
-        "longDescription": "Yon egzanp pakou kliyan pou yon restoran: yon meni byen òganize, enfòmasyon itil yo menm kote ak yon fason senp pou pran kontak. Konsèp sa a montre yon direksyon nou ka eksplore, li pa yon rezilta kliyan nou mezire.",
+        "title": "Yon restoran ki pi fasil pou dekouvri",
+        "description": "Meni, lè ouvèti, adrès ak kontak reyini nan yon eksperyans klè sou mobil.",
+        "longDescription": "Yon egzanp prezans dijital pou yon restoran, ki fèt pou ede kliyan yo jwenn enfòmasyon itil anvan yo vini oswa pran kontak.",
         "features": [
           "Meni ki fasil pou gade",
-          "Enfòmasyon pratik yo menm kote",
-          "Kontak ki pi senp"
+          "Lè ouvèti ak adrès aksesib",
+          "Kontak ki fasil pou jwenn"
         ]
       },
       {
-        "title": "Yon biznis ki pi byen prezante",
-        "badge": "Konsèp",
         "category": "Sèvis pwofesyonèl",
-        "description": "Yon prezantasyon sèvis ki klè pou fasilite premye konvèsasyon an.",
-        "longDescription": "Yon konsèp sit entènèt pou yon biznis sèvis. Li òganize sa biznis la ofri, reponn premye kesyon yo epi fè enfòmasyon kontak yo fasil pou jwenn, san li pa ajoute paj ki pa nesesè.",
+        "title": "Yon biznis ki pi fasil pou konprann",
+        "description": "Yon prezantasyon byen òganize sa biznis la ofri, ki reponn premye kesyon yo anvan premye konvèsasyon an.",
+        "longDescription": "Yon egzanp sit entènèt pou yon biznis sèvis, ki fèt pou esplike sa li ofri klèman epi ede vizitè yo prepare premye konvèsasyon yo.",
         "features": [
           "Sa biznis la ofri byen òganize",
           "Repons pou kesyon enpòtan yo",
@@ -173,42 +164,55 @@
         ]
       },
       {
-        "title": "Yon katalòg ki pi fasil pou itilize",
-        "badge": "Demonstrasyon",
         "category": "Komès",
-        "description": "Gade pwodwi yo epi prepare yon demann san etap ki konplike.",
-        "longDescription": "Yon demonstrasyon katalòg dijital pou yon boutik. Pwodwi yo òganize pou ede kliyan an fè chwa li epi prepare yon demann. Nivo konpleksite a ap depann de bezwen reyèl boutik la.",
+        "title": "Yon katalòg ki pi fasil pou gade",
+        "description": "Yon fason pi klè pou dekouvri pwodwi yo epi prepare yon demann.",
+        "longDescription": "Yon demonstrasyon katalòg dijital pou yon boutik, ki fèt pou ede kliyan yo dekouvri pwodwi yo epi fè yon demann klè.",
         "features": [
           "Pwodwi byen òganize",
-          "Seleksyon atik",
+          "Enfòmasyon ki fasil pou gade",
           "Yon rezime demann lan"
         ]
       }
     ]
   },
   "Differentiation": {
-    "purposeTitle": "Yon solisyon dwe gen yon rezon pou l egziste",
-    "purposeDescription": "Nou bay sa ki ede ou travay pi byen oswa sèvi kliyan ou yo pi byen priyorite. Nou deside sa pwojè a ap kouvri ansanm avè ou, selon sa ki pi enpòtan pou ou.",
-    "reachTitle": "Anrasinen ann Ayiti. Ouvè pou lòt orizon",
-    "reachDescription": "Seekursor ap devlope depi Ayiti, avèk atansyon sou fason biznis lokal yo travay ak sa yo bezwen. Anbisyon nou se pote menm apwòch sa a nan lòt mache."
+    "title": "Poukisa Seekursor",
+    "items": [
+      {
+        "title": "Kòmanse ak bezwen an",
+        "description": "Nou chèche konprann anvan tout bagay sa ki vrèman merite amelyore."
+      },
+      {
+        "title": "Bati sa ki itil",
+        "description": "Chak eleman dwe gen yon fonksyon klè pou biznis ou oswa kliyan ou yo."
+      },
+      {
+        "title": "Travay yon fason senp",
+        "description": "Yon solisyon itil dwe rete fasil pou moun ki pral sèvi avè l yo konprann."
+      },
+      {
+        "title": "Pran kontèks la an konsiderasyon",
+        "description": "Nou bati depi Ayiti, ak atansyon sou fason moun sèvi ak zouti yo, kontrent yo ak reyalite mache lokal la."
+      }
+    ],
+    "closing": "Anbisyon an ale pi lwen pase Ayiti. Apwòch la rete menm jan: konprann anvan nou bati."
   },
   "Founder": {
-    "eyebrow": "Dèyè Seekursor",
+    "eyebrow": "DÈYÈ SEEKURSOR",
     "title": "Yon konvèsasyon dirèk ak fondatè a",
-    "imageAlt": "Ilistrasyon yon espas travay pou konsepsyon dijital",
-    "role": "Fondatè ak devlopè solisyon dijital",
-    "statement1": "Harly Thelusma te fonde Seekursor sou yon lide senp: konprann biznis la anvan nou deside sa pou nou bati.",
-    "statement2": "Li baze ann Ayiti epi li travay dirèkteman avè ou pou fè yon bezwen konkrè tounen yon solisyon dijital ki itil."
+    "imageAlt": "Harly Thelusma, fondatè Seekursor, pandan l ap travay",
+    "role": "Fondatè",
+    "statement1": "Harly Thelusma te fonde Seekursor ak yon konviksyon senp: yon bon solisyon dijital kòmanse ak yon bon konpreyansyon biznis la.",
+    "statement2": "Li baze ann Ayiti epi li travay dirèkteman ak biznis yo pou fè yon bezwen konkrè tounen yon solisyon itil."
   },
   "FinalCTA": {
-    "eyebrow": "Pwochen pa ou",
-    "title": "Ann pale sou biznis ou",
-    "description": "Pi byen sèvi kliyan ou yo, senplifye fason ou travay oswa devlope biznis ou: ann kòmanse ak sa ki enpòtan pou ou.",
-    "help": "Pale sou WhatsApp oswa chwazi yon lè pou yon premye apèl.",
-    "inquiryPrompt": "Ou pito eksplike bezwen ou anvan?"
+    "eyebrow": "PWOCHEN PA OU",
+    "title": "Ou gen yon bagay pou amelyore? Ann pale sou li",
+    "description": "Esplike nou sa ou ap chèche amelyore, sa ki fè ou pèdi tan oswa sa ou ta renmen rann pi senp. N ap kòmanse ak konprann anvan nou pwopoze nenpòt bagay."
   },
   "Footer": {
-    "description": "Yon estidyo solisyon dijital pou amelyore epi devlope biznis ou.",
+    "description": "Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
     "contact": "Ann rete an kontak",
     "copyright": "© {year} Seekursor. Tout dwa rezève.",
     "madeIn": "Fèt ak anpil swen, depi Ayiti."
@@ -243,11 +247,11 @@
     "project": "Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou biznis mwen."
   },
   "Metadata": {
-    "title": "Seekursor — Ajans solisyon dijital",
-    "description": "Seekursor ede biznis yo pi byen sèvi kliyan yo, senplifye fason yo travay epi devlope aktivite yo ak solisyon dijital ki pratik.",
-    "socialDescription": "Solisyon dijital pou pi byen sèvi kliyan ou yo, senplifye fason ou travay epi devlope biznis ou.",
-    "twitterDescription": "Solisyon dijital ki pratik, selon bezwen ou yo.",
-    "structuredDescription": "Yon estidyo solisyon dijital ki ede biznis yo pi byen sèvi kliyan yo, senplifye fason yo travay epi devlope aktivite yo.",
-    "founderRole": "Fondatè ak devlopè solisyon dijital"
+    "title": "Seekursor — Solisyon dijital pou biznis yo",
+    "description": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "socialDescription": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "twitterDescription": "Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "structuredDescription": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "founderRole": "Fondatè"
   }
 }

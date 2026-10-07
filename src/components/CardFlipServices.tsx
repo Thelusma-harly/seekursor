@@ -7,14 +7,13 @@ import {
   Users,
   PanelsTopLeft,
   Workflow,
-  Sparkles,
 } from "lucide-react";
 import { useSeekursorConfig, type ServiceItem } from "../data/seekursorConfig";
 import { cn } from "@/lib/utils";
 import { WhatsAppCTA } from "./WhatsAppCTA";
 import type { OpenAcquisition } from "../lib/acquisition";
 
-const icons = [Globe2, Users, PanelsTopLeft, Workflow, Sparkles];
+const icons = [Globe2, Users, PanelsTopLeft, Workflow];
 export function CardFlip({
   service,
   index,
@@ -184,7 +183,7 @@ export function CardFlipServices({
             {t("description")}
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {config.services.map((service, index) => (
             <CardFlip
               key={index}
@@ -194,6 +193,7 @@ export function CardFlipServices({
             />
           ))}
         </div>
+        <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-ink-secondary">{t("aiNote")}</p>
       </div>
     </section>
   );

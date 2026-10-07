@@ -11,7 +11,7 @@ export interface ServiceItem {
   title: string; subtitle: string; description: string; features: string[];
 }
 export interface ProjectItem {
-  id: string; title: string; badge: string; category: string;
+  id: string; title: string; category: string;
   description: string; longDescription: string; image: string; features: string[];
 }
 const navigation = [

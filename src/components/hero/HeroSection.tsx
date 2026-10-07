@@ -8,6 +8,7 @@ import type { OpenAcquisition } from "../../lib/acquisition";
 export function HeroSection({ onAcquire }: { onAcquire: OpenAcquisition }) {
   const config = useSeekursorConfig();
   const t = useTranslations("Common");
+  const hero = useTranslations("Hero");
   const reduce = useReducedMotion();
   const item = {
     hidden: { opacity: reduce ? 1 : 0, y: reduce ? 0 : 20 },
@@ -27,6 +28,9 @@ export function HeroSection({ onAcquire }: { onAcquire: OpenAcquisition }) {
       }}
       className="pointer-events-none relative z-10 mx-auto max-w-5xl px-5 pt-32 pb-[176px] text-center sm:px-8 sm:pt-36 sm:pb-[232px] lg:pt-36 lg:pb-[280px]"
     >
+      <motion.p variants={item} className="pointer-events-auto mb-4 text-xs font-semibold uppercase tracking-[.18em] text-brand-ink sm:text-sm">
+        {hero("eyebrow")}
+      </motion.p>
       <motion.h1
         variants={item}
         className="pointer-events-auto mx-auto max-w-[960px] text-balance font-display text-[2.55rem] font-semibold leading-[1.08] tracking-[-0.045em] text-ink sm:text-6xl lg:text-[4rem]"
@@ -54,7 +58,7 @@ export function HeroSection({ onAcquire }: { onAcquire: OpenAcquisition }) {
         variants={item}
         className="pointer-events-auto mt-6 text-xs text-ink-muted sm:text-sm"
       >
-        {config.brand.baseline}
+        {hero("baseline")}
       </motion.p>
     </motion.div>
   );

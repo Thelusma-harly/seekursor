@@ -1,4 +1,4 @@
-## Navigation principale
+## Navigation
 
 Seekursor
 
@@ -6,7 +6,7 @@ Accueil
 
 Services
 
-Concepts
+Exemples
 
 Approche
 
@@ -32,7 +32,7 @@ Accueil
 
 Services
 
-Concepts
+Exemples
 
 Approche
 
@@ -52,65 +52,59 @@ English
 
 Kreyòl
 
-Basé en Haïti · Ouvert à d’autres marchés
+Basé en Haïti · Ouvert à d'autres marchés
 
 ---
 
 ## Hero
 
-Des solutions digitales qui font avancer votre activité
+AGENCE DE SOLUTIONS DIGITALES
 
-Seekursor est une Agence de solutions digitales. Nous aidons les entreprises à mieux servir leurs clients, simplifier leurs opérations et développer leur activité.
+Faites de votre présence digitale un vrai outil pour votre entreprise
+
+Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
 Parler à Seekursor
 
 Réserver un appel
 
-Basé en Haïti · Ouvert à d’autres marchés
+Basé en Haïti · Pensé pour les entreprises · Ouvert à d'autres marchés
 
 ---
 
-## Premier contact
+## Avant le premier échange
 
-LE PREMIER CONTACT
+AVANT LE PREMIER ÉCHANGE
 
-Aider vos clients à faire le premier pas
+Avant de vous contacter, votre client cherche déjà à comprendre trois choses
 
-Être trouvé
+Vous trouver
 
-Rendre votre activité et vos informations essentielles faciles à découvrir.
+Votre entreprise doit être facile à découvrir lorsqu'un client commence sa recherche.
 
-Être compris
+Vous comprendre
 
-Présenter clairement votre offre pour aider vos clients à faire leur choix.
+Votre offre, vos services et les informations importantes doivent être simples à saisir.
 
-Faciliter le contact
+Passer à l'action
 
-Créer un chemin simple entre une question et un premier échange.
-
----
-
-## Nos solutions
-
-NOS SOLUTIONS
-
-Ce que nous pouvons construire ensemble
-
-Le bon format dépend de votre activité, de vos clients et du besoin à résoudre.
+Le chemin vers un contact, une demande, une réservation ou une commande doit être évident.
 
 ---
 
-## Présence digitale
+## Services
 
-Présence digitale
+CE QUE NOUS CRÉONS
 
-Présenter clairement votre entreprise.
+Le bon niveau de solution pour le bon besoin
 
-Découvrir
+Nous ne partons pas d'une technologie ou d'un format imposé. Nous partons de ce que votre entreprise cherche à améliorer.
 
-Présence digitale
+### Présence digitale
 
-Des espaces en ligne qui rendent votre offre plus facile à découvrir et à comprendre.
+Présenter clairement votre entreprise et ce qu'elle propose.
+
+Sites web, pages de présentation, menus, catalogues et autres points de présence en ligne conçus pour rendre votre activité plus claire et plus accessible.
 
 Sites web
 
@@ -118,65 +112,47 @@ Menus et catalogues
 
 Pages de présentation
 
-Échanger sur ce service
-
----
-
-## Expérience client
-
-Expérience client
-
-Faciliter la relation avec vos clients.
-
 Découvrir
-
-Expérience client
-
-Des parcours simples pour trouver une information, prendre contact ou accéder à vos services.
-
-Parcours clients
-
-Réservations
-
-Demandes et commandes
 
 Échanger sur ce service
 
----
+### Expérience client
 
-## Outils digitaux
+Rendre les parcours plus simples pour vos clients.
 
-Outils digitaux
+Des expériences pensées pour faciliter la recherche d'informations, la prise de contact, la réservation, la demande ou la commande.
 
-Mieux organiser votre activité.
+Information
+
+Réservation
+
+Demandes
 
 Découvrir
 
-Outils digitaux
+Échanger sur ce service
 
-Des outils adaptés aux besoins de votre entreprise et aux personnes qui les utilisent.
+### Outils digitaux
 
-Outils internes
+Créer les outils dont votre activité a réellement besoin.
+
+Applications web, outils internes, portails et interfaces adaptés à votre façon de travailler.
 
 Applications web
 
+Outils internes
+
 Portails métier
-
-Échanger sur ce service
-
----
-
-## Automatisation
-
-Automatisation
-
-Simplifier les tâches répétitives.
 
 Découvrir
 
-Automatisation
+Échanger sur ce service
 
-Des processus mieux reliés pour limiter les étapes manuelles et faciliter le travail quotidien.
+### Automatisation
+
+Réduire les tâches répétitives qui ralentissent votre activité.
+
+Des processus mieux reliés pour simplifier le travail quotidien et limiter les étapes manuelles inutiles.
 
 Flux de travail
 
@@ -184,131 +160,73 @@ Suivi des demandes
 
 Connexions entre outils
 
-Échanger sur ce service
-
----
-
-## Solutions intelligentes
-
-Solutions intelligentes
-
-Utiliser l’IA quand elle est utile.
-
 Découvrir
 
-Solutions intelligentes
-
-Des fonctionnalités intelligentes choisies pour répondre à un besoin précis.
-
-Assistants ciblés
-
-Recherche facilitée
-
-Traitement d’informations
-
 Échanger sur ce service
 
----
-
-## Notre démarche
-
-NOTRE DÉMARCHE
-
-Comprendre d’abord. Construire ensuite
-
-Chaque entreprise fonctionne différemment. Nous partons de votre réalité pour choisir une solution adaptée.
-
-ÉTAPE 01
-
-Comprendre
-
-Nous échangeons sur votre activité, vos clients et ce que vous souhaitez améliorer.
-
-ÉTAPE 02
-
-Identifier
-
-Nous repérons les difficultés réelles et choisissons la priorité qui mérite une solution.
-
-ÉTAPE 03
-
-Concevoir
-
-Nous donnons forme à une réponse claire, avec un prototype lorsque cela aide à décider.
-
-ÉTAPE 04
-
-Construire
-
-Nous développons, testons et ajustons la solution avec vous avant sa mise en ligne.
+L'IA peut faire partie de la solution lorsqu'elle apporte une vraie valeur. Elle n'est pas la solution par défaut.
 
 ---
 
-## Concepts & démonstrations
+## Exemples
 
-CONCEPTS & DÉMONSTRATIONS
+QUELQUES EXEMPLES
 
-Des idées rendues concrètes
+Voir une idée prendre forme
 
-Quelques pistes pour imaginer ce qu’une solution digitale peut apporter à une activité.
+Quelques démonstrations de ce qu'une solution digitale peut apporter à une activité concrète.
 
 Restauration
 
-Un restaurant, plus accessible
+Un restaurant plus simple à découvrir
 
-Découvrir une carte et préparer une commande depuis son téléphone.
+Menu, horaires, localisation et contact réunis dans une expérience claire sur mobile.
 
 Examiner le concept
 
 Services professionnels
 
-Une entreprise, mieux présentée
+Une entreprise plus simple à comprendre
 
-Une présentation claire des services pour faciliter le premier échange.
+Une présentation structurée de l'offre qui répond aux premières questions avant même le premier échange.
 
 Examiner le concept
 
 Commerce
 
-Un catalogue, plus simple à utiliser
+Un catalogue plus simple à parcourir
 
-Explorer des produits et préparer une demande sans parcours compliqué.
+Une façon plus claire d'explorer les produits et de préparer une demande.
 
 Examiner le concept
 
 ---
 
-## Fenêtres des concepts
+## Détails des exemples
 
-## Un restaurant, plus accessible
+### Un restaurant plus simple à découvrir
 
-Concept · Restauration
+Restauration
 
-Un restaurant, plus accessible
-
-Un exemple de parcours client pour un restaurant : une carte organisée, les informations utiles au même endroit et une prise de contact simple. Ce concept illustre une direction de travail, pas un résultat client mesuré.
+Un exemple de présence digitale pour un restaurant, conçu pour aider les clients à trouver les informations utiles avant de venir ou de prendre contact.
 
 La piste proposée
 
-Carte facile à parcourir
+Menu facile à parcourir
 
-Informations pratiques regroupées
+Horaires et localisation accessibles
 
-Prise de contact simplifiée
+Contact facile à trouver
 
 Discuter de mon besoin
 
 Décrire mon projet
 
----
+### Une entreprise plus simple à comprendre
 
-## Une entreprise, mieux présentée
+Services professionnels
 
-Concept · Services professionnels
-
-Une entreprise, mieux présentée
-
-Un concept de site pour une entreprise de services. Il organise l’offre, répond aux premières questions et rend les coordonnées faciles à trouver, sans multiplier les pages inutiles.
+Un exemple de site pour une entreprise de services, conçu pour clarifier son offre et aider les visiteurs à préparer leur premier échange.
 
 La piste proposée
 
@@ -316,27 +234,23 @@ Offre structurée
 
 Réponses aux questions essentielles
 
-Contact visible
+Coordonnées visibles
 
 Discuter de mon besoin
 
 Décrire mon projet
 
----
+### Un catalogue plus simple à parcourir
 
-## Un catalogue, plus simple à utiliser
+Commerce
 
-Démonstration · Commerce
-
-Un catalogue, plus simple à utiliser
-
-Une démonstration de catalogue digital pour une boutique. Les produits sont organisés pour aider le client à faire son choix et à préparer une demande. Le niveau de complexité dépend ensuite des besoins réels du commerce.
+Une démonstration de catalogue digital pour un commerce, conçue pour aider les clients à explorer les produits et à formuler une demande claire.
 
 La piste proposée
 
 Produits organisés
 
-Sélection des articles
+Informations faciles à consulter
 
 Demande récapitulative
 
@@ -346,15 +260,61 @@ Décrire mon projet
 
 ---
 
-## Notre positionnement
+## Approche
 
-Une solution doit avoir une raison d’exister
+NOTRE DÉMARCHE
 
-Nous privilégions ce qui vous aide à mieux travailler ou à mieux servir vos clients. Le périmètre se décide avec vous, à partir de vos priorités.
+Comprendre d'abord. Construire ensuite
 
-Ancré en Haïti. Ouvert à d’autres horizons
+Une bonne solution commence par le problème qu'elle doit résoudre, pas par la technologie utilisée pour la construire.
 
-Seekursor se développe depuis Haïti, avec une attention aux usages et aux besoins des entreprises locales. L’ambition : proposer cette même approche à d’autres marchés.
+ÉTAPE 01
+
+Comprendre
+
+Votre activité, vos clients et ce que vous cherchez à améliorer.
+
+ÉTAPE 02
+
+Identifier
+
+Les difficultés réelles et la priorité qui mérite une solution.
+
+ÉTAPE 03
+
+Concevoir
+
+Une réponse claire, avec un prototype lorsque cela aide à décider.
+
+ÉTAPE 04
+
+Construire
+
+Une solution testée, ajustée et prête à évoluer avec votre activité.
+
+---
+
+## Pourquoi Seekursor
+
+Pourquoi Seekursor
+
+Partir du besoin
+
+Nous cherchons d'abord à comprendre ce qui mérite réellement d'être amélioré.
+
+Construire ce qui sert
+
+Chaque élément doit avoir une fonction claire pour votre activité ou vos clients.
+
+Travailler simplement
+
+Une solution utile doit rester compréhensible pour les personnes qui vont l'utiliser.
+
+Penser au contexte
+
+Nous construisons depuis Haïti, avec une attention particulière aux usages, contraintes et réalités du marché local.
+
+L'ambition dépasse Haïti. L'approche reste la même : comprendre avant de construire.
 
 ---
 
@@ -364,45 +324,41 @@ DERRIÈRE SEEKURSOR
 
 Un échange direct avec le fondateur
 
-Harly Thelusma a fondé Seekursor autour d’une idée simple : comprendre l’entreprise avant de décider quoi construire.
+Harly Thelusma a fondé Seekursor avec une conviction simple : une bonne solution digitale commence par une bonne compréhension de l'entreprise.
 
-Basé en Haïti, il travaille directement avec vous pour transformer un besoin concret en une solution digitale utile.
+Basé en Haïti, il travaille directement avec les entreprises pour transformer un besoin concret en une solution utile.
 
 Harly Thelusma
 
-Fondateur & développeur de solutions digitales
+Fondateur
 
 Nous écrire sur WhatsApp
 
 ---
 
-## Appel à l’action final
+## Votre prochain pas
 
 VOTRE PROCHAIN PAS
 
-Parlons de votre entreprise
+Vous avez quelque chose à améliorer ? Parlons-en
 
-Mieux servir vos clients, simplifier vos opérations ou développer votre activité : commençons par comprendre ce qui compte pour vous.
+Expliquez-nous ce que vous cherchez à améliorer, ce qui vous fait perdre du temps ou ce que vous aimeriez rendre plus simple. Nous commencerons par comprendre avant de proposer quoi que ce soit.
 
 Parler à Seekursor
 
 Réserver un appel
 
-Échangez sur WhatsApp ou choisissez un créneau pour un appel découverte.
-
-Vous préférez expliquer votre besoin d’abord ?
-
 Décrire mon projet
 
 ---
 
-## Pied de page
+## Footer
 
 Seekursor
 
-Un studio de solutions digitales pour améliorer et développer votre activité.
+Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
-Basé en Haïti · Ouvert à d’autres marchés
+Basé en Haïti · Ouvert à d'autres marchés
 
 Restons en contact
 
@@ -422,35 +378,7 @@ Conçu avec attention, depuis Haïti.
 
 ---
 
-## Réservation d’un appel
-
-Seekursor
-
-Appel découverte — 30 min
-
-Un court échange pour comprendre votre entreprise, votre situation et vos besoins digitaux.
-
-Ouvrir directement sur Cal.com
-
-Fermer la fenêtre
-
----
-
-## Demande de projet
-
-Seekursor
-
-Décrire mon projet
-
-Présentez votre entreprise et ce que vous aimeriez améliorer. Quelques informations suffisent pour commencer.
-
-Ouvrir directement sur Tally
-
-Fermer la fenêtre
-
----
-
-## Messages de chargement et d’indisponibilité
+## Fenêtres de contact
 
 Parler à Seekursor
 
@@ -458,122 +386,146 @@ Un premier échange pour comprendre votre activité et votre besoin.
 
 Le contact WhatsApp n’est pas encore disponible.
 
+Appel découverte — 30 min
+
+Un court échange pour comprendre votre entreprise, votre situation et vos besoins digitaux.
+
 Les réservations d’appels ne sont pas encore ouvertes.
 
+Décrire mon projet
+
+Présentez votre entreprise et ce que vous aimeriez améliorer. Quelques informations suffisent pour commencer.
+
 Le formulaire de projet n’est pas encore disponible.
-
-Chargement du calendrier…
-
-L’interface n’a pas pu être chargée. Utilisez le lien ci-dessus pour continuer.
-
-Nous écrire sur WhatsApp
-
-Nous écrire par email
-
-Merci de revenir un peu plus tard.
-
-Retour au site
-
----
-
-## Textes d’accessibilité
-
-Navigation principale
-
-Navigation mobile
-
-Menu principal
-
-Ouvrir le menu
-
-Fermer le menu
-
-Seekursor — accueil
-
-Langue
-
-Activer le mode sombre
-
-Activer le mode clair
-
-Fermer la fenêtre
-
-Découvrir : Présence digitale
-
-Retour : Présence digitale
-
-Découvrir : Expérience client
-
-Retour : Expérience client
-
-Découvrir : Outils digitaux
-
-Retour : Outils digitaux
-
-Découvrir : Automatisation
-
-Retour : Automatisation
-
-Découvrir : Solutions intelligentes
-
-Retour : Solutions intelligentes
-
-Fermer le concept
-
-Aperçu illustratif du concept : Un restaurant, plus accessible
-
-Visuel illustratif : Un restaurant, plus accessible
-
-Aperçu illustratif du concept : Une entreprise, mieux présentée
-
-Visuel illustratif : Une entreprise, mieux présentée
-
-Aperçu illustratif du concept : Un catalogue, plus simple à utiliser
-
-Visuel illustratif : Un catalogue, plus simple à utiliser
-
-Illustration d’un espace de travail pour la conception digitale
-
-Appel découverte Seekursor — Cal.com
-
-Formulaire de projet Seekursor — Tally
-
----
-
-## Messages WhatsApp préremplis
-
-Bonjour Seekursor, je viens de visiter votre site et j'aimerais discuter de mon projet.
-
-Bonjour Seekursor, je souhaite discuter du service « Présence digitale » pour mon entreprise.
-
-Bonjour Seekursor, je souhaite discuter du service « Expérience client » pour mon entreprise.
-
-Bonjour Seekursor, je souhaite discuter du service « Outils digitaux » pour mon entreprise.
-
-Bonjour Seekursor, je souhaite discuter du service « Automatisation » pour mon entreprise.
-
-Bonjour Seekursor, je souhaite discuter du service « Solutions intelligentes » pour mon entreprise.
-
-Bonjour Seekursor, j’aimerais échanger avec Harly sur un besoin pour mon entreprise.
-
-Bonjour Seekursor, je viens de voir le concept « Un restaurant, plus accessible » et j’aimerais discuter d’une solution pour mon entreprise.
-
-Bonjour Seekursor, je viens de voir le concept « Une entreprise, mieux présentée » et j’aimerais discuter d’une solution pour mon entreprise.
-
-Bonjour Seekursor, je viens de voir le concept « Un catalogue, plus simple à utiliser » et j’aimerais discuter d’une solution pour mon entreprise.
 
 ---
 
 ## Métadonnées
 
-Seekursor — Agence de solutions digitales
+Seekursor — Solutions digitales pour les entreprises
 
-Seekursor aide les entreprises à mieux servir leurs clients, simplifier leurs opérations et développer leur activité grâce à des solutions digitales pratiques.
+Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
-Des solutions digitales pour mieux servir vos clients, simplifier vos opérations et développer votre activité.
+Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
-Des solutions digitales pratiques, à partir de vos besoins.
+Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
-Studio de solutions digitales aidant les entreprises à mieux servir leurs clients, simplifier leurs opérations et développer leur activité.
+Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
-Fondateur et développeur de solutions digitales
+Fondateur
+
+---
+
+## Libellés et messages complémentaires
+
+### Common.location
+
+Haïti
+
+### Common.darkMode
+
+Activer le mode sombre
+
+### Common.lightMode
+
+Activer le mode clair
+
+### Common.close
+
+Fermer la fenêtre
+
+### Navigation.primary
+
+Navigation principale
+
+### Navigation.mobile
+
+Navigation mobile
+
+### Navigation.menu
+
+Menu principal
+
+### Navigation.open
+
+Ouvrir le menu
+
+### Navigation.close
+
+Fermer le menu
+
+### Navigation.brandHome
+
+Seekursor — accueil
+
+### Services.discoverLabel
+
+Découvrir : {title}
+
+### Services.returnLabel
+
+Retour : {title}
+
+### Projects.previewAlt
+
+Aperçu illustratif du concept : {title}
+
+### Projects.imageAlt
+
+Visuel illustratif : {title}
+
+### Projects.close
+
+Fermer le concept
+
+### Founder.imageAlt
+
+Harly Thelusma, fondateur de Seekursor, au travail
+
+### Acquisition.embedError
+
+L’interface n’a pas pu être chargée. Utilisez le lien ci-dessus pour continuer.
+
+### Acquisition.direct
+
+Ouvrir directement sur {provider}
+
+### Acquisition.loading
+
+Chargement du calendrier…
+
+### Acquisition.tallyTitle
+
+Formulaire de projet Seekursor — Tally
+
+### Acquisition.calTitle
+
+Appel découverte Seekursor — Cal.com
+
+### Acquisition.email
+
+Nous écrire par email
+
+### Acquisition.later
+
+Merci de revenir un peu plus tard.
+
+### Acquisition.back
+
+Retour au site
+
+### WhatsApp.default
+
+Bonjour Seekursor, je viens de visiter votre site et j'aimerais discuter de mon projet.
+
+### WhatsApp.service
+
+Bonjour Seekursor, je souhaite discuter du service « {title} » pour mon entreprise.
+
+### WhatsApp.founder
+
+Bonjour Seekursor, j’aimerais échanger avec Harly sur un besoin pour mon entreprise.
+
+### WhatsApp.project
+
+Bonjour Seekursor, je viens de voir le concept « {title} » et j’aimerais discuter d’une solution pour mon entreprise.

@@ -45,11 +45,11 @@ function SeekursorLanding() {
         <Hero onAcquire={openAcquisition} />
         <SpotlightCards />
         <CardFlipServices onAcquire={openAcquisition} />
-        <BentoGrid />
         <SelectedWorkSection onSelectProject={project => {
           projectReturnFocus.current = document.activeElement as HTMLElement;
           setSelectedProject(project);
         }} />
+        <BentoGrid />
         <DifferentiationSection />
         <FounderSection onAcquire={openAcquisition} />
         <div id="contact"><FinalCTASection onAcquire={openAcquisition} /></div>

@@ -22,9 +22,7 @@ export function FinalCTASection({ onAcquire }: { onAcquire: OpenAcquisition }) {
             {t("Common.booking")} <CalendarDays size={18} aria-hidden="true" />
           </button>
         </div>
-        <p className="mt-4 text-xs text-ink-muted">{t("FinalCTA.help")}</p>
         <div className="mx-auto mt-8 max-w-md border-t border-line pt-6">
-          <p className="text-sm text-ink-secondary">{t("FinalCTA.inquiryPrompt")}</p>
           <button type="button" aria-haspopup="dialog" data-acquisition="inquiry" onClick={event => onAcquire("inquiry", event.currentTarget)}
             className="mt-2 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-brand-ink hover:underline">
             {t("Common.inquiry")} <ArrowRight size={16} aria-hidden="true" />

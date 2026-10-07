@@ -1,6 +1,8 @@
 # Seekursor
 
-French, English and Haitian Creole landing page for a founder-led digital solutions studio, built with Next.js App Router, next-intl, React, TypeScript and Tailwind CSS.
+French, English and Haitian Creole landing page for a founder-led digital solutions agency, built with Next.js App Router, next-intl, React, TypeScript and Tailwind CSS.
+
+The page introduces Seekursor through the customer journey, four service categories, examples, approach, four working principles and the founder. AI is a capability used when appropriate. The complete localized copy is exported in `docs/copy/`.
 
 ## Local development
 

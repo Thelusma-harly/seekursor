@@ -1,4 +1,4 @@
-## Main navigation
+## Navigation
 
 Seekursor
 
@@ -6,7 +6,7 @@ Home
 
 Services
 
-Concepts
+Examples
 
 Approach
 
@@ -32,7 +32,7 @@ Home
 
 Services
 
-Concepts
+Examples
 
 Approach
 
@@ -58,59 +58,53 @@ Based in Haiti · Open to other markets
 
 ## Hero
 
-Digital solutions that move your business forward
+DIGITAL SOLUTIONS AGENCY
 
-Seekursor is a digital solutions agency. We help businesses serve their customers better, simplify their operations and grow.
+Turn your digital presence into a tool that works for your business
+
+Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 
 Talk to Seekursor
 
 Book a call
 
-Based in Haiti · Open to other markets
+Based in Haiti · Built for businesses · Open to other markets
 
 ---
 
-## First connection
+## Before the first conversation
 
-THE FIRST CONNECTION
+BEFORE THE FIRST CONVERSATION
 
-Help your customers take the first step
+Before contacting you, your customer is already trying to understand three things
 
-Be found
+Find you
 
-Make your business and essential information easy to discover.
+Your business should be easy to discover when a customer starts looking.
 
-Be understood
+Understand you
 
-Present your offering clearly so customers can make informed choices.
+Your offering, services and essential information should be easy to grasp.
 
-Make contact easy
+Take action
 
-Create a simple path from an initial question to a first conversation.
-
----
-
-## Our solutions
-
-OUR SOLUTIONS
-
-What we can build together
-
-The right format depends on your business, your customers and the need you want to address.
+The path to getting in touch, making an inquiry, booking or ordering should be clear.
 
 ---
 
-## Digital presence
+## Services
 
-Digital presence
+WHAT WE CREATE
 
-Present your business clearly.
+The right level of solution for the right need
 
-Explore
+We start with what your business wants to improve, rather than a predetermined technology or format.
 
-Digital presence
+### Digital presence
 
-Online spaces that make your offering easier to discover and understand.
+Present your business and what it offers clearly.
+
+Websites, presentation pages, menus, catalogues and other online touchpoints designed to make your business clearer and more accessible.
 
 Websites
 
@@ -118,197 +112,121 @@ Menus and catalogues
 
 Presentation pages
 
-Discuss this service
-
----
-
-## Customer experience
-
-Customer experience
-
-Make it easier to connect with customers.
-
 Explore
 
-Customer experience
+Discuss this service
 
-Simple journeys to find information, get in touch or access your services.
+### Customer experience
 
-Customer journeys
+Make customer journeys simpler.
+
+Experiences designed to make it easier to find information, get in touch, book, inquire or order.
+
+Information
 
 Bookings
 
-Requests and orders
-
-Discuss this service
-
----
-
-## Digital tools
-
-Digital tools
-
-Organize your business better.
+Inquiries
 
 Explore
 
-Digital tools
+Discuss this service
 
-Tools shaped around your business needs and the people who use them.
+### Digital tools
 
-Internal tools
+Create the tools your business actually needs.
+
+Web applications, internal tools, portals and interfaces adapted to the way you work.
 
 Web applications
 
+Internal tools
+
 Business portals
-
-Discuss this service
-
----
-
-## Automation
-
-Automation
-
-Simplify repetitive tasks.
 
 Explore
 
-Automation
+Discuss this service
 
-Better-connected processes that reduce manual steps and make day-to-day work easier.
+### Automation
+
+Reduce repetitive tasks that slow your business down.
+
+Better-connected processes to simplify everyday work and reduce unnecessary manual steps.
 
 Workflows
 
-Request tracking
+Inquiry tracking
 
 Connections between tools
 
-Discuss this service
-
----
-
-## Intelligent solutions
-
-Intelligent solutions
-
-Use AI where it adds value.
-
 Explore
 
-Intelligent solutions
-
-Intelligent features chosen to address a specific need.
-
-Task-focused assistants
-
-Easier search
-
-Information processing
-
 Discuss this service
 
----
-
-## Our approach
-
-OUR APPROACH
-
-Understand first. Build next
-
-Every business works differently. We start with your reality to choose a solution that fits.
-
-STEP 01
-
-Understand
-
-We discuss your business, your customers and what you want to improve.
-
-STEP 02
-
-Identify
-
-We identify the real challenges and choose the priority worth addressing.
-
-STEP 03
-
-Design
-
-We shape a clear response, using a prototype when it helps you decide.
-
-STEP 04
-
-Build
-
-We develop, test and refine the solution with you before it goes live.
+AI can be part of a solution when it brings real value. It is not the default.
 
 ---
 
-## Concepts & demonstrations
+## Examples
 
-CONCEPTS & DEMONSTRATIONS
+A FEW EXAMPLES
 
-Ideas made tangible
+See an idea take shape
 
-A few examples to imagine what a digital solution could bring to a business.
+A few demonstrations of what a digital solution can bring to a real business setting.
 
 Food service
 
-A restaurant, easier to reach
+A restaurant that is easier to discover
 
-Browse a menu and prepare an order from your phone.
+Menu, opening hours, location and contact details brought together in a clear mobile experience.
 
 Explore the concept
 
 Professional services
 
-A business, clearly presented
+A business that is easier to understand
 
-A clear presentation of services to make the first conversation easier.
+A structured presentation of the offering that answers initial questions before the first conversation.
 
 Explore the concept
 
 Retail
 
-A catalogue, easier to use
+A catalogue that is easier to browse
 
-Explore products and prepare a request without a complicated process.
+A clearer way to explore products and prepare an inquiry.
 
 Explore the concept
 
 ---
 
-## Concept modals
+## Example details
 
-## A restaurant, easier to reach
+### A restaurant that is easier to discover
 
-Concept · Food service
+Food service
 
-A restaurant, easier to reach
-
-An example of a customer journey for a restaurant: an organized menu, useful information in one place and an easy way to get in touch. This concept illustrates a direction to explore, not a measured client result.
+An example of a digital presence for a restaurant, designed to help customers find useful information before visiting or getting in touch.
 
 The proposed direction
 
-Easy-to-browse menu
+An easy-to-browse menu
 
-Practical information in one place
+Accessible opening hours and location
 
-Simpler contact
+Easy-to-find contact details
 
 Discuss my needs
 
 Describe my project
 
----
+### A business that is easier to understand
 
-## A business, clearly presented
+Professional services
 
-Concept · Professional services
-
-A business, clearly presented
-
-A website concept for a service business. It organizes the offering, answers initial questions and makes contact details easy to find, without adding unnecessary pages.
+An example website for a service business, designed to clarify its offering and help visitors prepare for their first conversation.
 
 The proposed direction
 
@@ -322,23 +240,19 @@ Discuss my needs
 
 Describe my project
 
----
+### A catalogue that is easier to browse
 
-## A catalogue, easier to use
+Retail
 
-Demonstration · Retail
-
-A catalogue, easier to use
-
-A digital catalogue demonstration for a shop. Products are organized to help customers make a choice and prepare a request. The level of complexity then depends on the shop’s actual needs.
+A digital catalogue demonstration for a shop, designed to help customers explore products and make a clear inquiry.
 
 The proposed direction
 
 Organized products
 
-Item selection
+Easy-to-access information
 
-A summarized request
+A summarized inquiry
 
 Discuss my needs
 
@@ -346,15 +260,61 @@ Describe my project
 
 ---
 
-## Our positioning
+## Approach
 
-A solution should have a reason to exist
+OUR APPROACH
 
-We focus on what helps you work better or serve your customers better. We define the scope with you, based on your priorities.
+Understand first. Build next
 
-Rooted in Haiti. Open to new horizons
+A good solution starts with the problem it needs to solve, rather than the technology used to build it.
 
-Seekursor is growing from Haiti, with attention to the ways local businesses work and what they need. Our ambition is to bring the same approach to other markets.
+STEP 01
+
+Understand
+
+Your business, your customers and what you want to improve.
+
+STEP 02
+
+Identify
+
+The real challenges and the priority worth addressing.
+
+STEP 03
+
+Design
+
+A clear response, with a prototype when it helps you decide.
+
+STEP 04
+
+Build
+
+A tested, refined solution that can evolve with your business.
+
+---
+
+## Why Seekursor
+
+Why Seekursor
+
+Start with the need
+
+We begin by understanding what is genuinely worth improving.
+
+Build what is useful
+
+Every element should serve a clear purpose for your business or your customers.
+
+Keep things simple
+
+A useful solution should remain understandable to the people who will use it.
+
+Consider the context
+
+We build from Haiti, paying close attention to the habits, constraints and realities of the local market.
+
+Our ambition extends beyond Haiti. Our approach stays the same: understand before building.
 
 ---
 
@@ -364,33 +324,29 @@ BEHIND SEEKURSOR
 
 A direct conversation with the founder
 
-Harly Thelusma founded Seekursor around a simple idea: understand the business before deciding what to build.
+Harly Thelusma founded Seekursor with a simple conviction: a good digital solution begins with a good understanding of the business.
 
-Based in Haiti, he works directly with you to turn a concrete need into a useful digital solution.
+Based in Haiti, he works directly with businesses to turn a concrete need into a useful solution.
 
 Harly Thelusma
 
-Founder & digital solutions developer
+Founder
 
 Message us on WhatsApp
 
 ---
 
-## Final call to action
+## Your next step
 
 YOUR NEXT STEP
 
-Let’s talk about your business
+Have something to improve? Let’s talk
 
-Serve your customers better, simplify your operations or grow your business: let’s start by understanding what matters to you.
+Tell us what you want to improve, what costs you time or what you would like to make simpler. We will start by understanding before proposing anything.
 
 Talk to Seekursor
 
 Book a call
-
-Chat on WhatsApp or choose a time for a discovery call.
-
-Would you rather explain your needs first?
 
 Describe my project
 
@@ -400,7 +356,7 @@ Describe my project
 
 Seekursor
 
-A digital solutions studio to improve and grow your business.
+Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.
 
 Based in Haiti · Open to other markets
 
@@ -422,35 +378,7 @@ Thoughtfully built, from Haiti.
 
 ---
 
-## Call booking
-
-Seekursor
-
-Discovery call — 30 min
-
-A short conversation to understand your business, your situation and your digital needs.
-
-Open directly on Cal.com
-
-Close window
-
----
-
-## Project inquiry
-
-Seekursor
-
-Describe my project
-
-Tell us about your business and what you would like to improve. A few details are enough to get started.
-
-Open directly on Tally
-
-Close window
-
----
-
-## Loading and availability messages
+## Contact dialogs
 
 Talk to Seekursor
 
@@ -458,122 +386,146 @@ A first conversation to understand your business and your needs.
 
 WhatsApp contact is not available yet.
 
+Discovery call — 30 min
+
+A short conversation to understand your business, your situation and your digital needs.
+
 Call bookings are not open yet.
 
+Describe my project
+
+Tell us about your business and what you would like to improve. A few details are enough to get started.
+
 The project inquiry form is not available yet.
-
-Loading the calendar…
-
-The interface could not load. Use the link above to continue.
-
-Message us on WhatsApp
-
-Email us
-
-Please check back a little later.
-
-Back to the website
-
----
-
-## Accessibility text
-
-Main navigation
-
-Mobile navigation
-
-Main menu
-
-Open menu
-
-Close menu
-
-Seekursor — home
-
-Language
-
-Switch to dark mode
-
-Switch to light mode
-
-Close window
-
-Explore: Digital presence
-
-Back: Digital presence
-
-Explore: Customer experience
-
-Back: Customer experience
-
-Explore: Digital tools
-
-Back: Digital tools
-
-Explore: Automation
-
-Back: Automation
-
-Explore: Intelligent solutions
-
-Back: Intelligent solutions
-
-Close concept
-
-Illustrative concept preview: A restaurant, easier to reach
-
-Illustrative image: A restaurant, easier to reach
-
-Illustrative concept preview: A business, clearly presented
-
-Illustrative image: A business, clearly presented
-
-Illustrative concept preview: A catalogue, easier to use
-
-Illustrative image: A catalogue, easier to use
-
-Illustration of a workspace for digital design
-
-Seekursor discovery call — Cal.com
-
-Seekursor project inquiry — Tally
-
----
-
-## Prefilled WhatsApp messages
-
-Hello Seekursor, I just visited your website and would like to discuss my project.
-
-Hello Seekursor, I would like to discuss the “Digital presence” service for my business.
-
-Hello Seekursor, I would like to discuss the “Customer experience” service for my business.
-
-Hello Seekursor, I would like to discuss the “Digital tools” service for my business.
-
-Hello Seekursor, I would like to discuss the “Automation” service for my business.
-
-Hello Seekursor, I would like to discuss the “Intelligent solutions” service for my business.
-
-Hello Seekursor, I would like to speak with Harly about a need for my business.
-
-Hello Seekursor, I just viewed the “A restaurant, easier to reach” concept and would like to discuss a solution for my business.
-
-Hello Seekursor, I just viewed the “A business, clearly presented” concept and would like to discuss a solution for my business.
-
-Hello Seekursor, I just viewed the “A catalogue, easier to use” concept and would like to discuss a solution for my business.
 
 ---
 
 ## Metadata
 
-Seekursor — Digital solutions agency
+Seekursor — Digital solutions for businesses
 
-Seekursor helps businesses serve their customers better, simplify operations and grow through practical digital solutions.
+Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 
-Digital solutions to serve your customers better, simplify operations and grow your business.
+Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 
-Practical digital solutions, built around your needs.
+Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.
 
-A digital solutions studio helping businesses serve their customers better, simplify operations and grow.
+Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 
-Founder and digital solutions developer
+Founder
+
+---
+
+## Additional labels and messages
+
+### Common.location
+
+Haiti
+
+### Common.darkMode
+
+Switch to dark mode
+
+### Common.lightMode
+
+Switch to light mode
+
+### Common.close
+
+Close window
+
+### Navigation.primary
+
+Main navigation
+
+### Navigation.mobile
+
+Mobile navigation
+
+### Navigation.menu
+
+Main menu
+
+### Navigation.open
+
+Open menu
+
+### Navigation.close
+
+Close menu
+
+### Navigation.brandHome
+
+Seekursor — home
+
+### Services.discoverLabel
+
+Explore: {title}
+
+### Services.returnLabel
+
+Back: {title}
+
+### Projects.previewAlt
+
+Illustrative concept preview: {title}
+
+### Projects.imageAlt
+
+Illustrative image: {title}
+
+### Projects.close
+
+Close concept
+
+### Founder.imageAlt
+
+Harly Thelusma, founder of Seekursor, at work
+
+### Acquisition.embedError
+
+The interface could not load. Use the link above to continue.
+
+### Acquisition.direct
+
+Open directly on {provider}
+
+### Acquisition.loading
+
+Loading the calendar…
+
+### Acquisition.tallyTitle
+
+Seekursor project inquiry — Tally
+
+### Acquisition.calTitle
+
+Seekursor discovery call — Cal.com
+
+### Acquisition.email
+
+Email us
+
+### Acquisition.later
+
+Please check back a little later.
+
+### Acquisition.back
+
+Back to the website
+
+### WhatsApp.default
+
+Hello Seekursor, I just visited your website and would like to discuss my project.
+
+### WhatsApp.service
+
+Hello Seekursor, I would like to discuss the “{title}” service for my business.
+
+### WhatsApp.founder
+
+Hello Seekursor, I would like to speak with Harly about a need for my business.
+
+### WhatsApp.project
+
+Hello Seekursor, I just viewed the “{title}” concept and would like to discuss a solution for my business.

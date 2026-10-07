@@ -36,7 +36,7 @@ export function ProjectModal({
       >
         <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-4">
           <span className="text-xs font-medium text-ink-secondary">
-            {project.badge} · {project.category}
+            {project.category}
           </span>
           <button
             type="button"

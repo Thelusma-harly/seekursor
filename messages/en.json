@@ -20,7 +20,7 @@
   "Navigation": {
     "home": "Home",
     "services": "Services",
-    "projects": "Concepts",
+    "projects": "Examples",
     "approach": "Approach",
     "about": "About",
     "primary": "Main navigation",
@@ -31,31 +31,33 @@
     "brandHome": "Seekursor — home"
   },
   "Hero": {
-    "title": "Digital solutions that move your business forward",
-    "description": "Seekursor is a digital solutions agency. We help businesses serve their customers better, simplify their operations and grow."
+    "title": "Turn your digital presence into a tool that works for your business",
+    "description": "Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.",
+    "eyebrow": "DIGITAL SOLUTIONS AGENCY",
+    "baseline": "Based in Haiti · Built for businesses · Open to other markets"
   },
   "Discovery": {
-    "eyebrow": "THE FIRST CONNECTION",
-    "title": "Help your customers take the first step",
+    "eyebrow": "BEFORE THE FIRST CONVERSATION",
+    "title": "Before contacting you, your customer is already trying to understand three things",
     "items": [
       {
-        "title": "Be found",
-        "description": "Make your business and essential information easy to discover."
+        "title": "Find you",
+        "description": "Your business should be easy to discover when a customer starts looking."
       },
       {
-        "title": "Be understood",
-        "description": "Present your offering clearly so customers can make informed choices."
+        "title": "Understand you",
+        "description": "Your offering, services and essential information should be easy to grasp."
       },
       {
-        "title": "Make contact easy",
-        "description": "Create a simple path from an initial question to a first conversation."
+        "title": "Take action",
+        "description": "The path to getting in touch, making an inquiry, booking or ordering should be clear."
       }
     ]
   },
   "Services": {
-    "eyebrow": "Our solutions",
-    "title": "What we can build together",
-    "description": "The right format depends on your business, your customers and the need you want to address.",
+    "eyebrow": "WHAT WE CREATE",
+    "title": "The right level of solution for the right need",
+    "description": "We start with what your business wants to improve, rather than a predetermined technology or format.",
     "discover": "Explore",
     "discoverLabel": "Explore: {title}",
     "returnLabel": "Back: {title}",
@@ -63,8 +65,8 @@
     "items": [
       {
         "title": "Digital presence",
-        "subtitle": "Present your business clearly.",
-        "description": "Online spaces that make your offering easier to discover and understand.",
+        "subtitle": "Present your business and what it offers clearly.",
+        "description": "Websites, presentation pages, menus, catalogues and other online touchpoints designed to make your business clearer and more accessible.",
         "features": [
           "Websites",
           "Menus and catalogues",
@@ -73,74 +75,65 @@
       },
       {
         "title": "Customer experience",
-        "subtitle": "Make it easier to connect with customers.",
-        "description": "Simple journeys to find information, get in touch or access your services.",
+        "subtitle": "Make customer journeys simpler.",
+        "description": "Experiences designed to make it easier to find information, get in touch, book, inquire or order.",
         "features": [
-          "Customer journeys",
+          "Information",
           "Bookings",
-          "Requests and orders"
+          "Inquiries"
         ]
       },
       {
         "title": "Digital tools",
-        "subtitle": "Organize your business better.",
-        "description": "Tools shaped around your business needs and the people who use them.",
+        "subtitle": "Create the tools your business actually needs.",
+        "description": "Web applications, internal tools, portals and interfaces adapted to the way you work.",
         "features": [
-          "Internal tools",
           "Web applications",
+          "Internal tools",
           "Business portals"
         ]
       },
       {
         "title": "Automation",
-        "subtitle": "Simplify repetitive tasks.",
-        "description": "Better-connected processes that reduce manual steps and make day-to-day work easier.",
+        "subtitle": "Reduce repetitive tasks that slow your business down.",
+        "description": "Better-connected processes to simplify everyday work and reduce unnecessary manual steps.",
         "features": [
           "Workflows",
-          "Request tracking",
+          "Inquiry tracking",
           "Connections between tools"
         ]
-      },
-      {
-        "title": "Intelligent solutions",
-        "subtitle": "Use AI where it adds value.",
-        "description": "Intelligent features chosen to address a specific need.",
-        "features": [
-          "Task-focused assistants",
-          "Easier search",
-          "Information processing"
-        ]
       }
-    ]
+    ],
+    "aiNote": "AI can be part of a solution when it brings real value. It is not the default."
   },
   "Process": {
-    "eyebrow": "Our approach",
+    "eyebrow": "OUR APPROACH",
     "title": "Understand first. Build next",
-    "description": "Every business works differently. We start with your reality to choose a solution that fits.",
+    "description": "A good solution starts with the problem it needs to solve, rather than the technology used to build it.",
     "step": "STEP {number}",
     "items": [
       {
         "title": "Understand",
-        "description": "We discuss your business, your customers and what you want to improve."
+        "description": "Your business, your customers and what you want to improve."
       },
       {
         "title": "Identify",
-        "description": "We identify the real challenges and choose the priority worth addressing."
+        "description": "The real challenges and the priority worth addressing."
       },
       {
         "title": "Design",
-        "description": "We shape a clear response, using a prototype when it helps you decide."
+        "description": "A clear response, with a prototype when it helps you decide."
       },
       {
         "title": "Build",
-        "description": "We develop, test and refine the solution with you before it goes live."
+        "description": "A tested, refined solution that can evolve with your business."
       }
     ]
   },
   "Projects": {
-    "eyebrow": "Concepts & demonstrations",
-    "title": "Ideas made tangible",
-    "description": "A few examples to imagine what a digital solution could bring to a business.",
+    "eyebrow": "A FEW EXAMPLES",
+    "title": "See an idea take shape",
+    "description": "A few demonstrations of what a digital solution can bring to a real business setting.",
     "examine": "Explore the concept",
     "previewAlt": "Illustrative concept preview: {title}",
     "imageAlt": "Illustrative image: {title}",
@@ -149,23 +142,21 @@
     "discuss": "Discuss my needs",
     "items": [
       {
-        "title": "A restaurant, easier to reach",
-        "badge": "Concept",
         "category": "Food service",
-        "description": "Browse a menu and prepare an order from your phone.",
-        "longDescription": "An example of a customer journey for a restaurant: an organized menu, useful information in one place and an easy way to get in touch. This concept illustrates a direction to explore, not a measured client result.",
+        "title": "A restaurant that is easier to discover",
+        "description": "Menu, opening hours, location and contact details brought together in a clear mobile experience.",
+        "longDescription": "An example of a digital presence for a restaurant, designed to help customers find useful information before visiting or getting in touch.",
         "features": [
-          "Easy-to-browse menu",
-          "Practical information in one place",
-          "Simpler contact"
+          "An easy-to-browse menu",
+          "Accessible opening hours and location",
+          "Easy-to-find contact details"
         ]
       },
       {
-        "title": "A business, clearly presented",
-        "badge": "Concept",
         "category": "Professional services",
-        "description": "A clear presentation of services to make the first conversation easier.",
-        "longDescription": "A website concept for a service business. It organizes the offering, answers initial questions and makes contact details easy to find, without adding unnecessary pages.",
+        "title": "A business that is easier to understand",
+        "description": "A structured presentation of the offering that answers initial questions before the first conversation.",
+        "longDescription": "An example website for a service business, designed to clarify its offering and help visitors prepare for their first conversation.",
         "features": [
           "A structured offering",
           "Answers to essential questions",
@@ -173,42 +164,55 @@
         ]
       },
       {
-        "title": "A catalogue, easier to use",
-        "badge": "Demonstration",
         "category": "Retail",
-        "description": "Explore products and prepare a request without a complicated process.",
-        "longDescription": "A digital catalogue demonstration for a shop. Products are organized to help customers make a choice and prepare a request. The level of complexity then depends on the shop’s actual needs.",
+        "title": "A catalogue that is easier to browse",
+        "description": "A clearer way to explore products and prepare an inquiry.",
+        "longDescription": "A digital catalogue demonstration for a shop, designed to help customers explore products and make a clear inquiry.",
         "features": [
           "Organized products",
-          "Item selection",
-          "A summarized request"
+          "Easy-to-access information",
+          "A summarized inquiry"
         ]
       }
     ]
   },
   "Differentiation": {
-    "purposeTitle": "A solution should have a reason to exist",
-    "purposeDescription": "We focus on what helps you work better or serve your customers better. We define the scope with you, based on your priorities.",
-    "reachTitle": "Rooted in Haiti. Open to new horizons",
-    "reachDescription": "Seekursor is growing from Haiti, with attention to the ways local businesses work and what they need. Our ambition is to bring the same approach to other markets."
+    "title": "Why Seekursor",
+    "items": [
+      {
+        "title": "Start with the need",
+        "description": "We begin by understanding what is genuinely worth improving."
+      },
+      {
+        "title": "Build what is useful",
+        "description": "Every element should serve a clear purpose for your business or your customers."
+      },
+      {
+        "title": "Keep things simple",
+        "description": "A useful solution should remain understandable to the people who will use it."
+      },
+      {
+        "title": "Consider the context",
+        "description": "We build from Haiti, paying close attention to the habits, constraints and realities of the local market."
+      }
+    ],
+    "closing": "Our ambition extends beyond Haiti. Our approach stays the same: understand before building."
   },
   "Founder": {
-    "eyebrow": "Behind Seekursor",
+    "eyebrow": "BEHIND SEEKURSOR",
     "title": "A direct conversation with the founder",
-    "imageAlt": "Illustration of a workspace for digital design",
-    "role": "Founder & digital solutions developer",
-    "statement1": "Harly Thelusma founded Seekursor around a simple idea: understand the business before deciding what to build.",
-    "statement2": "Based in Haiti, he works directly with you to turn a concrete need into a useful digital solution."
+    "imageAlt": "Harly Thelusma, founder of Seekursor, at work",
+    "role": "Founder",
+    "statement1": "Harly Thelusma founded Seekursor with a simple conviction: a good digital solution begins with a good understanding of the business.",
+    "statement2": "Based in Haiti, he works directly with businesses to turn a concrete need into a useful solution."
   },
   "FinalCTA": {
-    "eyebrow": "Your next step",
-    "title": "Let’s talk about your business",
-    "description": "Serve your customers better, simplify your operations or grow your business: let’s start by understanding what matters to you.",
-    "help": "Chat on WhatsApp or choose a time for a discovery call.",
-    "inquiryPrompt": "Would you rather explain your needs first?"
+    "eyebrow": "YOUR NEXT STEP",
+    "title": "Have something to improve? Let’s talk",
+    "description": "Tell us what you want to improve, what costs you time or what you would like to make simpler. We will start by understanding before proposing anything."
   },
   "Footer": {
-    "description": "A digital solutions studio to improve and grow your business.",
+    "description": "Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.",
     "contact": "Let’s stay in touch",
     "copyright": "© {year} Seekursor. All rights reserved.",
     "madeIn": "Thoughtfully built, from Haiti."
@@ -243,11 +247,11 @@
     "project": "Hello Seekursor, I just viewed the “{title}” concept and would like to discuss a solution for my business."
   },
   "Metadata": {
-    "title": "Seekursor — Digital solutions agency",
-    "description": "Seekursor helps businesses serve their customers better, simplify operations and grow through practical digital solutions.",
-    "socialDescription": "Digital solutions to serve your customers better, simplify operations and grow your business.",
-    "twitterDescription": "Practical digital solutions, built around your needs.",
-    "structuredDescription": "A digital solutions studio helping businesses serve their customers better, simplify operations and grow.",
-    "founderRole": "Founder and digital solutions developer"
+    "title": "Seekursor — Digital solutions for businesses",
+    "description": "Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.",
+    "socialDescription": "Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.",
+    "twitterDescription": "Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.",
+    "structuredDescription": "Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.",
+    "founderRole": "Founder"
   }
 }
