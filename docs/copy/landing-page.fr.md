@@ -164,7 +164,43 @@ Découvrir
 
 Échanger sur ce service
 
+### Planification et publication
+
+Maintenir une présence régulière sur les réseaux sociaux, avec un processus de publication simple.
+
+Nous vous aidons à organiser vos contenus, préparer les publications convenues et programmer leur diffusion à partir d’informations et de visuels validés ensemble.
+
+Calendrier éditorial
+
+Préparation des publications
+
+Programmation des posts
+
+Découvrir
+
+Échanger sur ce service
+
 L'IA peut faire partie de la solution lorsqu'elle apporte une vraie valeur. Elle n'est pas la solution par défaut.
+
+---
+
+## Approche tarifaire
+
+NOTRE APPROCHE TARIFAIRE
+
+Un périmètre clair, un tarif adapté
+
+Chaque projet a ses propres objectifs et contraintes. Le tarif dépend du type de solution, de son périmètre, des fonctionnalités, du contenu à préparer, des intégrations nécessaires et du niveau d’accompagnement demandé.
+
+Comprendre votre besoin et vos priorités.
+
+Définir ensemble le périmètre et les livrables.
+
+Présenter un devis adapté avant le démarrage.
+
+Pour les services de publication sur les réseaux sociaux, le périmètre peut notamment tenir compte des réseaux concernés, du volume de publications, de la préparation des textes et visuels, des éléments fournis par le client et du caractère ponctuel ou récurrent de l’accompagnement.
+
+Discuter de mon projet
 
 ---
 

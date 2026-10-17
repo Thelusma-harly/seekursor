@@ -164,7 +164,43 @@ Explore
 
 Discuss this service
 
+### Social Media Planning & Publishing
+
+Maintain a consistent presence with a straightforward publishing process.
+
+We help organize content, prepare agreed posts, and schedule their publication using information and visuals reviewed together.
+
+Editorial calendar
+
+Post preparation
+
+Post scheduling
+
+Explore
+
+Discuss this service
+
 AI can be part of a solution when it brings real value. It is not the default.
+
+---
+
+## Pricing approach
+
+OUR PRICING APPROACH
+
+A clear scope, with pricing tailored to the project
+
+Every project has its own goals and constraints. Pricing depends on the type and scope of the solution, its features, the content to prepare, the integrations needed and the level of support requested.
+
+Understand your needs and priorities.
+
+Agree on the scope and deliverables together.
+
+Present a tailored quote before work begins.
+
+For social media publishing, the scope may account for the platforms involved, the volume of posts, text and visual preparation, materials supplied by the client and whether support is one-time or recurring.
+
+Discuss my project
 
 ---
 

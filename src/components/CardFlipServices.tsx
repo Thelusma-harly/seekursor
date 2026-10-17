@@ -7,13 +7,14 @@ import {
   Users,
   PanelsTopLeft,
   Workflow,
+  CalendarDays,
 } from "lucide-react";
 import { useSeekursorConfig, type ServiceItem } from "../data/seekursorConfig";
 import { cn } from "@/lib/utils";
 import { WhatsAppCTA } from "./WhatsAppCTA";
 import type { OpenAcquisition } from "../lib/acquisition";
 
-const icons = [Globe2, Users, PanelsTopLeft, Workflow];
+const icons = [Globe2, Users, PanelsTopLeft, Workflow, CalendarDays];
 export function CardFlip({
   service,
   index,
@@ -40,7 +41,11 @@ export function CardFlip({
   return (
     <article
       data-service-card={service.title}
-      className="group relative mx-auto h-[440px] w-full max-w-[400px] [perspective:2000px]"
+      className={cn(
+        "group relative mx-auto h-[440px] w-full max-w-[400px] [perspective:2000px] lg:col-span-2",
+        index === 3 && "lg:col-start-2",
+        index === 4 && "sm:col-span-2 lg:col-start-4",
+      )}
       onClick={(event) => {
         if (!(event.target as HTMLElement).closest("button, a"))
           flipWithFocus(!flipped);
@@ -183,7 +188,7 @@ export function CardFlipServices({
             {t("description")}
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6">
           {config.services.map((service, index) => (
             <CardFlip
               key={index}

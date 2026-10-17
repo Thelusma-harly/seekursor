@@ -102,9 +102,31 @@
           "Suivi des demandes",
           "Connexions entre outils"
         ]
+      },
+      {
+        "title": "Planification et publication",
+        "subtitle": "Maintenir une présence régulière sur les réseaux sociaux, avec un processus de publication simple.",
+        "description": "Nous vous aidons à organiser vos contenus, préparer les publications convenues et programmer leur diffusion à partir d’informations et de visuels validés ensemble.",
+        "features": [
+          "Calendrier éditorial",
+          "Préparation des publications",
+          "Programmation des posts"
+        ]
       }
     ],
     "aiNote": "L'IA peut faire partie de la solution lorsqu'elle apporte une vraie valeur. Elle n'est pas la solution par défaut."
+  },
+  "Pricing": {
+    "eyebrow": "NOTRE APPROCHE TARIFAIRE",
+    "title": "Un périmètre clair, un tarif adapté",
+    "description": "Chaque projet a ses propres objectifs et contraintes. Le tarif dépend du type de solution, de son périmètre, des fonctionnalités, du contenu à préparer, des intégrations nécessaires et du niveau d’accompagnement demandé.",
+    "steps": [
+      "Comprendre votre besoin et vos priorités.",
+      "Définir ensemble le périmètre et les livrables.",
+      "Présenter un devis adapté avant le démarrage."
+    ],
+    "recurring": "Pour les services de publication sur les réseaux sociaux, le périmètre peut notamment tenir compte des réseaux concernés, du volume de publications, de la préparation des textes et visuels, des éléments fournis par le client et du caractère ponctuel ou récurrent de l’accompagnement.",
+    "discuss": "Discuter de mon projet"
   },
   "Process": {
     "eyebrow": "NOTRE DÉMARCHE",

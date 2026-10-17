@@ -12,6 +12,7 @@ import { Navbar1 } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { SpotlightCards } from "./components/SpotlightCards";
 import { CardFlipServices } from "./components/CardFlipServices";
+import { PricingApproachSection } from "./components/PricingApproachSection";
 import { BentoGrid } from "./components/BentoProcess";
 import { SelectedWorkSection } from "./components/SelectedWorkSection";
 import { DifferentiationSection } from "./components/DifferentiationSection";
@@ -45,6 +46,7 @@ function SeekursorLanding() {
         <Hero onAcquire={openAcquisition} />
         <SpotlightCards />
         <CardFlipServices onAcquire={openAcquisition} />
+        <PricingApproachSection onAcquire={openAcquisition} />
         <SelectedWorkSection onSelectProject={project => {
           projectReturnFocus.current = document.activeElement as HTMLElement;
           setSelectedProject(project);

@@ -164,7 +164,43 @@ Dekouvri
 
 Pale sou sèvis sa a
 
+### Planifikasyon ak piblikasyon sou rezo sosyal
+
+Kenbe yon prezans regilye ak yon fason senp pou pibliye.
+
+Nou ede ou òganize kontni ou yo, prepare piblikasyon nou dakò sou yo epi pwograme yo, apati enfòmasyon ak vizyèl nou valide ansanm.
+
+Kalandriye kontni
+
+Preparasyon piblikasyon yo
+
+Pwogramasyon piblikasyon yo
+
+Dekouvri
+
+Pale sou sèvis sa a
+
 IA ka fè pati solisyon an lè li pote yon valè reyèl. Nou pa chwazi li otomatikman.
+
+---
+
+## Fason nou fikse tarif yo
+
+FASON NOU FIKSE TARIF YO
+
+Yon pwojè byen defini, yon tarif ki adapte
+
+Chak pwojè gen pwòp objektif li ak kontrent li. Tarif la depann de kalite solisyon an, sa li dwe kouvri, fonksyon li yo, kontni pou prepare, koneksyon ki nesesè ant zouti yo ak nivo akonpayman ou mande a.
+
+Konprann bezwen ou ak sa ki pi enpòtan pou ou.
+
+Dakò ansanm sou sa pwojè a ap kouvri ak sa n ap livre.
+
+Prezante yon devi ki adapte anvan travay la kòmanse.
+
+Pou piblikasyon sou rezo sosyal, nou ka konsidere ki rezo ki konsène yo, kantite piblikasyon, preparasyon tèks ak vizyèl, materyèl kliyan an bay ak si se yon sèvis yon sèl fwa oswa yon akonpayman regilye.
+
+Pale sou pwojè mwen
 
 ---
 
