@@ -10,7 +10,8 @@
     "preview": "npm run start",
     "lint": "tsc --noEmit",
     "test:acquisition": "tsx --test tests/acquisition.test.ts",
-    "test:i18n": "tsx --test tests/i18n.test.ts"
+    "test:i18n": "tsx --test tests/i18n.test.ts",
+    "test:seo": "tsx --test tests/seo.test.ts"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",

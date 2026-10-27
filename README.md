@@ -42,7 +42,9 @@ Approved French copy is stored in `messages/fr.json`; English and Haitian Creole
 
 `src/i18n/routing.ts`, `navigation.ts`, `request.ts` and `src/proxy.ts` configure next-intl. The locale layout/page use Next.js 16.4 root params and `generateStaticParams` to prerender all three landing pages. The language control uses an animated, keyboard-accessible dropdown, with compact FR/EN/HT indicators and native language names.
 
-`NEXT_PUBLIC_SITE_URL` is intentionally empty until the public domain is decided. Set it to the verified production origin before deployment so canonical and alternate URLs resolve to that domain and social preview images are enabled. Keep the other public destinations in `.env.local`; the prefix is now `NEXT_PUBLIC_`, replacing Vite's `VITE_` prefix. Never put secrets in public environment variables.
+`NEXT_PUBLIC_SITE_URL` defaults to the verified production origin, `https://seekursor.vercel.app`, including when the environment value is empty. Override it only with a verified HTTPS origin (no path or query). Canonicals, language alternates, schema, robots and the sitemap share this value. Keep the other public destinations in `.env.local`; the prefix is `NEXT_PUBLIC_`, replacing Vite's `VITE_` prefix. Never put secrets in public environment variables.
+
+Next.js generates `/robots.txt` and `/sitemap.xml`. Only `/fr`, `/en` and `/ht` are canonical pages; `/` redirects to a locale, and section anchors are not separate pages. Update `contentLastModified` in `src/lib/seo.ts` when page content or structured data materially changes, not on every build. A routing-level 404 supports the dynamic locale root layout.
 
 After `npm run build`, run `npm run start` to serve the production build on port 3000. Development also uses only port 3000; Next.js exits if it is already occupied.
 
