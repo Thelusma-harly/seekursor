@@ -25,6 +25,8 @@ npm run test:i18n
 npm run test:seo
 ```
 
+See [the technical SEO audit](docs/seo-audit.md) for all 27 checks, measured results, missing owner inputs and manual indexing steps. With the production server running, verify the served output using `node scripts/verify-seo.mjs http://localhost:3000`.
+
 ## Acquisition channels
 
 WhatsApp is the primary route, Cal.com handles discovery-call booking and Tally handles project inquiries. The supplied public destinations are configured in `.env.local` and `.env.example`. Missing values still open clear availability dialogs.
