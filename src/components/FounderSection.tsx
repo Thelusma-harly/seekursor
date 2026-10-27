@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { useSeekursorConfig } from "../data/seekursorConfig";
 import { WhatsAppCTA } from "./WhatsAppCTA";
@@ -17,12 +18,13 @@ export function FounderSection({
     >
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
         <figure>
-          <img
+          <Image
             src={founder.image}
             alt={t("Founder.imageAlt")}
             loading="lazy"
             width={1024}
             height={1024}
+            sizes="(min-width: 1280px) 576px, (min-width: 1024px) calc((100vw - 128px) / 2), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
             className="aspect-[4/3] w-full rounded-2xl object-cover"
           />
         </figure>

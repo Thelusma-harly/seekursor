@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { routing } from "../../i18n/routing";
 import { brandStructuredData, serializeJsonLd } from "../../lib/seo";
+import { inter, spaceGrotesk } from "../fonts";
 import "../../index.css";
 
 export function generateStaticParams() {
@@ -21,13 +22,10 @@ export default async function LocaleLayout({children, params}: {
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const structuredData = brandStructuredData({ structuredDescription: t("structuredDescription"), founderRole: t("founderRole") });
   return (
-    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
+    <html lang={locale} className={`scroll-smooth ${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }} />
         <Script id="seekursor-theme" strategy="beforeInteractive" dangerouslySetInnerHTML={{__html: themeScript}} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>

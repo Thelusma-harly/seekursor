@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useRef } from "react";
 import { createPortal } from "react-dom";
 import { X, ArrowUpRight } from "lucide-react";
@@ -48,11 +49,13 @@ export function ProjectModal({
           </button>
         </div>
         <div className="grid gap-6 p-6 sm:p-8 md:grid-cols-2">
-          <img
+          <Image
             src={project.image}
             alt={t("Projects.imageAlt", {title: project.title})}
             width={1024}
             height={768}
+            loading="eager"
+            sizes="(min-width: 896px) 403px, (min-width: 768px) calc((100vw - 122px) / 2), (min-width: 640px) calc(100vw - 98px), calc(100vw - 82px)"
             className="aspect-[4/3] w-full rounded-xl object-cover"
           />
           <div>

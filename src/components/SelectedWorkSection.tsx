@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { useSeekursorConfig, type ProjectItem } from "../data/seekursorConfig";
 export function SelectedWorkSection({
@@ -32,12 +33,13 @@ export function SelectedWorkSection({
               className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-page transition-colors hover:border-brand/50"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-surface-secondary">
-                <img
+                <Image
                   src={project.image}
                   alt={t("previewAlt", {title: project.title})}
                   loading="lazy"
                   width={1024}
                   height={768}
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) calc((100vw - 128px) / 3), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
                   className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transform-none"
                 />
               </div>

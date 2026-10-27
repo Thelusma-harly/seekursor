@@ -26,9 +26,9 @@ html.dark {
 
 @theme inline {
   --font-display:
-    "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    var(--font-space-grotesk), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-sans:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --color-page: var(--background);
   --color-surface: var(--surface);
   --color-surface-secondary: var(--surface-secondary);

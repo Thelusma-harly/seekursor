@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { inter, spaceGrotesk } from "./fonts";
 import "../index.css";
 
 export const metadata: Metadata = { title: "404 | Seekursor" };
 
 export default function GlobalNotFound() {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="bg-page text-ink">
         <main className="mx-auto flex min-h-screen max-w-xl flex-col justify-center gap-6 px-6 py-16">
           <p className="font-display text-lg font-semibold">Seekursor · 404</p>
