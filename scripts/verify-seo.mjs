@@ -87,6 +87,7 @@ for (const locale of locales) {
   for (const logo of tags(html, 'img').filter(image => image.src === '/brand/seekursor-eye.png')) {
     assert.equal(logo.alt, 'Seekursor logo');
     assert.notEqual(logo.loading, 'lazy');
+    assert.ok(logo.srcset?.includes('seekursor-eye-152.webp 152w') && logo.sizes, 'Missing responsive logo');
   }
   for (const resource of [...tags(html, 'script'), ...tags(html, 'link'), ...tags(html, 'img')]) {
     assert.ok(!/^http:\/\//i.test(resource.src || resource.href || ''), 'Mixed content');
@@ -122,7 +123,7 @@ for (const path of ['/', '/fr/', '/en/', '/ht/', '/not-a-real-seekursor-page', '
   }
   report.redirects.push({ path, hops, status: response.status });
 }
-for (const path of ['/brand/favicon.ico', '/brand/icon-48.png', '/brand/icon-512.png', '/brand/icon-180.png']) {
+for (const path of ['/brand/favicon.ico', '/brand/icon-48.png', '/brand/icon-512.png', '/brand/icon-180.png', '/brand/seekursor-eye-76.webp', '/brand/seekursor-eye-152.webp', '/brand/seekursor-eye-228.webp', '/brand/seekursor-eye-415.webp']) {
   const response = await request(path);
   assert.equal(response.status, 200, path);
   report.assets.push({ path, status: response.status });

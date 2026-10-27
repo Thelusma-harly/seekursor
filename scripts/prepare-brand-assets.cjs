@@ -27,6 +27,12 @@ async function main() {
     .png({compressionLevel: 9, adaptiveFiltering: true, palette: false})
     .toBuffer();
   await fs.writeFile(path.join(brandDir, 'seekursor-eye.png'), logo);
+  // Lossless responsive copies for the small navbar/footer mark; retain the full PNG.
+  for (const width of [76, 152, 228, right - left + 1]) {
+    await sharp(logo).resize({width, kernel: sharp.kernel.lanczos3, withoutEnlargement: true})
+      .webp({lossless: true, effort: 6})
+      .toFile(path.join(brandDir, `seekursor-eye-${width}.webp`));
+  }
 
   const navy = '#030615';
   async function icon(size) {

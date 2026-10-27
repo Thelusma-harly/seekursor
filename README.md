@@ -37,7 +37,7 @@ The approved eye-and-cursor logo is stored in `public/brand/seekursor-eye.png`, 
 
 Regenerate the three localized 1200×630 share cards with `node scripts/prepare-social-images.cjs`. Metadata and the Organization/WebSite graph share `src/lib/seo.ts`; the graph appears once in the locale layout head. Only known public business facts are included. No verification tags are emitted without supplied Google/Bing tokens.
 
-`next/font` self-hosts the original Inter/Space Grotesk families with `display: swap`; browsers no longer wait for an external font stylesheet. The founder and example previews use `next/image` for responsive WebP delivery and retain their existing dimensions, lazy loading and cropping. The small above-fold logo remains eager and lossless.
+`next/font` self-hosts the original Inter/Space Grotesk families with `display: swap`; browsers no longer wait for an external font stylesheet. Founder/example photos use `next/image` for responsive WebP delivery and retain their existing dimensions, loading behavior and cropping. The small above-fold logo remains eager and uses lossless WebP size variants, with the original PNG as fallback.
 
 Light mode is the default. A manual preference persists under `seekursor-theme` and is applied before first paint. Locale and theme operate independently. The Cobe 0.6.5 globe retains the supplied onRender and pointer-drag rendering model. Reduced motion stops automatic grid and globe movement.
 

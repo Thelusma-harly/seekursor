@@ -8,6 +8,8 @@ export function BrandLockup({ className }: { className?: string }) {
     >
       <img
         src={siteConfig.logo}
+        srcSet="/brand/seekursor-eye-76.webp 76w, /brand/seekursor-eye-152.webp 152w, /brand/seekursor-eye-228.webp 228w, /brand/seekursor-eye-415.webp 415w"
+        sizes="(min-width: 640px) 68px, (max-width: 360px) 48px, 56px"
         alt="Seekursor logo"
         width="76"
         height="40"
