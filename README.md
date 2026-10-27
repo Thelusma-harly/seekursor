@@ -32,7 +32,7 @@ See [acquisition setup](docs/acquisition-setup.md) for configuration, account se
 
 ## Brand and presentation
 
-The supplied symbol is kept unchanged in `public/brand-symbol.png`. Headings use Space Grotesk; body and UI use Inter. Theme tokens are in `src/index.css`. Translation files supply content through `src/data/seekursorConfig.ts` and next-intl.
+The approved eye-and-cursor logo is stored in `public/brand/seekursor-eye.png`, trimmed and encoded losslessly from the supplied transparent PNG. The shared brand lockup gives its white cursor a compact navy backing for contrast in both themes. Dedicated PNG/ICO favicons and an Apple touch icon live in the same folder. Regenerate these assets with `node scripts/prepare-brand-assets.cjs <path-to-approved-transparent-png>`; this uses the existing Sharp dependency and preserves the source logo colors. Headings use Space Grotesk; body and UI use Inter. Theme tokens are in `src/index.css`. Translation files supply content through `src/data/seekursorConfig.ts` and next-intl.
 
 Light mode is the default. A manual preference persists under `seekursor-theme` and is applied before first paint. Locale and theme operate independently. The Cobe 0.6.5 globe retains the supplied onRender and pointer-drag rendering model. Reduced motion stops automatic grid and globe movement.
 
