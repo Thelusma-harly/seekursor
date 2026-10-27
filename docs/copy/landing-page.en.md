@@ -438,9 +438,9 @@ The project inquiry form is not available yet.
 
 ## Metadata
 
-Seekursor — Digital solutions for businesses
+Seekursor | Digital Solutions Agency
 
-Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
+Seekursor is a digital solutions agency creating tailored websites, customer experiences and tools to help businesses serve customers and work better.
 
 Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 

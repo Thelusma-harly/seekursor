@@ -438,9 +438,9 @@ Le formulaire de projet n’est pas encore disponible.
 
 ## Métadonnées
 
-Seekursor — Solutions digitales pour les entreprises
+Seekursor | Agence de solutions digitales
 
-Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
+Seekursor crée des sites web, des expériences client et des outils digitaux sur mesure pour aider les entreprises à mieux servir leurs clients et travailler.
 
 Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 

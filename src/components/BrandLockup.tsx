@@ -8,7 +8,7 @@ export function BrandLockup({ className }: { className?: string }) {
     >
       <img
         src={siteConfig.logo}
-        alt=""
+        alt="Seekursor logo"
         width="76"
         height="40"
         decoding="async"

@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { routing } from "../../i18n/routing";
+import { brandStructuredData, serializeJsonLd } from "../../lib/seo";
 import "../../index.css";
 
 export function generateStaticParams() {
@@ -17,9 +18,12 @@ export default async function LocaleLayout({children, params}: {
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+  const structuredData = brandStructuredData({ structuredDescription: t("structuredDescription"), founderRole: t("founderRole") });
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }} />
         <Script id="seekursor-theme" strategy="beforeInteractive" dangerouslySetInnerHTML={{__html: themeScript}} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

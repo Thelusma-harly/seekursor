@@ -438,9 +438,9 @@ Fòm pou dekri pwojè a poko disponib.
 
 ## Metadone
 
-Seekursor — Solisyon dijital pou biznis yo
+Seekursor | Ajans solisyon dijital
 
-Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
+Seekursor se yon ajans solisyon dijital ki kreye sit entènèt, eksperyans kliyan ak zouti sou mezi pou ede biznis yo sèvi kliyan epi travay pi byen.
 
 Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
 

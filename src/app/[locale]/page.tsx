@@ -4,46 +4,18 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import App from "../../App";
 import { routing } from "../../i18n/routing";
-import { siteConfig } from "../../data/siteConfig";
+import { pageMetadata } from "../../lib/seo";
 
 type Props = {params: Promise<{locale: string}>};
-function publicOrigin() {
-  try {
-    const url = new URL(siteConfig.domain);
-    return /^https?:$/.test(url.protocol) ? url.origin : undefined;
-  } catch { return undefined; }
-}
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({locale, namespace: "Metadata"});
-  const origin = publicOrigin();
-  const languages = Object.fromEntries(routing.locales.map(code => [code, `${origin ?? ""}/${code}`]));
-  return {
-    ...(origin ? {metadataBase: new URL(origin)} : {}),
-    title: t("title"), description: t("description"),
-    alternates: {canonical: `${origin ?? ""}/${locale}`, languages: {...languages, "x-default": `${origin ?? ""}/fr`}},
-    icons: {
-      icon: [
-        {url: "/brand/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon"},
-        {url: "/brand/icon-32.png", sizes: "32x32", type: "image/png"},
-        {url: "/brand/icon-64.png", sizes: "64x64", type: "image/png"},
-      ],
-      apple: [{url: "/brand/icon-180.png", sizes: "180x180", type: "image/png"}],
-    },
-    openGraph: {type: "website", siteName: siteConfig.name, title: t("title"), description: t("socialDescription"),
-      locale: {fr: "fr_FR", en: "en_US", ht: "ht_HT"}[locale],
-      alternateLocale: routing.locales.filter(code => code !== locale).map(code => ({fr: "fr_FR", en: "en_US", ht: "ht_HT"}[code])),
-      ...(origin ? {images: [siteConfig.logo]} : {})},
-    twitter: {card: "summary", title: t("title"), description: t("twitterDescription"), ...(origin ? {images: [siteConfig.logo]} : {})},
-  };
+  return pageMetadata(locale, { title: t("title"), description: t("description"),
+    socialDescription: t("socialDescription"), twitterDescription: t("twitterDescription") });
 }
 export default async function Page({params}: Props) {
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  const t = await getTranslations({locale, namespace: "Metadata"});
-  const structuredData = {"@context": "https://schema.org", "@type": "ProfessionalService", name: siteConfig.name,
-    description: t("structuredDescription"), inLanguage: locale,
-    founder: {"@type": "Person", name: siteConfig.founderName, jobTitle: t("founderRole")}};
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(structuredData).replace(/</g, "\\u003c")}} /><App /></>;
+  return <App />;
 }
