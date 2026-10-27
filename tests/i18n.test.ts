@@ -54,4 +54,5 @@ test("Explicit locale paths override a previous selection", () => {
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("location"), null);
   assert.ok(response.headers.get("set-cookie")?.includes("NEXT_LOCALE=fr"));
+  assert.equal(response.headers.get("link"), null, "Metadata owns canonical hreflang URLs");
 });

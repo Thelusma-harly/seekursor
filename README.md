@@ -37,6 +37,8 @@ The approved eye-and-cursor logo is stored in `public/brand/seekursor-eye.png`, 
 
 Regenerate the three localized 1200×630 share cards with `node scripts/prepare-social-images.cjs`. Metadata and the Organization/WebSite graph share `src/lib/seo.ts`; the graph appears once in the locale layout head. Only known public business facts are included. No verification tags are emitted without supplied Google/Bing tokens.
 
+`next/font` self-hosts the original Inter/Space Grotesk families with `display: swap`; browsers no longer wait for an external font stylesheet. The founder and example previews use `next/image` for responsive WebP delivery and retain their existing dimensions, lazy loading and cropping. The small above-fold logo remains eager and lossless.
+
 Light mode is the default. A manual preference persists under `seekursor-theme` and is applied before first paint. Locale and theme operate independently. The Cobe 0.6.5 globe retains the supplied onRender and pointer-drag rendering model. Reduced motion stops automatic grid and globe movement.
 
 ## Translations and production
@@ -48,6 +50,8 @@ Approved French copy is stored in `messages/fr.json`; English and Haitian Creole
 `NEXT_PUBLIC_SITE_URL` defaults to the verified production origin, `https://seekursor.vercel.app`, including when the environment value is empty. Override it only with a verified HTTPS origin (no path or query). Canonicals, language alternates, schema, robots and the sitemap share this value. Keep the other public destinations in `.env.local`; the prefix is `NEXT_PUBLIC_`, replacing Vite's `VITE_` prefix. Never put secrets in public environment variables.
 
 Next.js generates `/robots.txt` and `/sitemap.xml`. Only `/fr`, `/en` and `/ht` are canonical pages; `/` redirects to a locale, and section anchors are not separate pages. Update `contentLastModified` in `src/lib/seo.ts` when page content or structured data materially changes, not on every build. A routing-level 404 supports the dynamic locale root layout.
+
+Language alternate URLs are emitted by the Metadata API and sitemap. next-intl's request-host-derived `Link` response header is disabled to keep one consistent canonical origin and `x-default` destination.
 
 After `npm run build`, run `npm run start` to serve the production build on port 3000. Development also uses only port 3000; Next.js exits if it is already occupied.
 
