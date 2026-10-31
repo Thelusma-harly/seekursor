@@ -275,5 +275,12 @@
     "twitterDescription": "Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
     "structuredDescription": "Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
     "founderRole": "Fondateur"
+  },
+  "Social": {
+    "contacts": "Réseaux sociaux et contact",
+    "instagram": "Seekursor sur Instagram",
+    "tiktok": "Seekursor sur TikTok",
+    "phone": "Appeler Seekursor au {number}",
+    "whatsapp": "Parler à Seekursor sur WhatsApp"
   }
 }

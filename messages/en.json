@@ -275,5 +275,12 @@
     "twitterDescription": "Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.",
     "structuredDescription": "Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.",
     "founderRole": "Founder"
+  },
+  "Social": {
+    "contacts": "Social media and contact",
+    "instagram": "Seekursor on Instagram",
+    "tiktok": "Seekursor on TikTok",
+    "phone": "Call Seekursor at {number}",
+    "whatsapp": "Talk to Seekursor on WhatsApp"
   }
 }

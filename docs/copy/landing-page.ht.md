@@ -398,9 +398,9 @@ Baze ann Ayiti · Ouvè pou lòt mache
 
 Ann rete an kontak
 
-Instagram @seekursor
+Instagram
 
-TikTok @seekursor
+TikTok
 
 +509 47 10 94 01
 
@@ -567,3 +567,28 @@ Bonjou Seekursor, mwen ta renmen pale ak Harly sou yon bezwen pou biznis mwen.
 ### WhatsApp.project
 
 Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou biznis mwen.
+
+
+---
+
+## Social — tooltips and accessible labels
+
+### Social.contacts
+
+Rezo sosyal ak kontak
+
+### Social.instagram
+
+Seekursor sou Instagram
+
+### Social.tiktok
+
+Seekursor sou TikTok
+
+### Social.phone
+
+Rele Seekursor nan {number}
+
+### Social.whatsapp
+
+Pale ak Seekursor sou WhatsApp

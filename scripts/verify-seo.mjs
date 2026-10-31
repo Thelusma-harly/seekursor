@@ -92,6 +92,15 @@ for (const locale of locales) {
     assert.ok(logo.srcset?.includes('-80.webp 80w') && logo.sizes, 'Missing responsive logo');
   }
   const footer = html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/i)?.[1] || '';
+  assert.equal(tags(footer, 'ul').length, 1, 'Footer contact icons must share one row');
+  const socialIcons = tags(footer, 'img').filter(image => image.src?.startsWith('/icons/social/'));
+  assert.deepEqual(socialIcons.map(image => image.src), ['instagram', 'tiktok', 'phone', 'whatsapp'].map(name => `/icons/social/${name}.svg`));
+  for (const icon of socialIcons) {
+    assert.equal(icon.width, '28');
+    assert.equal(icon.height, '28');
+    assert.equal(icon.alt, '');
+  }
+  assert.ok(tags(html, 'div').some(tag => tag['data-floating-socials'] === 'true'), 'Missing shared floating contact panel');
   for (const url of ['https://www.instagram.com/seekursor/', 'https://www.tiktok.com/@seekursor']) {
     assert.ok(tags(footer, 'a').some(link => link.href === url && link.rel?.includes('noopener')), 'Missing official footer social link');
     assert.ok(graph[0].sameAs.includes(url), 'Social identity missing from schema');
@@ -131,7 +140,7 @@ for (const path of ['/', '/fr/', '/en/', '/ht/', '/not-a-real-seekursor-page', '
   }
   report.redirects.push({ path, hops, status: response.status });
 }
-for (const path of ['/brand/seekursor-favicon.ico', '/brand/seekursor-icon-48.png', '/brand/seekursor-icon-512.png', '/brand/seekursor-icon-180.png', ...['light', 'dark'].flatMap(mode => [40, 80, 120, 256].map(width => `/brand/seekursor-mark-${mode}-${width}.webp`))]) {
+for (const path of ['/brand/seekursor-favicon.ico', '/brand/seekursor-icon-48.png', '/brand/seekursor-icon-512.png', '/brand/seekursor-icon-180.png', ...['light', 'dark'].flatMap(mode => [40, 80, 120, 256].map(width => `/brand/seekursor-mark-${mode}-${width}.webp`)), ...['instagram', 'tiktok', 'phone', 'whatsapp'].map(name => `/icons/social/${name}.svg`)]) {
   const response = await request(path);
   assert.equal(response.status, 200, path);
   report.assets.push({ path, status: response.status });

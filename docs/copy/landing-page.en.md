@@ -398,9 +398,9 @@ Based in Haiti · Open to other markets
 
 Let’s stay in touch
 
-Instagram @seekursor
+Instagram
 
-TikTok @seekursor
+TikTok
 
 +509 47 10 94 01
 
@@ -567,3 +567,28 @@ Hello Seekursor, I would like to speak with Harly about a need for my business.
 ### WhatsApp.project
 
 Hello Seekursor, I just viewed the “{title}” concept and would like to discuss a solution for my business.
+
+
+---
+
+## Social — tooltips and accessible labels
+
+### Social.contacts
+
+Social media and contact
+
+### Social.instagram
+
+Seekursor on Instagram
+
+### Social.tiktok
+
+Seekursor on TikTok
+
+### Social.phone
+
+Call Seekursor at {number}
+
+### Social.whatsapp
+
+Talk to Seekursor on WhatsApp

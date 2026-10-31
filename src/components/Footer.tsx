@@ -1,19 +1,17 @@
 import { useTranslations } from "next-intl";
-import { Instagram, Phone, MessageCircle } from "lucide-react";
+import { forwardRef } from "react";
 import { useSeekursorConfig } from "../data/seekursorConfig";
-import { acquisitionConfig } from "../data/acquisitionConfig";
-import { WhatsAppCTA } from "./WhatsAppCTA";
 import type { OpenAcquisition } from "../lib/acquisition";
 import { Link } from "../i18n/navigation";
 import { followSection } from "../lib/sectionNavigation";
 import { BrandLockup } from "./BrandLockup";
-import { TikTokIcon } from "./TikTokIcon";
-export function Footer({ onAcquire }: { onAcquire: OpenAcquisition }) {
+import { ContactSocialLinks } from "./ContactSocialLinks";
+export const Footer = forwardRef<HTMLElement, { onAcquire: OpenAcquisition }>(function Footer({ onAcquire }, ref) {
   const config = useSeekursorConfig();
   const contact = config.contact;
   const t = useTranslations();
   return (
-    <footer className="bg-surface text-ink">
+    <footer ref={ref} className="bg-surface text-ink">
       <div className="mx-auto max-w-7xl px-5 pt-14 pb-6 sm:px-8">
         <div className="grid gap-10 pb-12 md:grid-cols-[1.4fr_1fr]">
           <div>
@@ -39,27 +37,7 @@ export function Footer({ onAcquire }: { onAcquire: OpenAcquisition }) {
                 {contact.email}
               </a>
             )}
-            <div className="flex flex-col items-start gap-2">
-              {contact.instagramUrl && (
-                <a className="inline-flex min-h-11 items-center gap-2 hover:text-brand-ink"
-                  href={contact.instagramUrl} target="_blank" rel="noopener noreferrer">
-                  <Instagram size={16} aria-hidden="true" /> Instagram <span className="text-ink-muted">@seekursor</span>
-                </a>
-              )}
-              <a className="inline-flex min-h-11 items-center gap-2 hover:text-brand-ink"
-                href={contact.tiktokUrl} target="_blank" rel="noopener noreferrer">
-                <TikTokIcon /> TikTok <span className="text-ink-muted">@seekursor</span>
-              </a>
-              {acquisitionConfig.whatsappNumber && (
-                <a className="inline-flex min-h-9 items-center gap-2 hover:text-brand-ink"
-                  href={`tel:+${acquisitionConfig.whatsappNumber}`}>
-                  <Phone size={16} aria-hidden="true" /> {contact.phoneLabel}
-                </a>
-              )}
-              <WhatsAppCTA onUnavailable={onAcquire} className="inline-flex min-h-9 items-center gap-2 text-left hover:text-brand-ink">
-                <MessageCircle size={16} aria-hidden="true" /> WhatsApp
-              </WhatsAppCTA>
-            </div>
+            <ContactSocialLinks onAcquire={onAcquire} className="justify-start" />
             <div className="border-t border-line pt-3">
               <button type="button" aria-haspopup="dialog" onClick={event => onAcquire("booking", event.currentTarget)} className="block min-h-11 text-left hover:text-brand-ink">{t("Common.booking")}</button>
               <button type="button" aria-haspopup="dialog" onClick={event => onAcquire("inquiry", event.currentTarget)} className="block min-h-11 text-left hover:text-brand-ink">{t("Common.inquiry")}</button>
@@ -73,4 +51,4 @@ export function Footer({ onAcquire }: { onAcquire: OpenAcquisition }) {
       </div>
     </footer>
   );
-}
+});

@@ -275,5 +275,12 @@
     "twitterDescription": "Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
     "structuredDescription": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
     "founderRole": "Fondatè"
+  },
+  "Social": {
+    "contacts": "Rezo sosyal ak kontak",
+    "instagram": "Seekursor sou Instagram",
+    "tiktok": "Seekursor sou TikTok",
+    "phone": "Rele Seekursor nan {number}",
+    "whatsapp": "Pale ak Seekursor sou WhatsApp"
   }
 }

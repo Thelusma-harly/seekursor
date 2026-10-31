@@ -19,6 +19,7 @@ import { DifferentiationSection } from "./components/DifferentiationSection";
 import { FounderSection } from "./components/FounderSection";
 import { FinalCTASection } from "./components/FinalCTASection";
 import { Footer } from "./components/Footer";
+import { FloatingSocialLinks } from "./components/FloatingSocialLinks";
 import { ProjectModal } from "./components/ProjectModal";
 import { AcquisitionModal } from "./components/AcquisitionModal";
 import type { ProjectItem } from "./data/seekursorConfig";
@@ -30,6 +31,7 @@ function SeekursorLanding() {
   const [acquisition, setAcquisition] = useState<{ channel: AcquisitionChannel; context?: string } | null>(null);
   const acquisitionReturnFocus = useRef<HTMLElement | null>(null);
   const projectReturnFocus = useRef<HTMLElement | null>(null);
+  const footerRef = useRef<HTMLElement | null>(null);
   useEffect(() => {setSelectedProject(null); setAcquisition(null);}, [locale]);
   const openAcquisition: OpenAcquisition = (channel, trigger, context) => {
     acquisitionReturnFocus.current = selectedProject
@@ -56,7 +58,8 @@ function SeekursorLanding() {
         <FounderSection onAcquire={openAcquisition} />
         <div id="contact"><FinalCTASection onAcquire={openAcquisition} /></div>
       </main>
-      <Footer onAcquire={openAcquisition} />
+      <Footer ref={footerRef} onAcquire={openAcquisition} />
+      <FloatingSocialLinks footerRef={footerRef} onAcquire={openAcquisition} suspended={Boolean(selectedProject || acquisition)} />
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} onAcquire={openAcquisition} />
       <AcquisitionModal request={acquisition} onClose={() => setAcquisition(null)} returnFocusRef={acquisitionReturnFocus} />
     </div>
