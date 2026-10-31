@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef, useId, useState, type HTMLAttributes } from "react";
+import { forwardRef, useId, useState, type CSSProperties, type HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 export interface SocialItem {
@@ -9,6 +9,7 @@ export interface SocialItem {
   tooltip: string;
   svgUrl: string;
   color: string;
+  darkColor?: string;
   onActivate?: (trigger: HTMLElement) => void;
 }
 
@@ -22,8 +23,8 @@ const SocialTooltip = forwardRef<HTMLUListElement, SocialTooltipProps>(
     const id = useId();
     const [dismissed, setDismissed] = useState(false);
     const baseIconStyles = "relative flex size-11 items-center justify-center overflow-hidden rounded-full bg-page transition-shadow duration-300 ease-in-out group-hover:shadow-lg group-focus-within:shadow-lg motion-reduce:transition-none";
-    const baseSvgStyles = "relative z-10 size-6 brightness-0 transition-[filter] duration-300 ease-in-out dark:invert group-hover:invert group-focus-within:invert motion-reduce:transition-none";
-    const baseFilledStyles = "absolute bottom-0 left-0 h-0 w-full transition-[height] duration-300 ease-in-out group-hover:h-full group-focus-within:h-full motion-reduce:transition-none";
+    const baseSvgStyles = "relative z-10 size-5 brightness-0 transition-[filter] duration-300 ease-in-out dark:invert group-hover:invert group-focus-within:invert motion-reduce:transition-none";
+    const baseFilledStyles = "absolute bottom-0 left-0 h-0 w-full bg-[var(--social-fill)] transition-[height] duration-300 ease-in-out group-hover:h-full group-focus-within:h-full dark:bg-[var(--social-fill-dark)] motion-reduce:transition-none";
     const baseTooltipStyles = "invisible absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm text-white opacity-0 transition-all duration-300 ease-in-out motion-reduce:transition-none";
 
     return (
@@ -32,8 +33,8 @@ const SocialTooltip = forwardRef<HTMLUListElement, SocialTooltipProps>(
         {items.map((item, index) => {
           const tooltipId = `${id}-${index}`;
           const icon = <>
-            <span aria-hidden="true" className={baseFilledStyles} style={{ backgroundColor: item.color }} />
-            <img src={item.svgUrl} alt="" aria-hidden="true" width={24} height={24} className={baseSvgStyles} />
+            <span aria-hidden="true" className={baseFilledStyles} style={{ "--social-fill": item.color, "--social-fill-dark": item.darkColor ?? item.color } as CSSProperties} />
+            <img src={item.svgUrl} alt="" aria-hidden="true" width={20} height={20} className={baseSvgStyles} />
           </>;
           return (
             <li key={item.href || item.ariaLabel}
