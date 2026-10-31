@@ -96,8 +96,8 @@ for (const locale of locales) {
   const socialIcons = tags(footer, 'img').filter(image => image.src?.startsWith('/icons/social/'));
   assert.deepEqual(socialIcons.map(image => image.src), ['instagram', 'tiktok', 'phone', 'whatsapp'].map(name => `/icons/social/${name}.svg`));
   for (const icon of socialIcons) {
-    assert.equal(icon.width, '28');
-    assert.equal(icon.height, '28');
+    assert.equal(icon.width, '24');
+    assert.equal(icon.height, '24');
     assert.equal(icon.alt, '');
   }
   assert.ok(tags(html, 'div').some(tag => tag['data-floating-socials'] === 'true'), 'Missing shared floating contact panel');
