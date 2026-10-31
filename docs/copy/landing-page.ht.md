@@ -398,7 +398,9 @@ Baze ann Ayiti · Ouvè pou lòt mache
 
 Ann rete an kontak
 
-Instagram
+Instagram @seekursor
+
+TikTok @seekursor
 
 +509 47 10 94 01
 

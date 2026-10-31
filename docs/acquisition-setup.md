@@ -14,7 +14,7 @@ Copy `.env.example` to `.env.local` and populate:
 
 These are public identifiers. Never place API tokens, email-provider keys or webhook secrets in NEXT_PUBLIC variables. Invalid or missing destinations show a visitor-friendly availability dialog. The supplied URL must be a published public destination; its query string is discarded. Tracking is added from the explicit allowlist below. Custom provider domains are outside this first integration.
 
-Optional existing `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_INSTAGRAM_URL` and `NEXT_PUBLIC_SITE_URL` remain supported. Restart `npm run dev` after changing environment values. Production deployments must rebuild with the public values present.
+Optional `NEXT_PUBLIC_CONTACT_EMAIL` and `NEXT_PUBLIC_SITE_URL` remain supported. The official Instagram and TikTok profile URLs are maintained together in `src/data/siteConfig.ts` and shared by the footer and Organization schema. Legacy `NEXT_PUBLIC_INSTAGRAM_URL` values are no longer read. Restart `npm run dev` after changing environment values. Production deployments must rebuild with the public values present.
 
 ## WhatsApp
 

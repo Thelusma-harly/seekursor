@@ -84,11 +84,19 @@ for (const locale of locales) {
     assert.equal(image.loading, 'lazy', 'Below-fold photos must remain lazy');
     assert.ok(image.srcset && image.sizes && image.src.startsWith('/_next/image?'));
   }
-  for (const logo of tags(html, 'img').filter(image => image.src === '/brand/seekursor-eye.png')) {
+  const brandLogos = tags(html, 'img').filter(image => /^\/brand\/seekursor-mark-(light|dark)\.png$/.test(image.src));
+  assert.ok(brandLogos.some(image => image.src.includes('-light.png')) && brandLogos.some(image => image.src.includes('-dark.png')), 'Missing theme logo variant');
+  for (const logo of brandLogos) {
     assert.equal(logo.alt, 'Seekursor logo');
     assert.notEqual(logo.loading, 'lazy');
-    assert.ok(logo.srcset?.includes('seekursor-eye-152.webp 152w') && logo.sizes, 'Missing responsive logo');
+    assert.ok(logo.srcset?.includes('-80.webp 80w') && logo.sizes, 'Missing responsive logo');
   }
+  const footer = html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/i)?.[1] || '';
+  for (const url of ['https://www.instagram.com/seekursor/', 'https://www.tiktok.com/@seekursor']) {
+    assert.ok(tags(footer, 'a').some(link => link.href === url && link.rel?.includes('noopener')), 'Missing official footer social link');
+    assert.ok(graph[0].sameAs.includes(url), 'Social identity missing from schema');
+  }
+  assert.ok(!html.includes('instagram.com/th_harly2.0'), 'Old Instagram identity remains');
   for (const resource of [...tags(html, 'script'), ...tags(html, 'link'), ...tags(html, 'img')]) {
     assert.ok(!/^http:\/\//i.test(resource.src || resource.href || ''), 'Mixed content');
   }
@@ -123,7 +131,7 @@ for (const path of ['/', '/fr/', '/en/', '/ht/', '/not-a-real-seekursor-page', '
   }
   report.redirects.push({ path, hops, status: response.status });
 }
-for (const path of ['/brand/favicon.ico', '/brand/icon-48.png', '/brand/icon-512.png', '/brand/icon-180.png', '/brand/seekursor-eye-76.webp', '/brand/seekursor-eye-152.webp', '/brand/seekursor-eye-228.webp', '/brand/seekursor-eye-415.webp']) {
+for (const path of ['/brand/seekursor-favicon.ico', '/brand/seekursor-icon-48.png', '/brand/seekursor-icon-512.png', '/brand/seekursor-icon-180.png', ...['light', 'dark'].flatMap(mode => [40, 80, 120, 256].map(width => `/brand/seekursor-mark-${mode}-${width}.webp`))]) {
   const response = await request(path);
   assert.equal(response.status, 200, path);
   report.assets.push({ path, status: response.status });

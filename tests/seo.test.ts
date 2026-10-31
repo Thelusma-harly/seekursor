@@ -39,7 +39,7 @@ for (const [locale, messages] of Object.entries({ fr, en, ht })) {
     assert.equal(organization.url, publicOrigin());
     assert.equal(organization.telephone, "+50947109401");
     assert.equal(organization.areaServed?.name, "Haiti");
-    assert.deepEqual(organization.sameAs, siteConfig.instagramUrl ? [siteConfig.instagramUrl] : undefined);
+    assert.deepEqual(organization.sameAs, ["https://www.instagram.com/seekursor/", "https://www.tiktok.com/@seekursor"]);
     assert.equal(organization.email, siteConfig.email || undefined);
     assert.ok(!("address" in organization) && !("review" in organization) && !("aggregateRating" in organization));
     assert.equal(organization.logo?.width, 512);

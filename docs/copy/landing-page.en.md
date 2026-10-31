@@ -398,7 +398,9 @@ Based in Haiti · Open to other markets
 
 Let’s stay in touch
 
-Instagram
+Instagram @seekursor
+
+TikTok @seekursor
 
 +509 47 10 94 01
 

@@ -7,6 +7,7 @@ import type { OpenAcquisition } from "../lib/acquisition";
 import { Link } from "../i18n/navigation";
 import { followSection } from "../lib/sectionNavigation";
 import { BrandLockup } from "./BrandLockup";
+import { TikTokIcon } from "./TikTokIcon";
 export function Footer({ onAcquire }: { onAcquire: OpenAcquisition }) {
   const config = useSeekursorConfig();
   const contact = config.contact;
@@ -40,11 +41,15 @@ export function Footer({ onAcquire }: { onAcquire: OpenAcquisition }) {
             )}
             <div className="flex flex-col items-start gap-2">
               {contact.instagramUrl && (
-                <a className="inline-flex min-h-9 items-center gap-2 hover:text-brand-ink"
+                <a className="inline-flex min-h-11 items-center gap-2 hover:text-brand-ink"
                   href={contact.instagramUrl} target="_blank" rel="noopener noreferrer">
-                  <Instagram size={16} aria-hidden="true" /> Instagram
+                  <Instagram size={16} aria-hidden="true" /> Instagram <span className="text-ink-muted">@seekursor</span>
                 </a>
               )}
+              <a className="inline-flex min-h-11 items-center gap-2 hover:text-brand-ink"
+                href={contact.tiktokUrl} target="_blank" rel="noopener noreferrer">
+                <TikTokIcon /> TikTok <span className="text-ink-muted">@seekursor</span>
+              </a>
               {acquisitionConfig.whatsappNumber && (
                 <a className="inline-flex min-h-9 items-center gap-2 hover:text-brand-ink"
                   href={`tel:+${acquisitionConfig.whatsappNumber}`}>

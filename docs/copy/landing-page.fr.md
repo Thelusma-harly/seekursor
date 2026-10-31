@@ -398,7 +398,9 @@ Basé en Haïti · Ouvert à d'autres marchés
 
 Restons en contact
 
-Instagram
+Instagram @seekursor
+
+TikTok @seekursor
 
 +509 47 10 94 01
 

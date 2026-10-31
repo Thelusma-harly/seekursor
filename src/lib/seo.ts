@@ -13,7 +13,7 @@ export function publicOrigin(value = siteConfig.domain): string {
 }
 
 // Update only when these pages materially change; never use the build/request time.
-export const contentLastModified = "2026-10-26";
+export const contentLastModified = "2026-10-30";
 
 type Locale = (typeof routing.locales)[number];
 type MetadataCopy = {
@@ -36,11 +36,11 @@ export function pageMetadata(locale: Locale, copy: MetadataCopy): Metadata {
     alternates: { canonical: url, languages: { ...languages, "x-default": `${origin}/fr` } },
     icons: {
       icon: [
-        { url: "/brand/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
-        { url: "/brand/icon-48.png", sizes: "48x48", type: "image/png" },
-        { url: "/brand/icon-512.png", sizes: "512x512", type: "image/png" },
+        { url: "/brand/seekursor-favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+        { url: "/brand/seekursor-icon-48.png", sizes: "48x48", type: "image/png" },
+        { url: "/brand/seekursor-icon-512.png", sizes: "512x512", type: "image/png" },
       ],
-      apple: [{ url: "/brand/icon-180.png", sizes: "180x180", type: "image/png" }],
+      apple: [{ url: "/brand/seekursor-icon-180.png", sizes: "180x180", type: "image/png" }],
     },
     openGraph: {
       type: "website", siteName: siteConfig.name, url,
@@ -61,11 +61,11 @@ export function brandStructuredData(copy: { structuredDescription: string; found
       {
         "@type": "Organization", "@id": `${origin}/#organization`,
         name: siteConfig.name, url: origin,
-        logo: { "@type": "ImageObject", "@id": `${origin}/#logo`, url: `${origin}/brand/icon-512.png`, width: 512, height: 512 },
+        logo: { "@type": "ImageObject", "@id": `${origin}/#logo`, url: `${origin}/brand/seekursor-icon-512.png`, width: 512, height: 512 },
         description: copy.structuredDescription,
         telephone: siteConfig.phoneLabel.replace(/\s/g, ""),
         ...(siteConfig.email ? { email: siteConfig.email } : {}),
-        ...(siteConfig.instagramUrl ? { sameAs: [siteConfig.instagramUrl] } : {}),
+        sameAs: [siteConfig.instagramUrl, siteConfig.tiktokUrl],
         areaServed: { "@type": "Country", name: "Haiti" },
         founder: { "@type": "Person", name: siteConfig.founderName, jobTitle: copy.founderRole },
       },

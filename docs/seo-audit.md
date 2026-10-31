@@ -1,5 +1,7 @@
 # Seekursor technical SEO audit
 
+Historical snapshot: the results below describe the 26 October audit. The 30 October branding update replaces the old eye mark with the approved `LastVersionLogo` aperture mark, adds theme-specific transparent assets and changes the linked/schema social identities to Instagram `@seekursor` and TikTok `@seekursor`. See the README for current asset names and configuration; earlier URLs and measurements below are retained as audit history.
+
 Audited 26 October 2026 (America/Port-au-Prince). Work is local on `seo-audit`; nothing was pushed, deployed or changed in Vercel. This improves crawlability and identity signals; it cannot guarantee a Google ranking, favicon display or knowledge panel.
 
 ## Discovery and verified inputs
