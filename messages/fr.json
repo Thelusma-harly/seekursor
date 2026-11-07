@@ -32,7 +32,7 @@
   },
   "Hero": {
     "title": "Faites de votre présence digitale un vrai outil pour votre entreprise",
-    "description": "Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
+    "description": "Seekursor conçoit des sites web, des applications sur mesure, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
     "eyebrow": "AGENCE DE SOLUTIONS DIGITALES",
     "baseline": "Basé en Haïti · Pensé pour les entreprises · Ouvert à d'autres marchés"
   },
@@ -57,7 +57,7 @@
   "Services": {
     "eyebrow": "CE QUE NOUS CRÉONS",
     "title": "Le bon niveau de solution pour le bon besoin",
-    "description": "Nous ne partons pas d'une technologie ou d'un format imposé. Nous partons de ce que votre entreprise cherche à améliorer.",
+    "description": "Nous ne partons pas d'une technologie ou d'un format imposé. Nous partons de votre besoin et de ce que vous cherchez à créer ou améliorer.",
     "discover": "Découvrir",
     "discoverLabel": "Découvrir : {title}",
     "returnLabel": "Retour : {title}",
@@ -84,13 +84,13 @@
         ]
       },
       {
-        "title": "Outils digitaux",
-        "subtitle": "Créer les outils dont votre activité a réellement besoin.",
-        "description": "Applications web, outils internes, portails et interfaces adaptés à votre façon de travailler.",
+        "title": "Applications & outils sur mesure",
+        "subtitle": "Transformer votre besoin ou votre idée en une application utile.",
+        "description": "Nous créons des applications web, mobiles et de bureau adaptées à votre projet, pour vos utilisateurs ou votre fonctionnement interne : outils métier, portails et interfaces sur mesure.",
         "features": [
           "Applications web",
-          "Outils internes",
-          "Portails métier"
+          "Applications mobiles",
+          "Applications de bureau"
         ]
       },
       {
@@ -230,8 +230,8 @@
   },
   "FinalCTA": {
     "eyebrow": "VOTRE PROCHAIN PAS",
-    "title": "Vous avez quelque chose à améliorer ? Parlons-en",
-    "description": "Expliquez-nous ce que vous cherchez à améliorer, ce qui vous fait perdre du temps ou ce que vous aimeriez rendre plus simple. Nous commencerons par comprendre avant de proposer quoi que ce soit."
+    "title": "Un besoin à améliorer ou une application à créer ? Parlons-en",
+    "description": "Expliquez-nous ce que vous cherchez à améliorer ou l’application que vous souhaitez créer. Nous commencerons par comprendre vos objectifs, vos utilisateurs et vos besoins avant de proposer une solution."
   },
   "Footer": {
     "description": "Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
@@ -244,9 +244,9 @@
       "booking": "Appel découverte — 30 min"
     },
     "descriptions": {
-      "whatsapp": "Un premier échange pour comprendre votre activité et votre besoin.",
-      "booking": "Un court échange pour comprendre votre entreprise, votre situation et vos besoins digitaux.",
-      "inquiry": "Présentez votre entreprise et ce que vous aimeriez améliorer. Quelques informations suffisent pour commencer."
+      "whatsapp": "Un premier échange pour comprendre votre entreprise ou votre projet et vos besoins.",
+      "booking": "Un court échange pour comprendre votre entreprise ou votre projet, vos objectifs et vos besoins digitaux.",
+      "inquiry": "Présentez votre entreprise ou votre projet et ce que vous souhaitez créer ou améliorer. Quelques informations suffisent pour commencer."
     },
     "unavailable": {
       "whatsapp": "Le contact WhatsApp n’est pas encore disponible.",
@@ -264,16 +264,16 @@
   },
   "WhatsApp": {
     "default": "Bonjour Seekursor, je viens de visiter votre site et j'aimerais discuter de mon projet.",
-    "service": "Bonjour Seekursor, je souhaite discuter du service « {title} » pour mon entreprise.",
-    "founder": "Bonjour Seekursor, j’aimerais échanger avec Harly sur un besoin pour mon entreprise.",
-    "project": "Bonjour Seekursor, je viens de voir le concept « {title} » et j’aimerais discuter d’une solution pour mon entreprise."
+    "service": "Bonjour Seekursor, je souhaite discuter du service « {title} » pour mon projet.",
+    "founder": "Bonjour Seekursor, j’aimerais échanger avec Harly sur mon projet.",
+    "project": "Bonjour Seekursor, je viens de voir le concept « {title} » et j’aimerais discuter d’une solution pour mon projet."
   },
   "Metadata": {
     "title": "Seekursor | Agence de solutions digitales",
-    "description": "Seekursor crée des sites web, des expériences client et des outils digitaux sur mesure pour aider les entreprises à mieux servir leurs clients et travailler.",
-    "socialDescription": "Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
-    "twitterDescription": "Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
-    "structuredDescription": "Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.",
+    "description": "Seekursor conçoit des sites web, des applications web, mobiles et de bureau et des outils sur mesure pour les entreprises et les porteurs de projet.",
+    "socialDescription": "Seekursor conçoit des sites web, des applications web, mobiles et de bureau sur mesure, des expériences client et des outils digitaux pour les entreprises et les porteurs de projet.",
+    "twitterDescription": "Seekursor conçoit des sites web, des applications web, mobiles et de bureau et des outils sur mesure pour les entreprises et les porteurs de projet.",
+    "structuredDescription": "Seekursor conçoit des sites web, des applications web, mobiles et de bureau sur mesure, des expériences client et des outils digitaux pour les entreprises et les porteurs de projet.",
     "founderRole": "Fondateur"
   },
   "Social": {

@@ -62,7 +62,7 @@ DIGITAL SOLUTIONS AGENCY
 
 Turn your digital presence into a tool that works for your business
 
-Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
+Seekursor designs websites, custom applications, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
 
 Talk to Seekursor
 
@@ -98,7 +98,7 @@ WHAT WE CREATE
 
 The right level of solution for the right need
 
-We start with what your business wants to improve, rather than a predetermined technology or format.
+We start with your needs and what you want to create or improve, rather than a predetermined technology or format.
 
 ### Digital presence
 
@@ -132,17 +132,17 @@ Explore
 
 Discuss this service
 
-### Digital tools
+### Custom apps & digital tools
 
-Create the tools your business actually needs.
+Turn your needs or your idea into a useful application.
 
-Web applications, internal tools, portals and interfaces adapted to the way you work.
+We build custom web, mobile and desktop applications for your project, whether for your users or your internal operations: business tools, portals and tailored interfaces.
 
 Web applications
 
-Internal tools
+Mobile applications
 
-Business portals
+Desktop applications
 
 Explore
 
@@ -376,9 +376,9 @@ Message us on WhatsApp
 
 YOUR NEXT STEP
 
-Have something to improve? Let’s talk
+Something to improve or an app to build? Let’s talk
 
-Tell us what you want to improve, what costs you time or what you would like to make simpler. We will start by understanding before proposing anything.
+Tell us what you want to improve or the application you want to create. We will start by understanding your goals, your users and your needs before proposing a solution.
 
 Talk to Seekursor
 
@@ -420,19 +420,19 @@ Thoughtfully built, from Haiti.
 
 Talk to Seekursor
 
-A first conversation to understand your business and your needs.
+A first conversation to understand your business or project and your needs.
 
 WhatsApp contact is not available yet.
 
 Discovery call — 30 min
 
-A short conversation to understand your business, your situation and your digital needs.
+A short conversation to understand your business or project, your goals and your digital needs.
 
 Call bookings are not open yet.
 
 Describe my project
 
-Tell us about your business and what you would like to improve. A few details are enough to get started.
+Tell us about your business or project and what you want to create or improve. A few details are enough to get started.
 
 The project inquiry form is not available yet.
 
@@ -442,13 +442,13 @@ The project inquiry form is not available yet.
 
 Seekursor | Digital Solutions Agency
 
-Seekursor is a digital solutions agency creating tailored websites, customer experiences and tools to help businesses serve customers and work better.
+Seekursor builds websites, custom web, mobile and desktop apps, customer experiences and digital tools for businesses and project owners.
 
-Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
+Seekursor designs websites, custom web, mobile and desktop applications, customer experiences and digital tools for businesses and project owners.
 
-Digital solutions designed to help businesses present themselves clearly, serve their customers better and work more effectively.
+Seekursor builds websites, custom web, mobile and desktop apps, customer experiences and digital tools for businesses and project owners.
 
-Seekursor designs websites, customer experiences and digital tools to help businesses present themselves clearly, serve their customers better and work more effectively.
+Seekursor designs websites, custom web, mobile and desktop applications, customer experiences and digital tools for businesses and project owners.
 
 Founder
 
@@ -558,15 +558,15 @@ Hello Seekursor, I just visited your website and would like to discuss my projec
 
 ### WhatsApp.service
 
-Hello Seekursor, I would like to discuss the “{title}” service for my business.
+Hello Seekursor, I would like to discuss the “{title}” service for my project.
 
 ### WhatsApp.founder
 
-Hello Seekursor, I would like to speak with Harly about a need for my business.
+Hello Seekursor, I would like to speak with Harly about my project.
 
 ### WhatsApp.project
 
-Hello Seekursor, I just viewed the “{title}” concept and would like to discuss a solution for my business.
+Hello Seekursor, I just viewed the “{title}” concept and would like to discuss a solution for my project.
 
 
 ---

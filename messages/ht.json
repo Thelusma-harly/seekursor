@@ -32,7 +32,7 @@
   },
   "Hero": {
     "title": "Fè prezans dijital ou tounen yon zouti ki itil pou biznis ou",
-    "description": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "description": "Seekursor kreye sit entènèt, aplikasyon sou mezi, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
     "eyebrow": "AJANS SOLISYON DIJITAL",
     "baseline": "Baze ann Ayiti · Fèt pou biznis yo · Ouvè pou lòt mache"
   },
@@ -57,7 +57,7 @@
   "Services": {
     "eyebrow": "SA NOU KREYE",
     "title": "Bon nivo solisyon an pou bon bezwen an",
-    "description": "Nou pa kòmanse ak yon teknoloji oswa yon fòma nou deja chwazi. Nou kòmanse ak sa biznis ou ap chèche amelyore.",
+    "description": "Nou pa kòmanse ak yon teknoloji oswa yon fòma nou deja chwazi. Nou kòmanse ak bezwen ou ak sa ou ap chèche kreye oswa amelyore.",
     "discover": "Dekouvri",
     "discoverLabel": "Dekouvri: {title}",
     "returnLabel": "Retounen: {title}",
@@ -84,13 +84,13 @@
         ]
       },
       {
-        "title": "Zouti dijital",
-        "subtitle": "Kreye zouti biznis ou vrèman bezwen yo.",
-        "description": "Aplikasyon entènèt, zouti entèn, pòtay ak entèfas ki adapte ak fason ou travay.",
+        "title": "Aplikasyon ak zouti sou mezi",
+        "subtitle": "Fè bezwen ou oswa lide ou tounen yon aplikasyon itil.",
+        "description": "Nou kreye aplikasyon entènèt, mobil ak pou òdinatè sou mezi pou pwojè ou, pou itilizatè ou yo oswa pou travay entèn ou: zouti biznis, pòtay ak entèfas ki adapte ak bezwen ou.",
         "features": [
           "Aplikasyon entènèt",
-          "Zouti entèn",
-          "Pòtay pou biznis"
+          "Aplikasyon mobil",
+          "Aplikasyon pou òdinatè"
         ]
       },
       {
@@ -230,8 +230,8 @@
   },
   "FinalCTA": {
     "eyebrow": "PWOCHEN PA OU",
-    "title": "Ou gen yon bagay pou amelyore? Ann pale sou li",
-    "description": "Esplike nou sa ou ap chèche amelyore, sa ki fè ou pèdi tan oswa sa ou ta renmen rann pi senp. N ap kòmanse ak konprann anvan nou pwopoze nenpòt bagay."
+    "title": "Ou gen yon bagay pou amelyore oswa yon aplikasyon pou kreye? Ann pale sou li",
+    "description": "Esplike nou sa ou ap chèche amelyore oswa aplikasyon ou ta renmen kreye a. N ap kòmanse ak konprann objektif ou, itilizatè ou yo ak bezwen ou anvan nou pwopoze yon solisyon."
   },
   "Footer": {
     "description": "Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
@@ -244,9 +244,9 @@
       "booking": "Premye apèl — 30 min"
     },
     "descriptions": {
-      "whatsapp": "Yon premye konvèsasyon pou konprann biznis ou ak bezwen ou.",
-      "booking": "Yon ti konvèsasyon pou konprann biznis ou, sitiyasyon ou ak bezwen dijital ou yo.",
-      "inquiry": "Prezante biznis ou ak sa ou ta renmen amelyore. Kèk enfòmasyon sifi pou nou kòmanse."
+      "whatsapp": "Yon premye konvèsasyon pou konprann biznis ou oswa pwojè ou ak bezwen ou.",
+      "booking": "Yon ti konvèsasyon pou konprann biznis ou oswa pwojè ou, objektif ou ak bezwen dijital ou yo.",
+      "inquiry": "Prezante biznis ou oswa pwojè ou ak sa ou ta renmen kreye oswa amelyore. Kèk enfòmasyon sifi pou nou kòmanse."
     },
     "unavailable": {
       "whatsapp": "Kontak WhatsApp la poko disponib.",
@@ -264,16 +264,16 @@
   },
   "WhatsApp": {
     "default": "Bonjou Seekursor, mwen sot vizite sit nou an epi mwen ta renmen pale sou pwojè mwen.",
-    "service": "Bonjou Seekursor, mwen ta renmen pale sou sèvis « {title} » la pou biznis mwen.",
-    "founder": "Bonjou Seekursor, mwen ta renmen pale ak Harly sou yon bezwen pou biznis mwen.",
-    "project": "Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou biznis mwen."
+    "service": "Bonjou Seekursor, mwen ta renmen pale sou sèvis « {title} » la pou pwojè mwen.",
+    "founder": "Bonjou Seekursor, mwen ta renmen pale ak Harly sou pwojè mwen.",
+    "project": "Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou pwojè mwen."
   },
   "Metadata": {
     "title": "Seekursor | Ajans solisyon dijital",
-    "description": "Seekursor se yon ajans solisyon dijital ki kreye sit entènèt, eksperyans kliyan ak zouti sou mezi pou ede biznis yo sèvi kliyan epi travay pi byen.",
-    "socialDescription": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
-    "twitterDescription": "Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
-    "structuredDescription": "Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.",
+    "description": "Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.",
+    "socialDescription": "Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.",
+    "twitterDescription": "Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.",
+    "structuredDescription": "Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.",
     "founderRole": "Fondatè"
   },
   "Social": {

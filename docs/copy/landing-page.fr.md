@@ -62,7 +62,7 @@ AGENCE DE SOLUTIONS DIGITALES
 
 Faites de votre présence digitale un vrai outil pour votre entreprise
 
-Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
+Seekursor conçoit des sites web, des applications sur mesure, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
 
 Parler à Seekursor
 
@@ -98,7 +98,7 @@ CE QUE NOUS CRÉONS
 
 Le bon niveau de solution pour le bon besoin
 
-Nous ne partons pas d'une technologie ou d'un format imposé. Nous partons de ce que votre entreprise cherche à améliorer.
+Nous ne partons pas d'une technologie ou d'un format imposé. Nous partons de votre besoin et de ce que vous cherchez à créer ou améliorer.
 
 ### Présence digitale
 
@@ -132,17 +132,17 @@ Découvrir
 
 Échanger sur ce service
 
-### Outils digitaux
+### Applications & outils sur mesure
 
-Créer les outils dont votre activité a réellement besoin.
+Transformer votre besoin ou votre idée en une application utile.
 
-Applications web, outils internes, portails et interfaces adaptés à votre façon de travailler.
+Nous créons des applications web, mobiles et de bureau adaptées à votre projet, pour vos utilisateurs ou votre fonctionnement interne : outils métier, portails et interfaces sur mesure.
 
 Applications web
 
-Outils internes
+Applications mobiles
 
-Portails métier
+Applications de bureau
 
 Découvrir
 
@@ -376,9 +376,9 @@ Nous écrire sur WhatsApp
 
 VOTRE PROCHAIN PAS
 
-Vous avez quelque chose à améliorer ? Parlons-en
+Un besoin à améliorer ou une application à créer ? Parlons-en
 
-Expliquez-nous ce que vous cherchez à améliorer, ce qui vous fait perdre du temps ou ce que vous aimeriez rendre plus simple. Nous commencerons par comprendre avant de proposer quoi que ce soit.
+Expliquez-nous ce que vous cherchez à améliorer ou l’application que vous souhaitez créer. Nous commencerons par comprendre vos objectifs, vos utilisateurs et vos besoins avant de proposer une solution.
 
 Parler à Seekursor
 
@@ -420,19 +420,19 @@ Conçu avec attention, depuis Haïti.
 
 Parler à Seekursor
 
-Un premier échange pour comprendre votre activité et votre besoin.
+Un premier échange pour comprendre votre entreprise ou votre projet et vos besoins.
 
 Le contact WhatsApp n’est pas encore disponible.
 
 Appel découverte — 30 min
 
-Un court échange pour comprendre votre entreprise, votre situation et vos besoins digitaux.
+Un court échange pour comprendre votre entreprise ou votre projet, vos objectifs et vos besoins digitaux.
 
 Les réservations d’appels ne sont pas encore ouvertes.
 
 Décrire mon projet
 
-Présentez votre entreprise et ce que vous aimeriez améliorer. Quelques informations suffisent pour commencer.
+Présentez votre entreprise ou votre projet et ce que vous souhaitez créer ou améliorer. Quelques informations suffisent pour commencer.
 
 Le formulaire de projet n’est pas encore disponible.
 
@@ -442,13 +442,13 @@ Le formulaire de projet n’est pas encore disponible.
 
 Seekursor | Agence de solutions digitales
 
-Seekursor crée des sites web, des expériences client et des outils digitaux sur mesure pour aider les entreprises à mieux servir leurs clients et travailler.
+Seekursor conçoit des sites web, des applications web, mobiles et de bureau et des outils sur mesure pour les entreprises et les porteurs de projet.
 
-Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
+Seekursor conçoit des sites web, des applications web, mobiles et de bureau sur mesure, des expériences client et des outils digitaux pour les entreprises et les porteurs de projet.
 
-Des solutions digitales pensées pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
+Seekursor conçoit des sites web, des applications web, mobiles et de bureau et des outils sur mesure pour les entreprises et les porteurs de projet.
 
-Seekursor conçoit des sites web, des expériences client et des outils digitaux pour aider les entreprises à mieux se présenter, mieux servir leurs clients et mieux travailler.
+Seekursor conçoit des sites web, des applications web, mobiles et de bureau sur mesure, des expériences client et des outils digitaux pour les entreprises et les porteurs de projet.
 
 Fondateur
 
@@ -558,15 +558,15 @@ Bonjour Seekursor, je viens de visiter votre site et j'aimerais discuter de mon 
 
 ### WhatsApp.service
 
-Bonjour Seekursor, je souhaite discuter du service « {title} » pour mon entreprise.
+Bonjour Seekursor, je souhaite discuter du service « {title} » pour mon projet.
 
 ### WhatsApp.founder
 
-Bonjour Seekursor, j’aimerais échanger avec Harly sur un besoin pour mon entreprise.
+Bonjour Seekursor, j’aimerais échanger avec Harly sur mon projet.
 
 ### WhatsApp.project
 
-Bonjour Seekursor, je viens de voir le concept « {title} » et j’aimerais discuter d’une solution pour mon entreprise.
+Bonjour Seekursor, je viens de voir le concept « {title} » et j’aimerais discuter d’une solution pour mon projet.
 
 
 ---

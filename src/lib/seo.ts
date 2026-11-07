@@ -13,7 +13,7 @@ export function publicOrigin(value = siteConfig.domain): string {
 }
 
 // Update only when these pages materially change; never use the build/request time.
-export const contentLastModified = "2026-10-30";
+export const contentLastModified = "2026-11-07";
 
 type Locale = (typeof routing.locales)[number];
 type MetadataCopy = {

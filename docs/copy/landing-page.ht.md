@@ -62,7 +62,7 @@ AJANS SOLISYON DIJITAL
 
 Fè prezans dijital ou tounen yon zouti ki itil pou biznis ou
 
-Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
+Seekursor kreye sit entènèt, aplikasyon sou mezi, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
 
 Pale ak Seekursor
 
@@ -98,7 +98,7 @@ SA NOU KREYE
 
 Bon nivo solisyon an pou bon bezwen an
 
-Nou pa kòmanse ak yon teknoloji oswa yon fòma nou deja chwazi. Nou kòmanse ak sa biznis ou ap chèche amelyore.
+Nou pa kòmanse ak yon teknoloji oswa yon fòma nou deja chwazi. Nou kòmanse ak bezwen ou ak sa ou ap chèche kreye oswa amelyore.
 
 ### Prezans dijital
 
@@ -132,17 +132,17 @@ Dekouvri
 
 Pale sou sèvis sa a
 
-### Zouti dijital
+### Aplikasyon ak zouti sou mezi
 
-Kreye zouti biznis ou vrèman bezwen yo.
+Fè bezwen ou oswa lide ou tounen yon aplikasyon itil.
 
-Aplikasyon entènèt, zouti entèn, pòtay ak entèfas ki adapte ak fason ou travay.
+Nou kreye aplikasyon entènèt, mobil ak pou òdinatè sou mezi pou pwojè ou, pou itilizatè ou yo oswa pou travay entèn ou: zouti biznis, pòtay ak entèfas ki adapte ak bezwen ou.
 
 Aplikasyon entènèt
 
-Zouti entèn
+Aplikasyon mobil
 
-Pòtay pou biznis
+Aplikasyon pou òdinatè
 
 Dekouvri
 
@@ -376,9 +376,9 @@ Ekri nou sou WhatsApp
 
 PWOCHEN PA OU
 
-Ou gen yon bagay pou amelyore? Ann pale sou li
+Ou gen yon bagay pou amelyore oswa yon aplikasyon pou kreye? Ann pale sou li
 
-Esplike nou sa ou ap chèche amelyore, sa ki fè ou pèdi tan oswa sa ou ta renmen rann pi senp. N ap kòmanse ak konprann anvan nou pwopoze nenpòt bagay.
+Esplike nou sa ou ap chèche amelyore oswa aplikasyon ou ta renmen kreye a. N ap kòmanse ak konprann objektif ou, itilizatè ou yo ak bezwen ou anvan nou pwopoze yon solisyon.
 
 Pale ak Seekursor
 
@@ -420,19 +420,19 @@ Fèt ak anpil swen, depi Ayiti.
 
 Pale ak Seekursor
 
-Yon premye konvèsasyon pou konprann biznis ou ak bezwen ou.
+Yon premye konvèsasyon pou konprann biznis ou oswa pwojè ou ak bezwen ou.
 
 Kontak WhatsApp la poko disponib.
 
 Premye apèl — 30 min
 
-Yon ti konvèsasyon pou konprann biznis ou, sitiyasyon ou ak bezwen dijital ou yo.
+Yon ti konvèsasyon pou konprann biznis ou oswa pwojè ou, objektif ou ak bezwen dijital ou yo.
 
 Rezèvasyon apèl yo poko ouvè.
 
 Dekri pwojè mwen
 
-Prezante biznis ou ak sa ou ta renmen amelyore. Kèk enfòmasyon sifi pou nou kòmanse.
+Prezante biznis ou oswa pwojè ou ak sa ou ta renmen kreye oswa amelyore. Kèk enfòmasyon sifi pou nou kòmanse.
 
 Fòm pou dekri pwojè a poko disponib.
 
@@ -442,13 +442,13 @@ Fòm pou dekri pwojè a poko disponib.
 
 Seekursor | Ajans solisyon dijital
 
-Seekursor se yon ajans solisyon dijital ki kreye sit entènèt, eksperyans kliyan ak zouti sou mezi pou ede biznis yo sèvi kliyan epi travay pi byen.
+Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.
 
-Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
+Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.
 
-Solisyon dijital ki fèt pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
+Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.
 
-Seekursor kreye sit entènèt, eksperyans kliyan ak zouti dijital pou ede biznis yo pi byen prezante tèt yo, pi byen sèvi kliyan yo epi travay pi byen.
+Seekursor kreye sit entènèt, aplikasyon entènèt, mobil ak pou òdinatè sou mezi, eksperyans kliyan ak zouti dijital pou biznis ak moun ki gen pwojè.
 
 Fondatè
 
@@ -558,15 +558,15 @@ Bonjou Seekursor, mwen sot vizite sit nou an epi mwen ta renmen pale sou pwojè 
 
 ### WhatsApp.service
 
-Bonjou Seekursor, mwen ta renmen pale sou sèvis « {title} » la pou biznis mwen.
+Bonjou Seekursor, mwen ta renmen pale sou sèvis « {title} » la pou pwojè mwen.
 
 ### WhatsApp.founder
 
-Bonjou Seekursor, mwen ta renmen pale ak Harly sou yon bezwen pou biznis mwen.
+Bonjou Seekursor, mwen ta renmen pale ak Harly sou pwojè mwen.
 
 ### WhatsApp.project
 
-Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou biznis mwen.
+Bonjou Seekursor, mwen sot gade konsèp « {title} » la epi mwen ta renmen pale sou yon solisyon pou pwojè mwen.
 
 
 ---
