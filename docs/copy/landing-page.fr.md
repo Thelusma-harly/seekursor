@@ -376,7 +376,7 @@ Nous écrire sur WhatsApp
 
 VOTRE PROCHAIN PAS
 
-Un besoin à améliorer ou une application à créer ? Parlons-en
+Une idée d’application ou une activité à améliorer ? Parlons-en
 
 Expliquez-nous ce que vous cherchez à améliorer ou l’application que vous souhaitez créer. Nous commencerons par comprendre vos objectifs, vos utilisateurs et vos besoins avant de proposer une solution.
 
@@ -592,3 +592,8 @@ Appeler Seekursor au {number}
 ### Social.whatsapp
 
 Parler à Seekursor sur WhatsApp
+
+
+### Services.imageAlt
+
+Illustration 3D du service : {title}

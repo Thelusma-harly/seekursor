@@ -592,3 +592,8 @@ Rele Seekursor nan {number}
 ### Social.whatsapp
 
 Pale ak Seekursor sou WhatsApp
+
+
+### Services.imageAlt
+
+Ilistrasyon 3D sèvis la: {title}

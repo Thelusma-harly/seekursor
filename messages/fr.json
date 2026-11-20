@@ -114,7 +114,8 @@
         ]
       }
     ],
-    "aiNote": "L'IA peut faire partie de la solution lorsqu'elle apporte une vraie valeur. Elle n'est pas la solution par défaut."
+    "aiNote": "L'IA peut faire partie de la solution lorsqu'elle apporte une vraie valeur. Elle n'est pas la solution par défaut.",
+    "imageAlt": "Illustration 3D du service : {title}"
   },
   "Pricing": {
     "eyebrow": "NOTRE APPROCHE TARIFAIRE",
@@ -230,7 +231,7 @@
   },
   "FinalCTA": {
     "eyebrow": "VOTRE PROCHAIN PAS",
-    "title": "Un besoin à améliorer ou une application à créer ? Parlons-en",
+    "title": "Une idée d’application ou une activité à améliorer ? Parlons-en",
     "description": "Expliquez-nous ce que vous cherchez à améliorer ou l’application que vous souhaitez créer. Nous commencerons par comprendre vos objectifs, vos utilisateurs et vos besoins avant de proposer une solution."
   },
   "Footer": {

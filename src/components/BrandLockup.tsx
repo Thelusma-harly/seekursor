@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 const logoSources = (url: string) => [40, 80, 120, 256]
   .map(width => `${url.replace(".png", `-${width}.webp`)} ${width}w`).join(", ");
 
-export function BrandLockup({ className }: { className?: string }) {
+export function BrandLockup({ className, markSize = 40 }: { className?: string; markSize?: number }) {
   return (
     <span
       className={cn("inline-flex shrink-0 items-center gap-2.5", className)}
@@ -12,7 +12,7 @@ export function BrandLockup({ className }: { className?: string }) {
       <img
         src={siteConfig.logo}
         srcSet={logoSources(siteConfig.logo)}
-        sizes="(min-width: 640px) 40px, 36px"
+        sizes={markSize === 40 ? "(min-width: 640px) 40px, 36px" : markSize + "px"}
         alt="Seekursor logo"
         width="40"
         height="40"
@@ -22,7 +22,7 @@ export function BrandLockup({ className }: { className?: string }) {
       <img
         src={siteConfig.logoDark}
         srcSet={logoSources(siteConfig.logoDark)}
-        sizes="(min-width: 640px) 40px, 36px"
+        sizes={markSize === 40 ? "(min-width: 640px) 40px, 36px" : markSize + "px"}
         alt="Seekursor logo"
         width="40"
         height="40"

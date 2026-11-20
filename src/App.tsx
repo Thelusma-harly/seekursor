@@ -17,7 +17,6 @@ import { BentoGrid } from "./components/BentoProcess";
 import { SelectedWorkSection } from "./components/SelectedWorkSection";
 import { DifferentiationSection } from "./components/DifferentiationSection";
 import { FounderSection } from "./components/FounderSection";
-import { FinalCTASection } from "./components/FinalCTASection";
 import { Footer } from "./components/Footer";
 import { FloatingSocialLinks } from "./components/FloatingSocialLinks";
 import { ProjectModal } from "./components/ProjectModal";
@@ -43,7 +42,7 @@ function SeekursorLanding() {
 
   return (
     <div className="min-h-screen bg-page text-ink flex flex-col font-sans selection:bg-brand selection:text-white transition-colors duration-200">
-      <Navbar1 onAcquire={openAcquisition} />
+      <Navbar1 />
       <main className="flex-1">
         <Hero onAcquire={openAcquisition} />
         <SpotlightCards />
@@ -56,7 +55,6 @@ function SeekursorLanding() {
         <BentoGrid />
         <DifferentiationSection />
         <FounderSection onAcquire={openAcquisition} />
-        <div id="contact"><FinalCTASection onAcquire={openAcquisition} /></div>
       </main>
       <Footer ref={footerRef} onAcquire={openAcquisition} />
       <FloatingSocialLinks footerRef={footerRef} onAcquire={openAcquisition} suspended={Boolean(selectedProject || acquisition)} />

@@ -45,9 +45,21 @@ The footer uses one icon-only contact row (Instagram, TikTok, phone and WhatsApp
 
 Regenerate the three localized 1200×630 share cards with `node scripts/prepare-social-images.cjs`. Metadata and the Organization/WebSite graph share `src/lib/seo.ts`; the graph appears once in the locale layout head. Only known public business facts are included. No verification tags are emitted without supplied Google/Bing tokens.
 
-`next/font` self-hosts the original Inter/Space Grotesk families with `display: swap`; browsers no longer wait for an external font stylesheet. Founder/example photos use `next/image` for responsive WebP delivery and retain their existing dimensions, loading behavior and cropping. The small above-fold logo remains eager and uses lossless WebP size variants, with the original PNG as fallback.
+`next/font/local` loads Inter and Space Grotesk from two checked-in variable WOFF2 files (about 69KiB combined), with `display: swap`. Their Latin coverage includes the French and Haitian Creole accents and punctuation used by the site. The SIL Open Font Licenses are included beside the files. Builds and browsers do not fetch fonts from Google. Founder/example photos and service illustrations use `next/image` for responsive delivery. Above-fold logos remain eager, with lossless WebP variants and PNG fallbacks.
 
-Light mode is the default. A manual preference persists under `seekursor-theme` and is applied before first paint. Locale and theme operate independently. The Cobe 0.6.5 globe retains the supplied onRender and pointer-drag rendering model. Reduced motion stops automatic grid and globe movement.
+Light mode is the default. A manual preference persists under seekursor-theme and is applied before first paint. Locale and theme operate independently.
+
+## November 2026 UI redesign
+
+The separated brand lockup, theme/language controls and floating lamp navigation share the original palette. Navigation moves to an icon dock below 1024px and follows the active section. The header has no acquisition CTA. The contact pill sits above the dock on mobile and hides when the footer enters the viewport.
+
+The supplied Originkit Cube Flip Button is adapted into shared CSS cube faces for native links and buttons. Ripple Image Card supplies the actual pointer-driven distortion: its renderer is dynamically imported for the single hovered service card, then unmounted on leave, focus, details opening or page hiding. Touch and reduced-motion visitors receive static responsive images. Service details use native buttons, inert hidden faces, keyboard focus restoration and Escape dismissal.
+
+Corolla Gleam supplies the blue glass-ring hero. Its Framer editor controls are removed; the desktop-only renderer is lazy loaded, caps resolution at 650,000 pixels / 1.25 DPR, and pauses offscreen or in hidden tabs. Mobile, data-saving and reduced-motion visitors receive a static CSS ring. Glass Icon and Cobalt Sprite use lightweight CSS adaptations of the supplied glass layering and cursor-following capsule. Terra Dusk's globe treatment uses a local 1024×512 Earth texture from the NASA imagery referenced by the supplied component; CSS movement pauses offscreen, in hidden tabs and with reduced motion. No runtime dependency was added.
+
+Five original 3D service illustrations were generated with the built-in image generator and optimized into 800×1000 WebPs in `public/images/services/` (180,482 bytes combined). Prompts are versioned in `docs/service-image-prompts.json`; original PNGs are saved in the agency project's `output/imagegen/seekursor-premium-services/` folder. The images are illustrative and make no client-results claims.
+
+The footer adapts the public [Originkit Footer 03 preview](https://www.originkit.dev/sections/footer-03), as approved after the CLI required sign-in: closing CTA panel, link columns, contact row and illuminated oversized wordmark. Its install command is replaced with Seekursor's existing booking and project-inquiry actions. The final CTA occurs once, inside the footer; no extra forms or acquisition integrations are created.
 
 ## Translations and production
 

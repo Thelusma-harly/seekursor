@@ -114,7 +114,8 @@
         ]
       }
     ],
-    "aiNote": "AI can be part of a solution when it brings real value. It is not the default."
+    "aiNote": "AI can be part of a solution when it brings real value. It is not the default.",
+    "imageAlt": "3D service illustration: {title}"
   },
   "Pricing": {
     "eyebrow": "OUR PRICING APPROACH",

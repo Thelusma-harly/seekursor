@@ -1,165 +1,172 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
-import {
-  ArrowRight,
-  Repeat2,
-  Globe2,
-  Users,
-  PanelsTopLeft,
-  Workflow,
-  CalendarDays,
-} from "lucide-react";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { ArrowUpRight, ArrowLeft, Check } from "lucide-react";
+import { useReducedMotion } from "framer-motion";
 import { useSeekursorConfig, type ServiceItem } from "../data/seekursorConfig";
-import { cn } from "@/lib/utils";
 import { WhatsAppCTA } from "./WhatsAppCTA";
+import { Reveal } from "./ui/Reveal";
 import type { OpenAcquisition } from "../lib/acquisition";
 
-const icons = [Globe2, Users, PanelsTopLeft, Workflow, CalendarDays];
-export function CardFlip({
+const RippleImage = dynamic(() => import("./visuals/RippleImage"), {
+  ssr: false,
+});
+const images = [
+  "digital-presence",
+  "customer-experience",
+  "custom-apps",
+  "automation",
+  "social-publishing",
+];
+function ServiceCard({
   service,
   index,
   onAcquire,
+  ripple,
+  onRipple,
 }: {
   service: ServiceItem;
   index: number;
   onAcquire: OpenAcquisition;
+  ripple: boolean;
+  onRipple: (index: number | null) => void;
 }) {
   const t = useTranslations();
-  const [flipped, setFlipped] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [size, setSize] = useState({ width: 400, height: 510 });
   const frontRef = useRef<HTMLButtonElement>(null);
   const backRef = useRef<HTMLButtonElement>(null);
-  const movingFocus = useRef(false);
-  const Icon = icons[index];
-  const flipWithFocus = (next: boolean) => {
-    movingFocus.current = true;
-    setFlipped(next);
-    requestAnimationFrame(() => {
-      (next ? backRef : frontRef).current?.focus({ preventScroll: true });
-      movingFocus.current = false;
-    });
+  const cardRef = useRef<HTMLElement>(null);
+  const pendingFocus = useRef(false);
+  const reduce = useReducedMotion();
+  const image = "/images/services/" + images[index] + ".webp";
+  const toggle = (next: boolean) => {
+    pendingFocus.current = true;
+    onRipple(null);
+    setOpen(next);
   };
+  useEffect(() => {
+    if (!pendingFocus.current) return;
+    const frame = requestAnimationFrame(() => {
+      (open ? backRef : frontRef).current?.focus({ preventScroll: true });
+      if (open && cardRef.current) {
+        const rect = cardRef.current.getBoundingClientRect();
+        if (rect.top < 88 || rect.bottom > window.innerHeight - 100) {
+          cardRef.current.scrollIntoView({
+            block: "start",
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+              .matches
+              ? "instant"
+              : "smooth",
+          });
+        }
+      }
+      pendingFocus.current = false;
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [open]);
   return (
     <article
+      ref={cardRef}
       data-service-card={service.title}
-      className={cn(
-        "group relative mx-auto h-[440px] w-full max-w-[400px] [perspective:2000px] lg:col-span-2",
-        index === 3 && "lg:col-start-2",
-        index === 4 && "sm:col-span-2 lg:col-start-4",
-      )}
-      onClick={(event) => {
-        if (!(event.target as HTMLElement).closest("button, a"))
-          flipWithFocus(!flipped);
+      className={"service-card service-card-" + index}
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && open) {
+          event.preventDefault();
+          toggle(false);
+        }
       }}
-      onPointerEnter={(e) => {
-        if (
-          e.pointerType === "mouse" &&
-          !e.currentTarget.closest("[inert]") &&
-          !e.currentTarget.contains(document.activeElement)
-        )
-          setFlipped(true);
+      onPointerEnter={(event) => {
+        if (event.pointerType !== "mouse" || reduce || open) return;
+        const rect = event.currentTarget.getBoundingClientRect();
+        setSize({
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+        });
+        onRipple(index);
       }}
-      onPointerLeave={(e) => {
-        if (
-          e.pointerType === "mouse" &&
-          !e.currentTarget.closest("[inert]") &&
-          !e.currentTarget.contains(document.activeElement)
-        )
-          setFlipped(false);
-      }}
-      onBlur={(e) => {
-        if (
-          !movingFocus.current &&
-          !e.currentTarget.closest("[inert]") &&
-          !e.currentTarget.contains(e.relatedTarget)
-        )
-          setFlipped(false);
-      }}
+      onPointerLeave={() => onRipple(null)}
+      onFocusCapture={() => onRipple(null)}
     >
-      <div
-        className={cn(
-          "relative size-full [transform-style:preserve-3d] transition-transform duration-500 motion-reduce:transition-none",
-          flipped ? "[transform:rotateY(180deg)]" : "",
-        )}
-      >
-        <div
-          aria-hidden={flipped}
-          inert={flipped}
-          className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border border-line bg-surface [backface-visibility:hidden]"
-        >
-          <div className="flex flex-1 items-center justify-center bg-gradient-to-b from-brand-tint to-surface">
-            <div className="grid size-24 place-items-center rounded-2xl border border-brand/20 bg-surface text-brand-ink">
-              <Icon size={40} strokeWidth={1.3} aria-hidden="true" />
-            </div>
+      <div className="service-front" aria-hidden={open} inert={open}>
+        <Image
+          src={image}
+          alt={t("Services.imageAlt", { title: service.title })}
+          width={800}
+          height={1000}
+          loading="lazy"
+          sizes="(min-width: 1400px) 426px, (min-width: 1024px) calc((100vw - 100px) / 3), (min-width: 768px) calc((100vw - 78px) / 2), (min-width: 480px) calc((100vw - 62px) / 2), calc(100vw - 40px)"
+          className="service-image"
+        />
+        {ripple && !open && (
+          <div className="service-ripple" aria-hidden="true">
+            <RippleImage
+              image={image}
+              cardWidth={size.width}
+              cardHeight={size.height}
+              intensity={24}
+              size={42}
+              rounded={0}
+            />
           </div>
-          <div className="p-6">
-            <h3 className="font-display text-xl font-semibold leading-tight text-ink">
-              {service.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-ink-secondary">
-              {service.subtitle}
-            </p>
+        )}
+        <div className="service-shade" />
+        <div className="service-front-copy">
+          <h3>{service.title}</h3>
+          <p>{service.subtitle}</p>
+          <button
+            ref={frontRef}
+            type="button"
+            onClick={() => toggle(true)}
+            aria-label={t("Services.discoverLabel", { title: service.title })}
+            className="service-discover"
+          >
+            {t("Services.discover")}
+            <span>
+              <ArrowUpRight size={19} aria-hidden="true" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        data-service-back
+        className="service-back"
+        aria-hidden={!open}
+        inert={!open}
+      >
+        <div>
+          <div className="service-back-header">
+            <h3>{service.title}</h3>
             <button
-              ref={frontRef}
+              ref={backRef}
               type="button"
-              onClick={() => flipWithFocus(true)}
-              aria-label={t("Services.discoverLabel", {title: service.title})}
-              className="mt-5 flex w-full items-center justify-between rounded-lg py-2 text-sm font-medium text-brand-ink"
+              aria-label={t("Services.returnLabel", { title: service.title })}
+              onClick={() => toggle(false)}
+              className="service-back-button"
             >
-              {t("Services.discover")} <Repeat2 size={17} aria-hidden="true" />
+              <ArrowLeft size={19} aria-hidden="true" />
             </button>
           </div>
+          <p className="service-detail">{service.description}</p>
         </div>
-        <div
-          data-service-back
-          aria-hidden={!flipped}
-          inert={!flipped}
-          className="absolute inset-0 grid grid-rows-[auto_1fr_auto] gap-4 overflow-hidden rounded-2xl border border-line bg-surface p-5 text-ink [backface-visibility:hidden] [transform:rotateY(180deg)]"
+        <ul>
+          {service.features.map((feature) => (
+            <li key={feature}>
+              <Check size={15} aria-hidden="true" />
+              {feature}
+            </li>
+          ))}
+        </ul>
+        <WhatsAppCTA
+          onUnavailable={onAcquire}
+          message={t("WhatsApp.service", { title: service.title })}
+          className="cube-compact w-full"
         >
-          <div>
-            <div className="flex items-start justify-between gap-2">
-              <h3 className="font-display text-lg font-semibold leading-tight">
-                {service.title}
-              </h3>
-              <button
-                ref={backRef}
-                type="button"
-                aria-label={t("Services.returnLabel", {title: service.title})}
-                onClick={() => flipWithFocus(false)}
-                className="grid size-7 shrink-0 place-items-center rounded-md text-ink-muted hover:bg-surface-secondary"
-              >
-                <Repeat2 size={16} />
-              </button>
-            </div>
-            <p className="mt-3 text-sm leading-relaxed text-ink-secondary">
-              {service.description}
-            </p>
-          </div>
-          <ul className="space-y-2 self-start">
-            {service.features.map((feature, i) => (
-              <li
-                key={feature}
-                style={{
-                  opacity: flipped ? 1 : 0,
-                  transform: flipped ? "translateX(0)" : "translateX(-10px)",
-                  transitionDelay: `${i * 40 + 100}ms`,
-                }}
-                className="flex items-start gap-2 text-sm text-ink-secondary transition-[opacity,transform] duration-300"
-              >
-                <ArrowRight
-                  size={14}
-                  className="mt-1 shrink-0 text-brand-ink"
-                  aria-hidden="true"
-                />
-                {feature}
-              </li>
-            ))}
-          </ul>
-          <div className="border-t border-line pt-4">
-            <WhatsAppCTA onUnavailable={onAcquire} message={t("WhatsApp.service", {title: service.title})} className="flex min-h-12 w-full items-center justify-between gap-2 rounded-xl bg-brand-tint px-3 py-2 text-left text-sm font-medium text-ink hover:bg-brand hover:text-white">
-              {t("Services.discuss")} <ArrowRight size={16} className="shrink-0" aria-hidden="true" />
-            </WhatsAppCTA>
-          </div>
-        </div>
+          {t("Services.discuss")}
+          <ArrowUpRight size={17} aria-hidden="true" />
+        </WhatsAppCTA>
       </div>
     </article>
   );
@@ -170,35 +177,48 @@ export function CardFlipServices({
   onAcquire: OpenAcquisition;
 }) {
   const t = useTranslations("Services");
-  const config = useSeekursorConfig();
+  const { services } = useSeekursorConfig();
+  const [ripple, setRipple] = useState<number | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const close = () => {
+      if (document.hidden) setRipple(null);
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) setRipple(null);
+    });
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    document.addEventListener("visibilitychange", close);
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", close);
+    };
+  }, []);
   return (
     <section
+      ref={sectionRef}
       id="services"
-      className="border-b border-line bg-surface py-20 sm:py-28"
+      className="section-space services-section"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="mb-12 max-w-2xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[.18em] text-brand-ink">
-            {t("eyebrow")}
-          </p>
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            {t("title")}
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-ink-secondary sm:text-lg">
-            {t("description")}
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6">
-          {config.services.map((service, index) => (
-            <CardFlip
+      <div className="page-shell">
+        <Reveal className="section-heading">
+          <p className="eyebrow">{t("eyebrow")}</p>
+          <h2>{t("title")}</h2>
+          <p>{t("description")}</p>
+        </Reveal>
+        <div className="service-grid">
+          {services.map((service, index) => (
+            <ServiceCard
               key={index}
               service={service}
               index={index}
               onAcquire={onAcquire}
+              ripple={ripple === index}
+              onRipple={setRipple}
             />
           ))}
         </div>
-        <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-ink-secondary">{t("aiNote")}</p>
+        <p className="services-note">{t("aiNote")}</p>
       </div>
     </section>
   );

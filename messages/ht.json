@@ -114,7 +114,8 @@
         ]
       }
     ],
-    "aiNote": "IA ka fè pati solisyon an lè li pote yon valè reyèl. Nou pa chwazi li otomatikman."
+    "aiNote": "IA ka fè pati solisyon an lè li pote yon valè reyèl. Nou pa chwazi li otomatikman.",
+    "imageAlt": "Ilistrasyon 3D sèvis la: {title}"
   },
   "Pricing": {
     "eyebrow": "FASON NOU FIKSE TARIF YO",

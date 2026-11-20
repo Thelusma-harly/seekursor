@@ -84,7 +84,7 @@ export function ProjectModal({
         </div>
         <div className="flex flex-col items-start justify-between gap-4 border-t border-line px-6 py-5 sm:flex-row sm:items-center sm:px-8">
           <div className="flex flex-col items-start gap-2 sm:ml-auto">
-            <WhatsAppCTA onUnavailable={onAcquire} message={t("WhatsApp.project", {title: project.title})} className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-xl bg-brand px-4 py-3 text-sm font-medium text-white hover:bg-brand-hover">
+            <WhatsAppCTA onUnavailable={onAcquire} message={t("WhatsApp.project", {title: project.title})} className="cube-compact shrink-0">
               {t("Projects.discuss")} <ArrowUpRight size={17} />
             </WhatsAppCTA>
             <button type="button" aria-haspopup="dialog" data-acquisition="inquiry" onClick={event => onAcquire("inquiry", event.currentTarget, project.title)} className="inline-flex min-h-11 items-center text-sm font-medium text-brand-ink hover:underline">{t("Common.inquiry")}</button>

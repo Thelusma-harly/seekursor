@@ -592,3 +592,8 @@ Call Seekursor at {number}
 ### Social.whatsapp
 
 Talk to Seekursor on WhatsApp
+
+
+### Services.imageAlt
+
+3D service illustration: {title}
