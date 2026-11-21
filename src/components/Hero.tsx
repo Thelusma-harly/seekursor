@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight, CalendarDays, ArrowDown } from "lucide-react";
-import { HeroSculpture } from "./visuals/HeroSculpture";
+import { WaterfallBackground, VelourAccent } from "./visuals/EffectBackgrounds";
 import { WhatsAppCTA } from "./WhatsAppCTA";
 import { CubeButton } from "./ui/CubeButton";
 import { Reveal } from "./ui/Reveal";
@@ -13,7 +13,10 @@ export function Hero({ onAcquire }: { onAcquire: OpenAcquisition }) {
   const t = useTranslations();
   return (
     <section id="accueil" className="premium-hero">
-      <div className="hero-mesh" aria-hidden="true" />
+      <div className="hero-waterfall" aria-hidden="true">
+        <WaterfallBackground />
+      </div>
+      <div className="hero-retro-grid" aria-hidden="true" />
       <div className="hero-layout page-shell">
         <Reveal className="hero-copy">
           <p className="eyebrow">
@@ -23,9 +26,16 @@ export function Hero({ onAcquire }: { onAcquire: OpenAcquisition }) {
           <h1>{t("Hero.title")}</h1>
           <p className="hero-description">{t("Hero.description")}</p>
           <div className="hero-actions">
-            <WhatsAppCTA onUnavailable={onAcquire} className="">
-              {t("Common.talk")}
-              <ArrowUpRight size={18} aria-hidden="true" />
+            <WhatsAppCTA
+              onUnavailable={onAcquire}
+              appearance="velour"
+              className="hero-velour-cta"
+            >
+              <VelourAccent label={t("Common.talk")} />
+              <span className="velour-label">
+                {t("Common.talk")}
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </span>
             </WhatsAppCTA>
             <CubeButton
               variant="secondary"
@@ -39,7 +49,6 @@ export function Hero({ onAcquire }: { onAcquire: OpenAcquisition }) {
           </div>
         </Reveal>
         <div className="hero-art">
-          <HeroSculpture />
           <span className="art-coordinate" aria-hidden="true">
             {t("Common.location")}
           </span>

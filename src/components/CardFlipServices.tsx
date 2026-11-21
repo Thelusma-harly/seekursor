@@ -1,59 +1,74 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+
+import { useEffect, useId, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import dynamic from "next/dynamic";
-import { ArrowUpRight, ArrowLeft, Check } from "lucide-react";
-import { useReducedMotion } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+  useTransform,
+} from "framer-motion";
+import {
+  ArrowUpRight,
+  ArrowLeft,
+  Check,
+  Globe2,
+  Users,
+  PanelsTopLeft,
+  Workflow,
+  CalendarDays,
+} from "lucide-react";
 import { useSeekursorConfig, type ServiceItem } from "../data/seekursorConfig";
 import { WhatsAppCTA } from "./WhatsAppCTA";
 import { Reveal } from "./ui/Reveal";
 import type { OpenAcquisition } from "../lib/acquisition";
 
-const RippleImage = dynamic(() => import("./visuals/RippleImage"), {
-  ssr: false,
-});
-const images = [
-  "digital-presence",
-  "customer-experience",
-  "custom-apps",
-  "automation",
-  "social-publishing",
-];
+const icons = [Globe2, Users, PanelsTopLeft, Workflow, CalendarDays];
+
+// Interactive Travel Card's spring tilt and raised inner surface, adapted to
+// simple service icons. The original service copy and contact actions remain.
 function ServiceCard({
   service,
   index,
   onAcquire,
-  ripple,
-  onRipple,
 }: {
   service: ServiceItem;
   index: number;
   onAcquire: OpenAcquisition;
-  ripple: boolean;
-  onRipple: (index: number | null) => void;
 }) {
   const t = useTranslations();
   const [open, setOpen] = useState(false);
-  const [size, setSize] = useState({ width: 400, height: 510 });
   const frontRef = useRef<HTMLButtonElement>(null);
   const backRef = useRef<HTMLButtonElement>(null);
   const cardRef = useRef<HTMLElement>(null);
   const pendingFocus = useRef(false);
+  const detailsId = useId();
   const reduce = useReducedMotion();
-  const image = "/images/services/" + images[index] + ".webp";
+  const pointerX = useMotionValue(0);
+  const pointerY = useMotionValue(0);
+  const springX = useSpring(pointerX, { damping: 22, stiffness: 150 });
+  const springY = useSpring(pointerY, { damping: 22, stiffness: 150 });
+  const rotateX = useTransform(springY, [-0.5, 0.5], [7, -7]);
+  const rotateY = useTransform(springX, [-0.5, 0.5], [-7, 7]);
+  const Icon = icons[index];
+  const resetTilt = () => {
+    pointerX.set(0);
+    pointerY.set(0);
+  };
   const toggle = (next: boolean) => {
     pendingFocus.current = true;
-    onRipple(null);
+    resetTilt();
     setOpen(next);
   };
+
   useEffect(() => {
     if (!pendingFocus.current) return;
     const frame = requestAnimationFrame(() => {
       (open ? backRef : frontRef).current?.focus({ preventScroll: true });
       if (open && cardRef.current) {
         const rect = cardRef.current.getBoundingClientRect();
-        if (rect.top < 88 || rect.bottom > window.innerHeight - 100) {
+        if (rect.top < 88 || rect.bottom > window.innerHeight - 32) {
           cardRef.current.scrollIntoView({
             block: "start",
             behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
@@ -67,110 +82,107 @@ function ServiceCard({
     });
     return () => cancelAnimationFrame(frame);
   }, [open]);
+
   return (
-    <article
+    <motion.article
       ref={cardRef}
       data-service-card={service.title}
-      className={"service-card service-card-" + index}
+      data-service-open={open}
+      className={"depth-service-card depth-service-card-" + index}
+      style={{
+        rotateX: reduce ? 0 : rotateX,
+        rotateY: reduce ? 0 : rotateY,
+        transformStyle: "preserve-3d",
+      }}
+      onPointerMove={(event) => {
+        if (
+          event.pointerType !== "mouse" ||
+          reduce ||
+          open ||
+          !window.matchMedia("(hover: hover) and (pointer: fine)").matches
+        )
+          return;
+        const rect = event.currentTarget.getBoundingClientRect();
+        pointerX.set((event.clientX - rect.left) / rect.width - 0.5);
+        pointerY.set((event.clientY - rect.top) / rect.height - 0.5);
+      }}
+      onPointerLeave={resetTilt}
+      onFocusCapture={resetTilt}
       onKeyDown={(event) => {
         if (event.key === "Escape" && open) {
           event.preventDefault();
           toggle(false);
         }
       }}
-      onPointerEnter={(event) => {
-        if (event.pointerType !== "mouse" || reduce || open) return;
-        const rect = event.currentTarget.getBoundingClientRect();
-        setSize({
-          width: Math.round(rect.width),
-          height: Math.round(rect.height),
-        });
-        onRipple(index);
-      }}
-      onPointerLeave={() => onRipple(null)}
-      onFocusCapture={() => onRipple(null)}
     >
-      <div className="service-front" aria-hidden={open} inert={open}>
-        <Image
-          src={image}
-          alt={t("Services.imageAlt", { title: service.title })}
-          width={800}
-          height={1000}
-          loading="lazy"
-          sizes="(min-width: 1400px) 426px, (min-width: 1024px) calc((100vw - 100px) / 3), (min-width: 768px) calc((100vw - 78px) / 2), (min-width: 480px) calc((100vw - 62px) / 2), calc(100vw - 40px)"
-          className="service-image"
-        />
-        {ripple && !open && (
-          <div className="service-ripple" aria-hidden="true">
-            <RippleImage
-              image={image}
-              cardWidth={size.width}
-              cardHeight={size.height}
-              intensity={24}
-              size={42}
-              rounded={0}
-            />
-          </div>
-        )}
-        <div className="service-shade" />
-        <div className="service-front-copy">
+      <div
+        className="depth-service-face depth-service-front"
+        aria-hidden={open}
+        inert={open}
+      >
+        <div className="depth-service-symbol" aria-hidden="true">
+          <Icon size={38} strokeWidth={1.35} />
+        </div>
+        <div className="depth-service-summary">
           <h3>{service.title}</h3>
           <p>{service.subtitle}</p>
-          <button
-            ref={frontRef}
-            type="button"
-            onClick={() => toggle(true)}
-            aria-label={t("Services.discoverLabel", { title: service.title })}
-            className="service-discover"
-          >
-            {t("Services.discover")}
-            <span>
-              <ArrowUpRight size={19} aria-hidden="true" />
-            </span>
-          </button>
         </div>
+        <button
+          ref={frontRef}
+          type="button"
+          onClick={() => toggle(true)}
+          aria-expanded={open}
+          aria-controls={detailsId}
+          aria-label={t("Services.discoverLabel", { title: service.title })}
+          className="depth-service-discover"
+        >
+          {t("Services.discover")}
+          <ArrowUpRight size={18} aria-hidden="true" />
+        </button>
       </div>
       <div
+        id={detailsId}
         data-service-back
-        className="service-back"
+        className="depth-service-face depth-service-back"
         aria-hidden={!open}
         inert={!open}
       >
         <div>
-          <div className="service-back-header">
+          <div className="depth-service-back-header">
             <h3>{service.title}</h3>
             <button
               ref={backRef}
               type="button"
               aria-label={t("Services.returnLabel", { title: service.title })}
               onClick={() => toggle(false)}
-              className="service-back-button"
+              className="depth-service-return"
             >
-              <ArrowLeft size={19} aria-hidden="true" />
+              <ArrowLeft size={18} aria-hidden="true" />
             </button>
           </div>
-          <p className="service-detail">{service.description}</p>
+          <p className="depth-service-detail">{service.description}</p>
         </div>
         <ul>
           {service.features.map((feature) => (
             <li key={feature}>
               <Check size={15} aria-hidden="true" />
-              {feature}
+              <span>{feature}</span>
             </li>
           ))}
         </ul>
         <WhatsAppCTA
           onUnavailable={onAcquire}
           message={t("WhatsApp.service", { title: service.title })}
-          className="cube-compact w-full"
+          className="w-full depth-service-discuss"
         >
           {t("Services.discuss")}
           <ArrowUpRight size={17} aria-hidden="true" />
         </WhatsAppCTA>
       </div>
-    </article>
+    </motion.article>
   );
 }
+
 export function CardFlipServices({
   onAcquire,
 }: {
@@ -178,43 +190,21 @@ export function CardFlipServices({
 }) {
   const t = useTranslations("Services");
   const { services } = useSeekursorConfig();
-  const [ripple, setRipple] = useState<number | null>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const close = () => {
-      if (document.hidden) setRipple(null);
-    };
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) setRipple(null);
-    });
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    document.addEventListener("visibilitychange", close);
-    return () => {
-      observer.disconnect();
-      document.removeEventListener("visibilitychange", close);
-    };
-  }, []);
   return (
-    <section
-      ref={sectionRef}
-      id="services"
-      className="section-space services-section"
-    >
+    <section id="services" className="section-space services-section">
       <div className="page-shell">
         <Reveal className="section-heading">
           <p className="eyebrow">{t("eyebrow")}</p>
           <h2>{t("title")}</h2>
           <p>{t("description")}</p>
         </Reveal>
-        <div className="service-grid">
+        <div className="depth-service-grid">
           {services.map((service, index) => (
             <ServiceCard
-              key={index}
+              key={service.title}
               service={service}
               index={index}
               onAcquire={onAcquire}
-              ripple={ripple === index}
-              onRipple={setRipple}
             />
           ))}
         </div>

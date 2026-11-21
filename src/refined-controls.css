@@ -1,0 +1,488 @@
+/* Tactile Button: one cap above a stationary, shallow base plate. */
+.tactile-button.cube-button {
+  display: inline-grid;
+  perspective: none;
+  border-radius: 12px;
+  isolation: isolate;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+  overflow: visible;
+}
+.tactile-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--cube-back);
+  transform: translateY(3px);
+  opacity: 0.95;
+}
+.tactile-face {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: var(--button-h, 54px);
+  min-width: 0;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: var(--cube-front);
+  color: var(--cube-text);
+  white-space: nowrap;
+  transform: translateY(0);
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.2s;
+}
+.tactile-button:hover .tactile-face {
+  background: color-mix(in srgb, var(--cube-front) 94%, var(--cube-text));
+}
+.tactile-button:active .tactile-face {
+  transform: translateY(3px);
+  transition-duration: 0.05s;
+}
+.tactile-button[data-variant="secondary"] {
+  --cube-back: color-mix(in srgb, var(--foreground) 15%, var(--surface));
+}
+.tactile-button[data-variant="secondary"] .tactile-face {
+  border-color: var(--border);
+}
+.tactile-button[data-variant="light"] {
+  --cube-back: #bacdec;
+}
+.tactile-button:disabled::before {
+  opacity: 0.3;
+}
+.tactile-button:disabled .tactile-face {
+  transform: none;
+}
+/* Discovery: the supplied orbiting dot, ray and four fine edge lines. */
+.dot-discovery-heading {
+  max-width: 790px;
+}
+.dot-discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.dot-discovery-grid > div {
+  min-width: 0;
+  height: 100%;
+}
+.dot-discovery-card {
+  position: relative;
+  height: 100%;
+  padding: 1px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--background);
+}
+.dot-card-interior {
+  position: relative;
+  isolation: isolate;
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 32px;
+  border-radius: 23px;
+  background: linear-gradient(
+    130deg,
+    color-mix(in srgb, var(--brand-tint) 35%, var(--surface)),
+    var(--surface) 70%
+  );
+}
+.dot-card-ray {
+  position: absolute;
+  z-index: -1;
+  top: -80px;
+  left: 25%;
+  width: 180px;
+  height: 300px;
+  transform: rotate(35deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(37 99 235 / 0.09),
+    transparent
+  );
+  filter: blur(18px);
+}
+.dot-card-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid color-mix(in srgb, var(--brand-ink) 18%, var(--border));
+  border-radius: 16px;
+  color: var(--brand-ink);
+  background: color-mix(in srgb, var(--brand-tint) 70%, var(--surface));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.2);
+}
+.dot-card-interior h3 {
+  margin-top: 29px;
+  font-size: clamp(23px, 2.1vw, 28px);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+.dot-card-interior p {
+  margin-top: 13px;
+  max-width: 360px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.discovery-orbit-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--brand-ink);
+  box-shadow: 0 0 8px 2px rgb(37 99 235 / 0.3);
+  offset-path: inset(0 round 24px);
+  offset-distance: 0%;
+  animation: discovery-orbit 11s linear infinite;
+  animation-delay: var(--dot-delay, 0s);
+  animation-play-state: paused;
+}
+[data-dots-active="true"] .discovery-orbit-dot {
+  animation-play-state: running;
+}
+@keyframes discovery-orbit {
+  to {
+    offset-distance: 100%;
+  }
+}
+.dot-card-line {
+  position: absolute;
+  opacity: 0.6;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--brand-ink) 40%, var(--border)),
+    transparent
+  );
+}
+.dot-card-line-top {
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  top: 0;
+}
+.dot-card-line-bottom {
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  bottom: 0;
+}
+.dot-card-line-left {
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  left: 0;
+  background: linear-gradient(transparent, var(--border), transparent);
+}
+.dot-card-line-right {
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  right: 0;
+  background: linear-gradient(transparent, var(--border), transparent);
+}
+/* Pricing Integration Card: local brand mark, scoped needs, animated routes. */
+.integration-pricing-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--background);
+}
+.pricing-integration-visual {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  overflow: hidden;
+  background: var(--surface-secondary);
+  border-right: 1px solid var(--border);
+}
+.integration-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    var(--subtle-foreground) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  opacity: 0.18;
+  mask-image: radial-gradient(ellipse at center, #000, transparent 75%);
+}
+.pricing-integration-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    var(--surface-secondary),
+    transparent 25%,
+    transparent 75%,
+    var(--surface-secondary)
+  );
+}
+.pricing-integration-diagram {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 564/410;
+}
+.integration-lines {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+.integration-line-base {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.25;
+}
+.integration-line-flow {
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 40 160;
+  animation: integration-route 5s linear infinite;
+  animation-play-state: paused;
+}
+[data-integration-active="true"] .integration-line-flow {
+  animation-play-state: running;
+}
+.integration-center {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  width: 83px;
+  height: 83px;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--border);
+  border-radius: 23px;
+  background: var(--surface);
+  box-shadow:
+    0 10px 30px rgb(16 24 40 / 0.08),
+    inset 0 1px 0 rgb(255 255 255 / 0.15);
+}
+.integration-center > span:first-child {
+  justify-content: center;
+  gap: 0;
+}
+.integration-center > span:first-child > span {
+  display: none;
+}
+.integration-center img {
+  width: 46px;
+  height: 46px;
+}
+.integration-pulse {
+  position: absolute;
+  inset: -6px;
+  border: 1px solid color-mix(in srgb, var(--brand-ink) 25%, transparent);
+  border-radius: 28px;
+  animation: integration-pulse 4s ease-out infinite;
+  animation-play-state: paused;
+}
+[data-integration-active="true"] .integration-pulse {
+  animation-play-state: running;
+}
+.integration-node {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  color: var(--brand-ink);
+  background: var(--surface);
+  box-shadow: 0 5px 15px rgb(16 24 40 / 0.04);
+}
+.integration-pricing-content {
+  padding: clamp(28px, 4vw, 54px);
+}
+.integration-pricing-content .section-heading {
+  margin: 0;
+}
+.integration-pricing-content h2 {
+  font-size: clamp(30px, 3vw, 42px);
+}
+.integration-pricing-content .section-heading > p:last-child {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.integration-pricing-steps {
+  display: grid;
+  gap: 17px;
+  margin-top: 28px;
+  list-style: none;
+}
+.integration-pricing-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  color: var(--foreground);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.integration-pricing-steps svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--brand-ink);
+}
+.integration-pricing-recurring {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--subtle-foreground);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.integration-pricing-action {
+  margin-top: 28px;
+}
+@keyframes integration-route {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: -200;
+  }
+}
+@keyframes integration-pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+@media (max-width: 1023px) {
+  .dot-discovery-grid {
+    gap: 18px;
+  }
+  .dot-card-interior {
+    padding: 25px;
+  }
+  .integration-pricing-card {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+}
+@media (max-width: 767px) {
+  .dot-discovery-grid {
+    grid-template-columns: 1fr;
+    gap: 19px;
+  }
+  .dot-card-interior {
+    min-height: 240px;
+    padding: 29px;
+  }
+  .dot-card-interior h3 {
+    margin-top: 23px;
+  }
+  .integration-pricing-card {
+    grid-template-columns: 1fr;
+    border-radius: 23px;
+  }
+  .pricing-integration-visual {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .pricing-integration-diagram {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+  .integration-pricing-content {
+    padding: 28px;
+  }
+  .integration-center {
+    width: 70px;
+    height: 70px;
+    border-radius: 19px;
+  }
+  .integration-center img {
+    width: 40px;
+    height: 40px;
+  }
+  .integration-node {
+    width: 43px;
+    height: 43px;
+    border-radius: 13px;
+  }
+  .integration-node svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+@media (max-width: 479px) {
+  .dot-card-interior {
+    padding: 25px;
+  }
+  .integration-pricing-content {
+    padding: 26px 22px;
+  }
+  .integration-pricing-action {
+    width: 100%;
+  }
+  .integration-pricing-action .tactile-face {
+    padding-inline: 14px;
+    font-size: 12px;
+    gap: 9px;
+  }
+  .integration-center {
+    width: 57px;
+    height: 57px;
+    border-radius: 16px;
+  }
+  .integration-center img {
+    width: 33px;
+    height: 33px;
+  }
+  .integration-node {
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
+  }
+  .integration-node svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .discovery-orbit-dot,
+  .integration-line-flow,
+  .integration-pulse {
+    animation: none;
+  }
+  .integration-pulse {
+    opacity: 0.25;
+  }
+  .tactile-face {
+    transition: none;
+  }
+}

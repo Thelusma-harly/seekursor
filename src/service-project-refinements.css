@@ -1,0 +1,402 @@
+/* Spring-tilt service cards from the supplied Interactive Travel Card. */
+.depth-service-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 24px;
+  perspective: 1600px;
+  align-items: stretch;
+}
+.depth-service-card {
+  position: relative;
+  grid-column: span 2;
+  min-width: 0;
+  display: grid;
+  scroll-margin-top: 88px;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--surface-secondary);
+  padding: 11px;
+  box-shadow: 0 14px 36px rgb(16 24 40 / 0.045);
+  will-change: auto;
+}
+.depth-service-card-3 {
+  grid-column: 2 / span 2;
+}
+.depth-service-card-4 {
+  grid-column: 4 / span 2;
+}
+.depth-service-face {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  min-width: 0;
+  min-height: 420px;
+  transition: opacity 0.2s;
+  transform: translateZ(24px);
+  box-shadow: 0 8px 24px rgb(16 24 40 / 0.025);
+}
+.depth-service-face[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.depth-service-front {
+  justify-content: space-between;
+  background:
+    radial-gradient(
+      ellipse at 35% 5%,
+      color-mix(in srgb, #2563eb 7%, transparent),
+      transparent 68%
+    ),
+    var(--surface);
+}
+.depth-service-symbol {
+  align-self: flex-start;
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid color-mix(in srgb, #2563eb 20%, var(--border));
+  border-radius: 24px;
+  color: var(--brand-ink);
+  background: var(--brand-tint);
+  transform: translateZ(20px);
+  box-shadow: 0 9px 24px color-mix(in srgb, #2563eb 7%, transparent);
+}
+.depth-service-summary {
+  transform: translateZ(12px);
+}
+.depth-service-summary h3,
+.depth-service-back-header h3 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  color: var(--foreground);
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.depth-service-summary p {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+}
+.depth-service-discover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--foreground);
+  background: var(--surface-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+  transform: translateZ(14px);
+}
+.depth-service-discover:hover {
+  background: var(--brand-tint);
+  border-color: #2563eb;
+}
+.depth-service-discover svg {
+  flex-shrink: 0;
+  color: var(--brand-ink);
+}
+.depth-service-back {
+  justify-content: space-between;
+  gap: 20px;
+  transform: none;
+}
+.depth-service-back-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.depth-service-back-header h3 {
+  font-size: 21px;
+}
+.depth-service-return {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface-secondary);
+  color: var(--foreground);
+  cursor: pointer;
+}
+.depth-service-detail {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+}
+.depth-service-back ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted-foreground);
+}
+.depth-service-back li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+.depth-service-back li svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--brand-ink);
+}
+.depth-service-discuss {
+  margin-top: auto;
+  font-size: 12px;
+  white-space: normal;
+}
+.depth-service-discuss svg {
+  flex-shrink: 0;
+}
+.depth-service-card[data-service-open="true"] {
+  transform: none !important;
+}
+.depth-service-discover:focus-visible,
+.depth-service-return:focus-visible,
+.notched-project-cover:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 5px;
+}
+/* Notched Project Card: original 80px cut, 64px disc and 28px fillets. */
+.notched-project-cover {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 28px;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  --notch-surface: var(--background);
+}
+.notched-project-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--surface-secondary);
+}
+.notched-project-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.notched-project-cover:hover img,
+.notched-project-cover:focus-visible img {
+  transform: scale(1.04);
+  filter: none;
+}
+.notched-project-badge {
+  position: absolute;
+  inset: 16px 16px auto;
+  max-width: fit-content;
+  margin-inline: auto;
+  border: 1px solid rgb(255 255 255 / 0.4);
+  border-radius: 999px;
+  background: rgb(5 13 30 / 0.55);
+  padding: 6px 10px;
+  color: white;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+.notched-project-cut {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border-top-left-radius: 48px;
+  background: var(--notch-surface);
+}
+.notched-project-fillet {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: radial-gradient(
+    circle at top left,
+    transparent 27.5px,
+    var(--notch-surface) 28px
+  );
+}
+.notched-project-fillet.fillet-right {
+  bottom: 80px;
+  right: 0;
+}
+.notched-project-fillet.fillet-bottom {
+  bottom: 0;
+  right: 80px;
+}
+.notched-project-disc {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface-secondary);
+  color: var(--foreground);
+  transition:
+    background 0.25s,
+    color 0.25s,
+    transform 0.25s;
+}
+.notched-project-cover:hover .notched-project-disc,
+.notched-project-cover:focus-visible .notched-project-disc {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.04);
+}
+.notched-project-disc svg {
+  transition: transform 0.25s;
+}
+.notched-project-cover:hover .notched-project-disc svg {
+  transform: translate(2px, -2px);
+}
+@media (max-width: 1023px) {
+  .depth-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .depth-service-card,
+  .depth-service-card-3,
+  .depth-service-card-4 {
+    grid-column: auto;
+  }
+  .depth-service-card-4 {
+    grid-column: 1/-1;
+    width: calc(50% - 11px);
+    justify-self: center;
+  }
+  .depth-service-face {
+    padding: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .depth-service-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .depth-service-card,
+  .depth-service-card-3,
+  .depth-service-card-4 {
+    grid-column: auto;
+    width: 100%;
+    padding: 9px;
+    border-radius: 23px;
+  }
+  .depth-service-face {
+    padding: 22px;
+    min-height: 370px;
+    border-radius: 15px;
+  }
+  .depth-service-symbol {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+  }
+  .depth-service-summary h3 {
+    font-size: 23px;
+  }
+  .depth-service-back-header h3 {
+    font-size: 21px;
+  }
+  .notched-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .notched-projects-grid > div:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+  .notched-project-card .project-copy {
+    padding-inline: 1px;
+  }
+  .notched-project-badge {
+    font-size: 8px;
+  }
+}
+@media (max-width: 380px) {
+  .depth-service-face {
+    padding: 17px;
+    gap: 20px;
+  }
+  .depth-service-summary h3 {
+    font-size: 22px;
+  }
+  .depth-service-summary p {
+    font-size: 13px;
+  }
+  .depth-service-back-header {
+    gap: 6px;
+    flex-direction: column-reverse;
+  }
+  .depth-service-return {
+    align-self: flex-end;
+  }
+  .depth-service-detail {
+    font-size: 12px;
+  }
+  .depth-service-back ul {
+    font-size: 12px;
+  }
+  .depth-service-discuss {
+    font-size: 11px;
+  }
+  .notched-project-card .project-copy h3 {
+    font-size: 21px;
+  }
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .depth-service-card,
+  .depth-service-face,
+  .depth-service-symbol,
+  .depth-service-summary,
+  .depth-service-discover {
+    transform: none !important;
+  }
+  .depth-service-face,
+  .notched-project-photo img,
+  .notched-project-disc,
+  .notched-project-disc svg {
+    transition: none;
+  }
+}

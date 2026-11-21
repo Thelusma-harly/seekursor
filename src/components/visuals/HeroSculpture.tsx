@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { BrandLockup } from "../BrandLockup";
+import { useRef } from "react";
 
 function StaticRing() {
   return (
@@ -25,6 +26,7 @@ const Corolla = dynamic(() => import("./CorollaGleam"), {
   loading: StaticRing,
 });
 export function HeroSculpture() {
+  const root = useRef<HTMLDivElement>(null);
   const [live, setLive] = useState(false);
   useEffect(() => {
     const media = window.matchMedia(
@@ -33,13 +35,29 @@ export function HeroSculpture() {
     const connection = (
       navigator as Navigator & { connection?: { saveData?: boolean } }
     ).connection;
-    const update = () => setLive(media.matches && !connection?.saveData);
-    update();
+    let visible = false;
+    const update = () =>
+      setLive(
+        visible && media.matches && !connection?.saveData && !document.hidden,
+      );
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+        update();
+      },
+      { rootMargin: "120px" },
+    );
+    if (root.current) observer.observe(root.current);
     media.addEventListener("change", update);
-    return () => media.removeEventListener("change", update);
+    document.addEventListener("visibilitychange", update);
+    return () => {
+      observer.disconnect();
+      media.removeEventListener("change", update);
+      document.removeEventListener("visibilitychange", update);
+    };
   }, []);
   return (
-    <div className="hero-sculpture" aria-hidden="true">
+    <div ref={root} className="hero-sculpture" aria-hidden="true">
       <div className="sculpture-orbit orbit-one" />
       <div className="sculpture-orbit orbit-two" />
       <div className="sculpture-canvas">

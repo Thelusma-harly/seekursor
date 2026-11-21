@@ -1,0 +1,120 @@
+.waterfall-effect,
+.cursor-field-effect {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.waterfall-live,
+.waterfall-still,
+.cursor-field-live,
+.cursor-field-still {
+  position: absolute;
+  inset: 0;
+}
+.waterfall-effect {
+  mask-image: linear-gradient(
+    to right,
+    transparent 23%,
+    #000 58%,
+    #000 94%,
+    transparent
+  );
+}
+.waterfall-live {
+  opacity: 0.8;
+}
+.dark .waterfall-live {
+  opacity: 0.95;
+}
+.waterfall-still {
+  background: radial-gradient(
+    ellipse 24% 17% at 77% 79%,
+    #2563eb23,
+    transparent 80%
+  );
+}
+.waterfall-still i {
+  position: absolute;
+  top: -8%;
+  bottom: 22%;
+  left: 76%;
+  width: 2px;
+  background: linear-gradient(
+    transparent,
+    #2563eb44 30%,
+    #397aff8c 72%,
+    #397affcc
+  );
+  box-shadow:
+    0 0 15px 5px #2563eb1c,
+    0 0 60px 18px #397aff1c;
+  transform: skewX(-3deg);
+}
+.waterfall-still b {
+  position: absolute;
+  left: 59%;
+  top: 76%;
+  width: 36%;
+  height: 9%;
+  border-radius: 50%;
+  border: 1px solid #2563eb33;
+  box-shadow:
+    0 0 18px #2563eb19,
+    inset 0 0 18px #2563eb16;
+  transform: perspective(200px) rotateX(55deg);
+}
+.waterfall-effect[data-live="true"] .waterfall-still {
+  opacity: 0.25;
+}
+.cursor-field-effect {
+  opacity: 0.6;
+}
+.cursor-field-still {
+  background-image: radial-gradient(circle, #2563eb4a 1px, transparent 1.7px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse at center, #000, transparent 72%);
+}
+.cursor-field-live {
+  mask-image: radial-gradient(ellipse at center, #000 10%, transparent 73%);
+}
+.cursor-field-effect[data-live="true"] .cursor-field-still {
+  opacity: 0.25;
+}
+.velour-effect {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  .waterfall-effect {
+    mask-image: linear-gradient(transparent 12%, #000 55%);
+    opacity: 0.85;
+  }
+  .waterfall-still i {
+    left: 65%;
+    top: 5%;
+    width: 3px;
+    background: linear-gradient(
+      transparent,
+      #2563eb88 30%,
+      #397affcc 72%,
+      #397aff
+    );
+  }
+  .waterfall-still b {
+    left: 47%;
+    width: 36%;
+  }
+  .cursor-field-effect {
+    opacity: 0.2;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .waterfall-live,
+  .cursor-field-live {
+    display: none;
+  }
+}

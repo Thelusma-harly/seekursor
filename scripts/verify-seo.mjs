@@ -9,7 +9,6 @@ const decode = value => value.replace(/&amp;/g, '&').replace(/&quot;/g, '"').rep
 const attrs = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map(([, key, value]) => [key.toLowerCase(), decode(value)]));
 const tags = (html, name) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, 'gi'))].map(match => attrs(match[0]));
 const report = { base: base.origin, canonicalOrigin: origin, pages: [], redirects: [], assets: [] };
-const serviceArt = ['digital-presence', 'customer-experience', 'custom-apps', 'automation', 'social-publishing'];
 async function request(path, options = {}) {
   return fetch(new URL(path, base), { redirect: 'manual', signal: AbortSignal.timeout(30000), ...options });
 }
@@ -44,8 +43,9 @@ for (const locale of locales) {
     assert.equal(links.find(link => link.rel === 'alternate' && link.hreflang === language)?.href, `${origin}/${language === 'x-default' ? 'fr' : language}`);
   }
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || '';
-  const servedServiceArt = tags(main, 'img').map(image => new URL(image.src, base).searchParams.get('url')).filter(src => src?.startsWith('/images/services/'));
-  assert.deepEqual(servedServiceArt, serviceArt.map(name => `/images/services/${name}.webp`), 'Missing or reordered service illustrations');
+  const servedServiceArt = tags(main, 'img').filter(image => new URL(image.src, base).searchParams.get('url')?.startsWith('/images/services/'));
+  assert.equal(servedServiceArt.length, 0, 'Service cards must remain free of generated artwork');
+  assert.equal([...main.matchAll(/data-service-card=/g)].length, 5, 'All five services must remain in the initial HTML');
   const header = html.match(/<header\b[^>]*>([\s\S]*?)<\/header>/i)?.[1] || '';
   assert.ok(!header.includes('data-acquisition'), 'Header must keep acquisition CTAs out of the navigation');
   assert.equal([...main.matchAll(/<h1\b/g)].length, 1);
@@ -152,15 +152,5 @@ for (const path of ['/brand/seekursor-favicon.ico', '/brand/seekursor-icon-48.pn
 }
 report.robots = { status: robots.status, content: rules };
 report.sitemap = { status: sitemap.status, urls: 3, stableLastmod: true };
-let serviceArtBytes = 0;
-for (const name of serviceArt) {
-  const response = await request(`/images/services/${name}.webp`);
-  assert.equal(response.status, 200);
-  const bytes = Buffer.from(await response.arrayBuffer());
-  assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
-  assert.ok(bytes.length < 75000, 'Individual service illustration exceeds 75KB');
-  serviceArtBytes += bytes.length;
-}
-assert.ok(serviceArtBytes < 250000, 'Combined service illustrations exceed the 250KB budget');
-report.serviceArt = { images: serviceArt.length, bytes: serviceArtBytes, budgetBytes: 250000 };
+report.services = { cards: 5, generatedImages: 0 };
 console.log(JSON.stringify(report, null, 2));

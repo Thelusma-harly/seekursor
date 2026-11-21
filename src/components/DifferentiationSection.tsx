@@ -3,6 +3,7 @@ import { Compass, Layers3, Sparkles, MapPin } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { GlassIcon } from "./ui/GlassIcon";
 import { TerraGlobe } from "./visuals/TerraGlobe";
+import { HeroSculpture } from "./visuals/HeroSculpture";
 const icons = [Compass, Layers3, Sparkles, MapPin];
 export function DifferentiationSection() {
   const t = useTranslations("Differentiation");
@@ -13,7 +14,9 @@ export function DifferentiationSection() {
       <div className="page-shell">
         <Reveal className="difference-heading">
           <h2>{t("title")}</h2>
-          <span className="section-rule" />
+          <div className="difference-emblem">
+            <HeroSculpture />
+          </div>
         </Reveal>
         <div className="principles-grid">
           {principles.map((item, index) => (

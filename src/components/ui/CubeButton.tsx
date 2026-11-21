@@ -3,17 +3,10 @@
 import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-// Cube Flip Button — adapted from the user-supplied Originkit component.
-// CSS keeps the two faces synchronized without observers or animation loops.
+// Compatibility exports for the existing actions. The visual now follows the
+// supplied Tactile Button: one keycap above a fixed base, with native semantics.
 export function CubeFaces({ children }: { children: ReactNode }) {
-  return (
-    <span className="cube-rotor">
-      <span className="cube-face">{children}</span>
-      <span className="cube-face cube-face-back" aria-hidden="true">
-        {children}
-      </span>
-    </span>
-  );
+  return <span className="tactile-face">{children}</span>;
 }
 export type CubeVariant = "primary" | "secondary" | "light";
 export const CubeButton = forwardRef<
@@ -27,7 +20,7 @@ export const CubeButton = forwardRef<
     <button
       ref={ref}
       type="button"
-      className={cn("cube-button", className)}
+      className={cn("cube-button tactile-button", className)}
       data-variant={variant}
       {...props}
     >

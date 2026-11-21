@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { FounderPortrait } from "./visuals/FounderPortrait";
 import { ArrowUpRight } from "lucide-react";
 import { useSeekursorConfig } from "../data/seekursorConfig";
 import { WhatsAppCTA } from "./WhatsAppCTA";
@@ -13,14 +13,7 @@ export function FounderSection({ onAcquire }: { onAcquire: OpenAcquisition }) {
       <div className="page-shell founder-layout">
         <Reveal>
           <figure className="founder-frame">
-            <Image
-              src={founder.image}
-              alt={t("Founder.imageAlt")}
-              loading="lazy"
-              width={1024}
-              height={1024}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
+            <FounderPortrait src={founder.image} alt={t("Founder.imageAlt")} />
             <figcaption>
               <span className="status-dot" />
               <div>

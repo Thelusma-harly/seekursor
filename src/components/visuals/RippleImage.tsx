@@ -5,6 +5,7 @@
 
 import * as React from "react"
 import { animate } from "framer-motion"
+import founderWorkspace from "../../assets/images/founder_workspace.jpg"
 
 /**
  * RippleCard — pointer-driven water rings on a photograph.
@@ -64,7 +65,7 @@ const DEFAULT_TRANSITION: Motion = {
 }
 
 // Same-origin optimized artwork is also the fallback.
-const DEFAULT_IMAGE_SRC = "/images/services/digital-presence.webp"
+const DEFAULT_IMAGE_SRC = founderWorkspace.src
 
 export interface RippleImage {
     src?: string

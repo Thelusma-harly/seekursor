@@ -4,12 +4,16 @@ import { useSeekursorConfig } from "../data/seekursorConfig";
 import { GlassIcon } from "./ui/GlassIcon";
 import { Reveal } from "./ui/Reveal";
 import { CobaltSprite } from "./visuals/CobaltSprite";
+import { CursorFieldBackground } from "./visuals/EffectBackgrounds";
 const icons = [MessageCircle, Focus, PenTool, CheckCircle2];
 export function BentoGrid() {
   const t = useTranslations("Process");
   const { processSteps } = useSeekursorConfig();
   return (
     <section id="approche" className="section-space process-section">
+      <div className="process-background" aria-hidden="true">
+        <CursorFieldBackground />
+      </div>
       <div className="page-shell">
         <div className="process-intro">
           <Reveal className="section-heading">

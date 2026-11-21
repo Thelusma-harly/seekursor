@@ -12,6 +12,7 @@ export function WhatsAppCTA({
   onUnavailable,
   onNavigate,
   variant = "primary",
+  appearance = "tactile",
 }: {
   children: ReactNode;
   className: string;
@@ -19,28 +20,35 @@ export function WhatsAppCTA({
   onUnavailable: OpenAcquisition;
   onNavigate?: () => void;
   variant?: CubeVariant;
+  appearance?: "tactile" | "velour";
 }) {
   const t = useTranslations("WhatsApp");
   const localizedMessage = message ?? t("default");
   const href = createWhatsAppLink({ message: localizedMessage });
+  const buttonClass = cn(
+    appearance === "velour" ? "hero-velour-cta" : "cube-button tactile-button",
+    className,
+  );
+  const content =
+    appearance === "velour" ? children : <CubeFaces>{children}</CubeFaces>;
   if (href)
     return (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={cn("cube-button", className)}
+        className={buttonClass}
         data-variant={variant}
         onClick={onNavigate}
         data-acquisition="whatsapp"
       >
-        <CubeFaces>{children}</CubeFaces>
+        {content}
       </a>
     );
   return (
     <button
       type="button"
-      className={cn("cube-button", className)}
+      className={buttonClass}
       data-variant={variant}
       data-acquisition="whatsapp"
       aria-haspopup="dialog"
@@ -48,7 +56,7 @@ export function WhatsAppCTA({
         onUnavailable("whatsapp", event.currentTarget, localizedMessage)
       }
     >
-      <CubeFaces>{children}</CubeFaces>
+      {content}
     </button>
   );
 }
